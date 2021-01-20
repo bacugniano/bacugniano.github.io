@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ROCAT</title>
+    <title>ROCAT - О нас</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     
     <link rel="stylesheet" href="css/slick.css"/>
@@ -15,8 +15,6 @@
 <body>
 
     <div class="container">
-
-        <h1 class="visually-hidden"></h1>
 
         <header class="header">
 
@@ -38,16 +36,16 @@
                         О НАС
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="">ТЕХНИКА</a>
+                        <a class="navigation__link" href="technics.html">ТЕХНИКА</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="">операторы</a>
+                        <a class="navigation__link" href="operators.html">операторы</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="">УСЛУГИ</a>
+                        <a class="navigation__link" href="services.html">УСЛУГИ</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="">ДЕТАЛИ</a>
+                        <a class="navigation__link" href="details.html">ДЕТАЛИ</a>
                     </li>
                     <li class="navigation__item">
                         <a class="navigation__link" href="contacts.html">КОНТАКТЫ</a>
@@ -69,6 +67,8 @@
     </div>
 
     <main class="main-index">
+
+    <h1 class="visually-hidden">Когда мощь встречается с интеллектом</h1>
 
         <img class="main-index__banner" src="image/main-banner.jpg" alt="Баннер">
 
@@ -171,34 +171,55 @@
                     
                     <div class="partners__slider">
                         <div class="partners__slide">
-                            <img class="partners__logotype" src="image/zeppelin-cat.jpg" alt="Логотип «Zeppelin CAT»">
+                            <a href="https://zeppelin.com.by/" target="_blank">
+                                <img class="partners__logotype" src="image/zeppelin-cat.jpg" alt="Логотип «Zeppelin CAT»">
+                            </a>
+                            
                         </div>
                         <div class="partners__slide">
-                            <img class="partners__logotype" src="image/beltelecom.png" alt="Логотип «Белтелеком»">
+                            <a href="https://beltelecom.by/" target="_blank">
+                                <img class="partners__logotype" src="image/beltelecom.png" alt="Логотип «Белтелеком»">
+                            </a>
                         </div>
                         <div class="partners__slide">
-                            <img class="partners__logotype" src="image/dominik.jpg" alt="Логотип «DOMINIK»">
+                            <a href="https://jv-dominik.com/" target="_blank">
+                                <img class="partners__logotype" src="image/dominik.jpg" alt="Логотип «DOMINIK»">
+                            </a>
                         </div>
                         <div class="partners__slide">
-                            <img class="partners__logotype partners__logotype--victoria" src="image/victoria91.png" alt="Логотип «Виктория 91»">
+                            <a href="http://www.victoria91.by/" target="_blank">
+                                <img class="partners__logotype partners__logotype--victoria" src="image/victoria91.png" alt="Логотип «Виктория 91»">
+                            </a>
                         </div>
                         <div class="partners__slide">
-                            <img class="partners__logotype" src="image/c-trading.png" alt="Логотип «СИ-трейдинг»">
+                            <a href="https://www.sit.by/" target="_blank">
+                                <img class="partners__logotype" src="image/c-trading.png" alt="Логотип «СИ-трейдинг»">
+                            </a>
                         </div>
                         <div class="partners__slide">
-                            <img class="partners__logotype" src="image/belstroynaladka.jpg" alt="Логотип «Белстройналадка»">
+                            <a href="#" target="_blank">
+                                <img class="partners__logotype" src="image/belstroynaladka.jpg" alt="Логотип «Белстройналадка»">
+                            </a>
                         </div>
                         <div class="partners__slide">
-                            <img class="partners__logotype" src="image/danaholdings.png" alt="Логотип «Dana Holdings»">
+                            <a href="https://bir.by/" target="_blank">
+                                <img class="partners__logotype" src="image/danaholdings.png" alt="Логотип «Dana Holdings»">
+                            </a>
                         </div>
                         <div class="partners__slide">
-                            <img class="partners__logotype" src="image/volna.png" alt="Логотип «Вольна»">
+                            <a href="https://volna.by/" target="_blank">
+                                <img class="partners__logotype" src="image/volna.png" alt="Логотип «Вольна»">
+                            </a>
                         </div>
                         <div class="partners__slide">
-                            <img class="partners__logotype" src="image/mozhelit.png" alt="Логотип «Можелит»">
+                            <a href="http://gelatin.by/" target="_blank">
+                                <img class="partners__logotype" src="image/mozhelit.png" alt="Логотип «Можелит»">
+                            </a>
                         </div>
                         <div class="partners__slide">
-                            <img class="partners__logotype partners__logotype--belarusneft" src="image/belarusneft.png" alt="Логотип «Белоруснефть»">
+                            <a href="https://www.belorusneft.by/" target="_blank">
+                                <img class="partners__logotype partners__logotype--belarusneft" src="image/belarusneft.png" alt="Логотип «Белоруснефть»">
+                            </a>
                         </div>
 
                     </div>
@@ -216,17 +237,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function(){
-          $('.partners__slider').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 1500,
-            arrows: false,
-          });
-        });
-    </script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>
