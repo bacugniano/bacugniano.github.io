@@ -1,0 +1,58 @@
+.about-us {
+    
+    &__wrap {
+
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__text {
+
+        width: 580px;
+        padding-top: 50px;
+        padding-bottom: 60px;
+
+    }
+
+    &__paragraph {
+
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+
+        &--first {
+
+            margin-top: 40px;
+            margin-bottom: 30px;
+
+        }
+
+    }
+
+    &__picture {
+
+        width: 530px;
+
+    }
+
+    &__link {
+
+        margin-top: 15px;
+        @include button;
+
+        &:hover {
+
+            @include button_hover;
+
+        }
+
+        &:active {
+
+            @include button_active;
+
+        }
+
+    }
+
+}

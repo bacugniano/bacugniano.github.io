@@ -1,0 +1,66 @@
+.features {
+
+    &__title {
+
+        margin-bottom: 30px;
+
+    }
+
+    &__list {
+
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__item {
+
+        width: 275px;
+        min-height: 290px;
+        padding: 0 20px;
+        padding-top: 40px;
+        border: 1px solid rgba(134, 134, 134, 0.6);
+
+    }
+
+    &__icon {
+
+        width: 47px;
+        height: 45px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+
+        &--technics {
+
+            background-image: url('../icon/technics.svg');
+
+        }
+
+        &--team {
+
+            background-image: url('../icon/team.svg');
+
+        }
+
+        &--prize {
+
+            background-image: url('../icon/prize.svg');
+
+        }
+
+        &--result {
+
+            background-image: url('../icon/result.svg');
+
+        }
+
+    }
+
+    &__description {
+
+        margin-top: 25px;
+        font-weight: 400;
+
+    }
+
+}

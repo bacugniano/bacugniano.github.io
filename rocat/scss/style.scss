@@ -1,0 +1,81 @@
+@import 'variables';
+@import 'mixins';
+
+*,
+*::before,
+*::after {
+
+    box-sizing: border-box;
+
+}
+
+
+p,
+h1,
+h2,
+h3 {
+
+    margin: 0;
+
+}
+
+ul {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: $main;
+    background-color: #1f1f1f;
+    background-image: url('../image/background_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.visually-hidden {
+
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+    overflow: hidden;
+    
+}
+
+@import 'blocks/common/header';
+@import 'blocks/common/navigation';
+@import 'blocks/index/main-index';
+@import 'blocks/index/results';
+@import 'blocks/index/about-us';
+@import 'blocks/index/features';
+@import 'blocks/index/partners';
+@import 'blocks/contacts/main-contacts';
+@import 'blocks/contacts/contacts';
+@import 'blocks/contacts/map';
+@import 'blocks/contacts/form';
+@import 'blocks/technics/main-technics';
+@import 'blocks/common/tab-navigation';
+@import 'blocks/technics/technics';
+@import 'blocks/technics/additional';
+@import 'blocks/services/services-index';
+@import 'blocks/services/services';
+@import 'blocks/operators/operators';
+@import 'blocks/details/main-details';
+@import 'blocks/details/table';
+@import 'blocks/details/details';

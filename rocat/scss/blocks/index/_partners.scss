@@ -1,0 +1,53 @@
+.partners {
+
+    &__title {
+
+        margin-bottom: 45px;
+
+    }
+
+    &__slder {
+
+        display: flex !important;
+        justify-content: space-between !important;
+
+    }
+
+    &__slide {
+
+        width: auto !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: 119px !important;
+        outline: none !important;
+        margin-right: 56px !important;
+
+    }
+
+    &__logotype {
+
+        filter: grayscale(100%);
+        transition: .2s all;
+
+        &:hover {
+
+            filter: none;
+            cursor: pointer;
+
+        }
+
+        &--victoria {
+
+            padding-bottom: 30px;
+        }
+
+        // &--belarusneft {
+
+        //     margin-right: 56px;
+
+        // }
+
+    }
+
+}

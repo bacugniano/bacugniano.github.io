@@ -1,0 +1,110 @@
+.contacts {
+
+    position: relative;
+    min-height: 350px;
+    padding-top: 80px;
+
+    &__list {
+
+        width: 510px;
+        min-height: 190px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+
+    }
+
+    &__item {
+
+        width: 232px;
+
+        &--social {
+
+            display: flex;
+            align-items: flex-end;
+
+        }
+
+    }
+
+    &__title {
+
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+
+    }
+
+    &__link {
+
+        color: $main;
+        text-decoration: none;
+        transition: .4s all;
+
+        &:hover {
+
+            color: $active;
+            text-decoration: underline;
+
+        }
+
+        &:active {
+
+            color: $disable-txt;
+
+        }
+
+    }
+
+    &__social-link {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        width: 40px;
+        height: 40px;
+        border: 1px solid $main;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transition: .4s all;
+
+        &--twitter {
+
+            background-image: url('../icon/twitter.svg');
+
+        }
+
+        &--facebook {
+
+            background-image: url('../icon/facebook.svg');
+
+        }
+
+        &:hover {
+
+            background-color: $second;
+            border: none;
+
+        }
+
+        &:active{
+
+            background-color: $disable-bg;
+            border: none;
+
+        }
+
+    }
+
+    &__form {
+
+        position: absolute;
+        top: 40px;
+        right: 130px;
+        z-index: 2;
+
+    }
+
+}

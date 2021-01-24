@@ -1,0 +1,64 @@
+.services {
+
+    &__list {
+
+        display: flex;
+        padding-top: 30px;
+        padding-bottom: 100px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+
+    &__item {
+
+        width: 366px;
+        height: 544px;
+        margin-bottom: 50px;
+        padding-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        background-color: $hover-bg;
+
+    }
+
+    &__description {
+        width: 343px;
+        margin-top: 24px;
+        margin-bottom: 16px;
+        padding-left: 39px;
+        line-height: 23.4px;
+
+    }
+
+    &__price {
+
+        font-weight: 700;
+        color: $third;
+        padding-left: 39px;
+
+    }
+
+    &__button {
+
+        @include button;
+        width: 166px;
+        height: 64px;
+        outline: none;
+        margin: 0 auto;
+        margin-top: auto;
+
+        &:hover {
+
+            @include button_hover;
+        }
+
+        &:active {
+
+            @include button_active;
+
+        }
+
+    }
+
+}

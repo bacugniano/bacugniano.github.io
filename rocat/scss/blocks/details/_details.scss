@@ -1,0 +1,120 @@
+.details {
+
+    display: none;
+
+    &__picture {
+
+        &-wrap {
+
+            height: 312px;
+            display: flex;
+            align-items: flex-end;
+
+        }
+
+        &--pitchfork {
+
+            margin-left: 29px;
+
+        }
+
+        &--BR1850 {
+
+            margin-left: 85px;
+
+        }
+
+        &--impulse {
+
+            margin-left: 88px;
+
+        }
+
+        &--VP10 {
+
+            margin-left: 107px;
+
+        }
+
+        &--crane {
+
+            margin-left: 68px;
+
+        }
+
+        &--pallet-forks {
+
+            margin-left: 70px;
+
+        }
+
+    }
+
+    &__header {
+
+        margin-top: 48px;
+        margin-bottom: 24px;
+        font-size: 24px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.2px;
+        line-height: 36px;
+
+    }
+
+    &__wrap {
+
+        width: 684px;
+        height: 64px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+
+    }
+
+    &__price {
+
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+
+    }
+
+    &__price-desc {
+
+        margin-top: 6px;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+        line-height: 18.2px;
+
+    }
+
+    &__button {
+
+        @include button;
+        width: 166px;
+        height: 64px;
+
+        &:hover {
+
+            @include button-hover;
+
+        }
+
+        &:active {
+
+            @include button-active;
+
+        }
+
+    }
+
+    &--active {
+
+        display: block;
+
+    }
+
+}

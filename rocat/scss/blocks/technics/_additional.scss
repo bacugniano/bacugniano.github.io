@@ -1,0 +1,288 @@
+.additional {
+
+    // margin-bottom: 125px;
+
+    &__header {
+
+        font-size: 24px;
+        font-weight: 900;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        text-align: center;
+
+    }
+
+    &__tab-list {
+
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+
+    }
+
+    &__tab-item {
+
+        margin-right: 25px;
+        transition: .2s all;
+
+        &--active {
+
+            background-image: linear-gradient(rgba(151, 151, 151, 0.2) 0%, rgba(9, 9, 9, 0.2) 100%);        
+
+        }
+
+    }
+
+    &__tab-button {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 214px;
+        height: 78px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        background: transparent;
+        border: none;
+        color: $main;
+        cursor: pointer;
+        outline: none;
+        transition: .2s all;
+
+        &:hover {
+
+            background-image: linear-gradient(rgba(151, 151, 151, 0.2) 0%, rgba(9, 9, 9, 0.2) 100%);        
+
+        }
+
+        &[disabled] {
+
+            background-image: none;
+            cursor: default; 
+            color: $disable-bg;           
+
+        }
+
+        &[disabled] .additional__tab-icon path {
+
+            fill:$disable-bg;
+
+        }
+
+    }
+
+    &__tab-icon {
+
+        margin-right: 8px;
+
+    }
+
+    &__services {
+
+        &-list {
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+
+        &-item {
+
+            display: flex;
+            width: 346px;
+            min-height: 219px;
+            background-color: $hover-bg;
+            margin-bottom: 25px;
+
+        }
+
+        &-wrap {
+
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            padding: 33px 0;
+            padding-left: 27px;
+
+        }
+
+        &-desc {
+
+            width: 182px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18.2px;
+
+        }
+
+        &-container {
+
+            display: flex;
+            justify-content: space-between;
+            margin-top: auto;
+            padding-right: 25px;
+            height: 49px;
+            width: 100%;
+
+        }
+
+    }
+
+    &__button {
+
+        height: 26px;
+        padding: 0;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        transition: .2s all;
+
+        &:hover .additional__button--active {
+
+            fill: $active;
+
+        }
+
+        &:hover .additional__button--active-2 {
+
+            stroke: $active;
+
+        }
+
+        &--service {
+
+            margin-top: auto;
+
+        }
+
+    }
+
+    &__price {
+
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18.2px;
+
+        &--service {
+
+            width: 115px;
+
+        }
+
+        &--details {
+
+            width: 100%;
+
+        }
+
+    }
+
+    &__details {
+
+        &-list {
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+
+        &-item {
+
+            width: 224px;
+            height: 219px;
+            background-color: $hover-bg;
+            margin-bottom: 25px;
+
+            &--invisible {
+
+                background: transparent;
+
+            }
+
+        }
+
+        &-image {
+
+            width: 100px;
+            height: 89px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+
+        }
+
+        &-wrap {
+
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 25px;
+            padding-bottom: 25px;
+
+
+        }
+
+        &-header {
+
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.2px;
+            width: 100%;
+            margin: 8px 0;
+
+        }
+
+        &-container {
+
+            width: 100%;
+            height: 26px;
+            margin-top: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+    }
+
+    &__learnmore-link {
+
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        color: $main;
+        transition: .2s all;
+
+        &:hover {
+
+            color: $active;
+
+        }
+
+        &:active {
+
+            color: $disable-txt;
+
+        }
+
+    }
+
+    &__list {
+
+        display: none;
+        margin-bottom: 150px;
+
+        &--active {
+
+            display: flex;
+
+        }
+
+    }
+
+  
+}

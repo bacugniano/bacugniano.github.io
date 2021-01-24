@@ -1,0 +1,50 @@
+.main-index {
+
+    width: 100%;
+
+    &__banner {
+
+        width: 100%;
+        margin-top: -160px;
+    }
+
+    &__about-us {
+
+        margin-top: 120px;
+
+    }
+
+    &__subtitle {
+
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 32px;
+        color: #868686;
+        text-transform: uppercase;
+
+    }
+
+    &__title {
+
+        margin-top: 10px;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 32px;
+        text-transform: uppercase;
+
+    }
+
+    &__features {
+
+        margin-top: 110px;
+
+    }
+
+    &__partners {
+
+        margin-top: 120px;
+        margin-bottom: 120px;
+
+    }
+
+}
