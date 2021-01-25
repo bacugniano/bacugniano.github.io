@@ -1,0 +1,71 @@
+.footer {
+
+    margin-top: 80px;
+    height: 120px;
+    background-color: #000000;
+
+    &__section {
+
+        height: 120px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__link {
+
+        color: $main;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        transition: .2s all;
+
+        &:hover {
+
+            color: $active;
+
+        }
+
+        &:active {
+
+            color: $disable-txt;
+
+        }
+
+        &--order {
+
+            margin-left: 48px;
+
+        }
+
+    }
+
+    &__social-list {
+
+        width: 88px;
+        height: 40px;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &--services {
+
+        margin-top: 30px;
+
+    }
+
+    &--details {
+
+        margin-top: 40px;
+
+    }
+
+    &--contacts {
+
+        margin-top: -4px;
+
+    }
+
+}

@@ -4,7 +4,6 @@
 
         display: flex;
         padding-top: 30px;
-        padding-bottom: 100px;
         justify-content: space-between;
         flex-wrap: wrap;
 
@@ -34,7 +33,7 @@
     &__price {
 
         font-weight: 700;
-        color: $third;
+        color: $main;
         padding-left: 39px;
 
     }
