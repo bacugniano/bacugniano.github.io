@@ -1,15 +1,3 @@
-//Табы в технике
-
-$(document).ready(function(){
-
-    $('ul.additional__tab-list').on('click', 'li:not(.additional__tab-item--active)', function() {
-        $(this)
-          .addClass('additional__tab-item--active').siblings().removeClass('additional__tab-item--active')
-          .closest('section.additional').find('ul.additional__list').removeClass('additional__list--active').eq($(this).index()).addClass('additional__list--active');
-      });
-
-});
-
 //Табы в навигации
 
 let tab = function () {

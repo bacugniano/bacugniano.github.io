@@ -1,0 +1,195 @@
+.cart {
+
+    &__item {
+
+        width: 850px;
+        height: 225px;
+        display: flex;
+        background-color: $hover-bg;
+        padding: 40px 0;
+        margin-bottom: 16px;
+
+    }
+
+    &__img-wrap {
+
+        width: 230px;
+        display: flex;
+        align-items: center;
+
+        &--services {
+
+            width: 284px;
+            height: 100%;
+
+        }
+
+    }
+
+    &__img {
+
+        margin-left: auto;
+
+    }
+
+    &__description-wrap {
+
+        width: 410px;
+        display: flex;
+        flex-direction: column;
+        padding: 0 24px;
+
+        &--services {
+
+            width: 100%;
+
+        }
+
+    }
+
+    &__subtitle {
+
+        font-size: 14px;
+        line-height: 18px;
+        left: 0.2px;
+        color: $third;
+        margin-bottom: 8px;
+
+    }
+
+    &__title {
+
+        width: 100%;
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 23.4px;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+
+    }
+
+    &__price {
+
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: auto;
+
+        &-wrap {
+
+            display: flex;
+            height: 25px;
+            justify-content: space-between;
+            margin-top: auto; 
+        }
+
+    }
+
+    &__link {
+
+        color: $main;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        margin-top: 24px;
+        transition: .2s all;
+
+        &:hover {
+
+            color: $active;
+
+        }
+
+        &:active {
+
+            color: $disable-txt;
+
+        }
+
+    }
+
+    &__value-wrap {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 1;
+        border-left: 1px solid rgba(134, 134, 134, 0.4);
+
+    }
+
+    &__value-list {
+
+        width: 127px;
+        height: 41px;
+        display: flex;
+        border: 1px solid rgba(134, 134, 134, 0.4);
+
+    }
+
+    &__value-item {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        &:nth-child(2) {
+
+            flex-grow: 1;
+
+        }
+
+    }
+
+    &__value-button {
+
+        width: 40px;
+        height: 100%;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        outline: none;
+        color: $main;
+
+        &:hover {
+
+            background-color: $active;
+
+        }
+
+    }
+
+    &__button-delete {
+
+        background: transparent;
+        background-image: url('../icon/trash.svg');
+        background-repeat: no-repeat;
+        background-position: center left;
+        padding-left: 29px;
+        border: none;
+        width: 84px;
+        height: 25px;
+        color: $main;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        cursor: pointer;
+        outline: none;
+
+    }
+
+    &__goods-title {
+
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 36px;
+        letter-spacing: 0.2px;
+        margin-top: 40px;
+        margin-bottom: 24px;
+
+    }
+
+}

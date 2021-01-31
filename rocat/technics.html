@@ -18,7 +18,7 @@
 
         
 
-        <header class="header">
+        <header id="up" class="header">
 
             <div class="header__logo">
 
@@ -57,13 +57,26 @@
 
             </nav>
 
-            <div class="header__cart">
+            <a class="header__cart">
 
-                <span class="header__cart-quantity">0</span>
-                <svg class="header__cart-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="24" viewBox="0 0 32 24"><g><path d="M1 1.5L8 4L12 15.5H27L31 4" fill="none" stroke="#ebebeb" stroke-width="2"/><g/><g><path fill="#ebebeb" d="M16 21.5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0z"/></g><g><path fill="#ebebeb" d="M28 21.5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0z"/></g></g>
+                <span class="header__cart-quantity"></span>
+                <svg class="header__cart-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="24" viewBox="0 0 32 24"><g><path class="header__cart-svg1" d="M1 1.5L8 4L12 15.5H27L31 4" fill="none" stroke="#ebebeb" stroke-width="2"/><g/><g><path class="header__cart-svg2" fill="#ebebeb" d="M16 21.5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0z"/></g><g><path class="header__cart-svg2" fill="#ebebeb" d="M28 21.5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0z"/></g></g>
                 </svg>
 
-            </div>
+            </a>
+
+            <section class="modal">
+                <div class="modal__wrap">
+                    <p class="modal__text">Здравствуйте, у Вас пока нет заказов.</p>
+                    <p class="modal__text">Но вы можете выбрать и заказать</p>
+                    <ul class="modal__link-list">
+                        <li class="modal__link-item"><a class="modal__link" href="technics.html">Технику</a></li>
+                        <li class="modal__link-item"><a class="modal__link" href="services.html">Услугу</a></li>
+                        <li class="modal__link-item"><a class="modal__link" href="details.html">Деталь</a></li>
+                    </ul>
+                </div>
+                <button class="modal__close"></button>
+            </section>
 
         </header>
 
@@ -140,7 +153,7 @@
                     <p class="technics__operator-label">Ваш оператор</p>
                 </div>
                 <div class="technics__picture-wrap">
-                    <img class="technics__picture" src="image/technics/CAT320G.png" alt="CAT 320 G">
+                    <img class="technics__picture technics__picture--CAT320G" src="image/technics/CAT320G.png" alt="CAT 320 G">
                 </div>
                 <p class="technics__price">70 BYN в час без учета НДС</p>
                 <h2 class="technics__header">ЭКСКАВАТОР ГУСЕНИЧНЫЙ CAT 320 GC</h2>
@@ -161,7 +174,7 @@
                 <div class="technics__wrap">
 
                     <a href="" class="technics__catalog-link">Скачать каталог</a> 
-                    <button class="technics__button">ЗАКАЗАТЬ</button>
+                    <button class="technics__button button-to-cart button--add" data-articul="t1">ЗАКАЗАТЬ</button>
 
                 </div>
 
@@ -193,7 +206,7 @@
                                 </p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s11">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -210,7 +223,7 @@
                                 <p class="additional__services-desc">Демонтаж бетона и других строительных конструкций гидромолотом</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s10">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -227,7 +240,7 @@
                                 <p class="additional__services-desc">Выкорчевывание деревьев, пней. Подарим вашему участку вторую жизнь!</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s3">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -244,7 +257,7 @@
                                 <p class="additional__services-desc">Погрузка и вывоз строительного мусора. Это как клининг, только лучше</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="t1">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -261,7 +274,7 @@
                                 <p class="additional__services-desc">Земляные работы любого объема: копка<br> фундамента, прудов, обустройство котлованов<br> и другие</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s7">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -278,7 +291,7 @@
                                 <p class="additional__services-desc">Разработка карьеров. Возьмем на себя все этапы: от проектирования<br> и самой разработки до ликвидации</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s12">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -295,7 +308,7 @@
                                 <p class="additional__services-desc">Снятие плодородного слоя почвы. Благодаря правильной технологии срезки мы не повредим ценные слои грунта</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s4">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -314,7 +327,7 @@
                                 </p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s6">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -331,7 +344,7 @@
                                 <p class="additional__services-desc">Планировка участков. Воплотим в жизнь проект вашего ландшафтного дизайнера</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s8">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -348,7 +361,7 @@
                                 <p class="additional__services-desc">Разработка траншей для разных целей</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s5">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -367,7 +380,7 @@
                                 </p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s2">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -384,7 +397,7 @@
                                 <p class="additional__services-desc">Проектирование и возведение фундамента</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s9">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -429,7 +442,7 @@
                 <div class="technics__wrap">
 
                     <a href="" class="technics__catalog-link">Скачать каталог</a> 
-                    <button class="technics__button">ЗАКАЗАТЬ</button>
+                    <button class="technics__button button-to-cart button--add" data-articul="t2">ЗАКАЗАТЬ</button>
 
                 </div>
 
@@ -461,7 +474,7 @@
                                 <p class="additional__price additional__price additional__price--details"></p>
                                 <div class="additional__details-container">
                                     <!-- <a href="details.html" class="additional__learnmore-link">Узнать больше</a> -->
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="d4">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -478,10 +491,10 @@
                                     <img class="additional__details-pic" src="image/details/Rockson-rs300-icon.png" alt="Гидромолот Rockson RS 300">
                                 </div>
                                 <h2 class="additional__details-header">Гидромолот Rockson RS 300</h2>
-                                <p class="additional__price additional__price additional__price--details">90 BYN в час без НДС</p>
+                                <p class="additional__price additional__price additional__price--details">97 BYN в час без НДС</p>
                                 <div class="additional__details-container">
                                     <!-- <a href="details.html" class="additional__learnmore-link">Узнать больше</a> -->
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="d2">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -501,7 +514,7 @@
                                 <p class="additional__price additional__price additional__price--details"></p>
                                 <div class="additional__details-container">
                                     <!-- <a href="details.html" class="additional__learnmore-link">Узнать больше</a> -->
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="d3">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -521,7 +534,7 @@
                                 <p class="additional__price additional__price additional__price--details"></p>
                                 <div class="additional__details-container">
                                     <!-- <a href="details.html" class="additional__learnmore-link">Узнать больше</a> -->
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="d5">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -538,10 +551,10 @@
                                     <img class="additional__details-pic" src="image/details/Rockson-VP10-icon.png" alt="Вибротрамбовка Rockson VP10">
                                 </div>
                                 <h2 class="additional__details-header">Вибротрамбовка Rockson VP10</h2>
-                                <p class="additional__price additional__price--details">90 BYN в час без НДС</p>
+                                <p class="additional__price additional__price--details">97 BYN в час без НДС</p>
                                 <div class="additional__details-container">
                                     <!-- <a href="details.html" class="additional__learnmore-link">Узнать больше</a> -->
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="d7">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -566,13 +579,13 @@
                                 </p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s11">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg> <span>Добавить в заказ</span> 
+                                        </svg><span>Добавить в заказ</span>  
                                 </button>
                                 </div>
                             </div>
@@ -583,24 +596,7 @@
                                 <p class="additional__services-desc">Демонтаж бетона и других строительных конструкций гидромолотом</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
-                                        <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
-                                            <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
-                                            <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
-                                            <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg><span>Добавить в заказ</span>  
-                                </button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="additional__services-item">
-                            <img class="additional__services-img" src="image/services/uprooting-icon.jpg" alt="Выкорчевывание деревьев">
-                            <div class="additional__services-wrap">
-                                <p class="additional__services-desc">Выкорчевывание деревьев, пней. Подарим вашему участку вторую жизнь!</p>
-                                <div class="additional__services-container">
-                                    <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s10">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -612,12 +608,12 @@
                             </div>
                         </li>
                         <li class="additional__services-item">
-                            <img class="additional__services-img" src="image/services/cleaning-icon.jpg" alt="Вывоз строительного мусора">
+                            <img class="additional__services-img" src="image/services/uprooting-icon.jpg" alt="Выкорчевывание деревьев">
                             <div class="additional__services-wrap">
-                                <p class="additional__services-desc">Погрузка и вывоз строительного мусора. Это как клининг, только лучше</p>
+                                <p class="additional__services-desc">Выкорчевывание деревьев, пней. Подарим вашему участку вторую жизнь!</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s3">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -629,12 +625,29 @@
                             </div>
                         </li>
                         <li class="additional__services-item">
+                            <img class="additional__services-img" src="image/services/cleaning-icon.jpg" alt="Вывоз строительного мусора">
+                            <div class="additional__services-wrap">
+                                <p class="additional__services-desc">Погрузка и вывоз строительного мусора. Это как клининг, только лучше</p>
+                                <div class="additional__services-container">
+                                    <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="t1">
+                                        <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
+                                            <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
+                                            <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
+                                            <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
+                                        </svg><span>Добавить в заказ</span> 
+                                </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="additional__services-item">
                             <img class="additional__services-img" src="image/services/earthworks-icon.jpg" alt="Земляные работы">
                             <div class="additional__services-wrap">
                                 <p class="additional__services-desc">Земляные работы любого объема: копка<br> фундамента, прудов, обустройство котлованов<br> и другие</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s7">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -651,7 +664,7 @@
                                 <p class="additional__services-desc">Разработка карьеров. Возьмем на себя все этапы: от проектирования<br> и самой разработки до ликвидации</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s12">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -668,7 +681,7 @@
                                 <p class="additional__services-desc">Снятие плодородного слоя почвы. Благодаря правильной технологии срезки мы не повредим ценные слои грунта</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s4">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -687,13 +700,13 @@
                                 </p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s6">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg><span>Добавить в заказ</span>  
+                                        </svg> <span>Добавить в заказ</span> 
                                 </button>
                                 </div>
                             </div>
@@ -704,7 +717,7 @@
                                 <p class="additional__services-desc">Планировка участков. Воплотим в жизнь проект вашего ландшафтного дизайнера</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s8">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -721,7 +734,7 @@
                                 <p class="additional__services-desc">Разработка траншей для разных целей</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s5">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -740,7 +753,7 @@
                                 </p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s2">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -757,7 +770,7 @@
                                 <p class="additional__services-desc">Проектирование и возведение фундамента</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s9">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -802,7 +815,7 @@
                 <div class="technics__wrap">
 
                     <a href="" class="technics__catalog-link">Скачать каталог</a> 
-                    <button class="technics__button">ЗАКАЗАТЬ</button>
+                    <button class="technics__button button-to-cart button--add" data-articul="t3">ЗАКАЗАТЬ</button>
 
                 </div>
 
@@ -834,13 +847,13 @@
                                 <p class="additional__price additional__price additional__price--details"></p>
                                 <div class="additional__details-container">
                                     <!-- <a href="details.html" class="additional__learnmore-link">Узнать больше</a> -->
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="d4">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg><span>Добавить в заказ</span>  
+                                        </svg> <span>Добавить в заказ</span> 
                                     </button>
                                 </div>
                             </div>
@@ -854,7 +867,7 @@
                                 <p class="additional__price additional__price additional__price--details">90 BYN в час без НДС</p>
                                 <div class="additional__details-container">
                                     <!-- <a href="details.html" class="additional__learnmore-link">Узнать больше</a> -->
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="d1">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -874,7 +887,7 @@
                                 <p class="additional__price additional__price additional__price--details"></p>
                                 <div class="additional__details-container">
                                     <!-- <a href="details.html" class="additional__learnmore-link">Узнать больше</a> -->
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="d3">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -894,7 +907,7 @@
                                 <p class="additional__price additional__price additional__price--details"></p>
                                 <div class="additional__details-container">
                                     <!-- <a href="details.html" class="additional__learnmore-link">Узнать больше</a> -->
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="d5">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -914,7 +927,7 @@
                                 <p class="additional__price additional__price--details">90 BYN в час без НДС</p>
                                 <div class="additional__details-container">
                                     <!-- <a href="details.html" class="additional__learnmore-link">Узнать больше</a> -->
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="d6">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -939,7 +952,7 @@
                                 </p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s11">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -956,13 +969,13 @@
                                 <p class="additional__services-desc">Демонтаж бетона и других строительных конструкций гидромолотом</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s10">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg><span>Добавить в заказ</span>  
+                                        </svg> <span>Добавить в заказ</span> 
                                 </button>
                                 </div>
                             </div>
@@ -973,7 +986,7 @@
                                 <p class="additional__services-desc">Выкорчевывание деревьев, пней. Подарим вашему участку вторую жизнь!</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s3">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -990,13 +1003,13 @@
                                 <p class="additional__services-desc">Погрузка и вывоз строительного мусора. Это как клининг, только лучше</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="t1">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg><span>Добавить в заказ</span>  
+                                        </svg><span>Добавить в заказ</span> 
                                 </button>
                                 </div>
                             </div>
@@ -1007,7 +1020,7 @@
                                 <p class="additional__services-desc">Земляные работы любого объема: копка<br> фундамента, прудов, обустройство котлованов<br> и другие</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s7">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -1024,7 +1037,7 @@
                                 <p class="additional__services-desc">Разработка карьеров. Возьмем на себя все этапы: от проектирования<br> и самой разработки до ликвидации</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s12">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -1041,7 +1054,7 @@
                                 <p class="additional__services-desc">Снятие плодородного слоя почвы. Благодаря правильной технологии срезки мы не повредим ценные слои грунта</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s4">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -1060,7 +1073,7 @@
                                 </p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s6">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -1077,7 +1090,7 @@
                                 <p class="additional__services-desc">Планировка участков. Воплотим в жизнь проект вашего ландшафтного дизайнера</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s8">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -1094,7 +1107,7 @@
                                 <p class="additional__services-desc">Разработка траншей для разных целей</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s5">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -1113,7 +1126,7 @@
                                 </p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s2">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -1130,7 +1143,7 @@
                                 <p class="additional__services-desc">Проектирование и возведение фундамента</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s9">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -1175,7 +1188,7 @@
                 <div class="technics__wrap">
 
                     <a href="" class="technics__catalog-link">Скачать каталог</a> 
-                    <button class="technics__button">ЗАКАЗАТЬ</button>
+                    <button class="technics__button button-to-cart button--add" data-articul="t4">ЗАКАЗАТЬ</button>
 
                 </div>
 
@@ -1207,13 +1220,13 @@
                                 <p class="additional__price additional__price additional__price--details"></p>
                                 <div class="additional__details-container">
                                     <!-- <a href="details.html" class="additional__learnmore-link">Узнать больше</a> -->
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="d4">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg><span>Добавить в заказ</span>  
+                                        </svg> <span>Добавить в заказ</span> 
                                     </button>
                                 </div>
                             </div>
@@ -1224,10 +1237,10 @@
                                     <img class="additional__details-pic" src="image/details/Rockson-rs300-icon.png" alt="Гидромолот Rockson RS 300">
                                 </div>
                                 <h2 class="additional__details-header">Гидромолот Rockson RS 300</h2>
-                                <p class="additional__price additional__price additional__price--details">90 BYN в час без НДС</p>
+                                <p class="additional__price additional__price additional__price--details">97 BYN в час без НДС</p>
                                 <div class="additional__details-container">
                                     <!-- <a href="details.html" class="additional__learnmore-link">Узнать больше</a> -->
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="d2">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -1247,7 +1260,7 @@
                                 <p class="additional__price additional__price additional__price--details"></p>
                                 <div class="additional__details-container">
                                     <!-- <a href="details.html" class="additional__learnmore-link">Узнать больше</a> -->
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="d3">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -1267,7 +1280,7 @@
                                 <p class="additional__price additional__price additional__price--details"></p>
                                 <div class="additional__details-container">
                                     <!-- <a href="details.html" class="additional__learnmore-link">Узнать больше</a> -->
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="d5">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -1287,7 +1300,7 @@
                                 <p class="additional__price additional__price--details">90 BYN в час без НДС</p>
                                 <div class="additional__details-container">
                                     <!-- <a href="details.html" class="additional__learnmore-link">Узнать больше</a> -->
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="d7">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -1312,7 +1325,7 @@
                                 </p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s11">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -1329,13 +1342,13 @@
                                 <p class="additional__services-desc">Демонтаж бетона и других строительных конструкций гидромолотом</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s10">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg><span>Добавить в заказ</span>  
+                                        </svg> <span>Добавить в заказ</span> 
                                 </button>
                                 </div>
                             </div>
@@ -1346,7 +1359,7 @@
                                 <p class="additional__services-desc">Выкорчевывание деревьев, пней. Подарим вашему участку вторую жизнь!</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s3">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -1363,13 +1376,13 @@
                                 <p class="additional__services-desc">Погрузка и вывоз строительного мусора. Это как клининг, только лучше</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="t1">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg><span>Добавить в заказ</span>  
+                                        </svg><span>Добавить в заказ</span> 
                                 </button>
                                 </div>
                             </div>
@@ -1380,7 +1393,7 @@
                                 <p class="additional__services-desc">Земляные работы любого объема: копка<br> фундамента, прудов, обустройство котлованов<br> и другие</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s7">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -1397,13 +1410,13 @@
                                 <p class="additional__services-desc">Разработка карьеров. Возьмем на себя все этапы: от проектирования<br> и самой разработки до ликвидации</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s12">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>  <span>Добавить в заказ</span>
+                                        </svg><span>Добавить в заказ</span>  
                                 </button>
                                 </div>
                             </div>
@@ -1414,14 +1427,13 @@
                                 <p class="additional__services-desc">Снятие плодородного слоя почвы. Благодаря правильной технологии срезки мы не повредим ценные слои грунта</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s4">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>  
+                                        </svg><span>Добавить в заказ</span>  
                                 </button>
                                 </div>
                             </div>
@@ -1434,7 +1446,24 @@
                                 </p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s6">
+                                        <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
+                                            <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
+                                            <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
+                                            <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
+                                        </svg> <span>Добавить в заказ</span> 
+                                </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="additional__services-item">
+                            <img class="additional__services-img" src="image/services/planning-icon.jpg" alt="Планировка участков">
+                            <div class="additional__services-wrap">
+                                <p class="additional__services-desc">Планировка участков. Воплотим в жизнь проект вашего ландшафтного дизайнера</p>
+                                <div class="additional__services-container">
+                                    <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s8">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -1446,37 +1475,18 @@
                             </div>
                         </li>
                         <li class="additional__services-item">
-                            <img class="additional__services-img" src="image/services/planning-icon.jpg" alt="Планировка участков">
-                            <div class="additional__services-wrap">
-                                <p class="additional__services-desc">Планировка участков. Воплотим в жизнь проект вашего ландшафтного дизайнера</p>
-                                <div class="additional__services-container">
-                                    <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
-                                        <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
-                                            <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
-                                            <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
-                                            <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>  
-                                </button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="additional__services-item">
                             <img class="additional__services-img" src="image/services/trenching-icon.jpg" alt="Разработка траншей">
                             <div class="additional__services-wrap">
                                 <p class="additional__services-desc">Разработка траншей для разных целей</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s5">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>  
+                                        </svg><span>Добавить в заказ</span>  
                                 </button>
                                 </div>
                             </div>
@@ -1489,14 +1499,13 @@
                                 </p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s2">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>  
+                                        </svg><span>Добавить в заказ</span>  
                                 </button>
                                 </div>
                             </div>
@@ -1507,14 +1516,13 @@
                                 <p class="additional__services-desc">Проектирование и возведение фундамента</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s9">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>  
+                                        </svg><span>Добавить в заказ</span>  
                                 </button>
                                 </div>
                             </div>
@@ -1532,7 +1540,7 @@
                     <p class="technics__operator-label">Ваш оператор</p>
                 </div>
                 <div class="technics__picture-wrap">
-                    <img class="technics__picture" src="image/technics/CATSEM655d.png" alt="CAT SEM655d">
+                    <img class="technics__picture technics__picture--CATSEM655d" src="image/technics/CATSEM655d.png" alt="CAT SEM655d">
                 </div>
                 <p class="technics__price">65 BYN в час без учета НДС</p>
                 <h2 class="technics__header">ФРОНТАЛЬНЫЙ ПОГРУЗЧИК CAT SEM655d</h2>
@@ -1553,7 +1561,7 @@
                 <div class="technics__wrap">
 
                     <a href="" class="technics__catalog-link">Скачать каталог</a> 
-                    <button class="technics__button">ЗАКАЗАТЬ</button>
+                    <button class="technics__button button-to-cart button--add" data-articul="t5">ЗАКАЗАТЬ</button>
 
                 </div>
 
@@ -1585,7 +1593,7 @@
                                 <p class="additional__price additional__price additional__price--details"></p>
                                 <div class="additional__details-container">
                                     <!-- <a href="details.html" class="additional__learnmore-link">Узнать больше</a> -->
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="d8">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -1606,7 +1614,7 @@
                                 <p class="additional__price additional__price additional__price--details"></p>
                                 <div class="additional__details-container">
                                     <!-- <a href="details.html" class="additional__learnmore-link">Узнать больше</a> -->
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="d9">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -1632,14 +1640,13 @@
                                 </p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s11">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>  
+                                        </svg><span>Добавить в заказ</span>  
                                 </button>
                                 </div>
                             </div>
@@ -1650,14 +1657,13 @@
                                 <p class="additional__services-desc">Демонтаж бетона и других строительных конструкций гидромолотом</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s10">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>  
+                                        </svg> <span>Добавить в заказ</span> 
                                 </button>
                                 </div>
                             </div>
@@ -1668,14 +1674,13 @@
                                 <p class="additional__services-desc">Выкорчевывание деревьев, пней. Подарим вашему участку вторую жизнь!</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s3">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>  
+                                        </svg><span>Добавить в заказ</span>  
                                 </button>
                                 </div>
                             </div>
@@ -1686,14 +1691,13 @@
                                 <p class="additional__services-desc">Погрузка и вывоз строительного мусора. Это как клининг, только лучше</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="t1">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>  
+                                        </svg><span>Добавить в заказ</span> 
                                 </button>
                                 </div>
                             </div>
@@ -1704,14 +1708,13 @@
                                 <p class="additional__services-desc">Земляные работы любого объема: копка<br> фундамента, прудов, обустройство котлованов<br> и другие</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s7">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>  
+                                        </svg><span>Добавить в заказ</span>  
                                 </button>
                                 </div>
                             </div>
@@ -1722,14 +1725,13 @@
                                 <p class="additional__services-desc">Разработка карьеров. Возьмем на себя все этапы: от проектирования<br> и самой разработки до ликвидации</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s12">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>  
+                                        </svg><span>Добавить в заказ</span>  
                                 </button>
                                 </div>
                             </div>
@@ -1740,14 +1742,13 @@
                                 <p class="additional__services-desc">Снятие плодородного слоя почвы. Благодаря правильной технологии срезки мы не повредим ценные слои грунта</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s4">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>  
+                                        </svg><span>Добавить в заказ</span>  
                                 </button>
                                 </div>
                             </div>
@@ -1760,14 +1761,13 @@
                                 </p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s6">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>  
+                                        </svg> <span>Добавить в заказ</span> 
                                 </button>
                                 </div>
                             </div>
@@ -1778,14 +1778,13 @@
                                 <p class="additional__services-desc">Планировка участков. Воплотим в жизнь проект вашего ландшафтного дизайнера</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s8">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>  
+                                        </svg><span>Добавить в заказ</span>  
                                 </button>
                                 </div>
                             </div>
@@ -1796,14 +1795,13 @@
                                 <p class="additional__services-desc">Разработка траншей для разных целей</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s5">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>  
+                                        </svg><span>Добавить в заказ</span>  
                                 </button>
                                 </div>
                             </div>
@@ -1816,14 +1814,13 @@
                                 </p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s2">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>  
+                                        </svg><span>Добавить в заказ</span>  
                                 </button>
                                 </div>
                             </div>
@@ -1834,14 +1831,13 @@
                                 <p class="additional__services-desc">Проектирование и возведение фундамента</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s9">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>  
+                                        </svg><span>Добавить в заказ</span>  
                                 </button>
                                 </div>
                             </div>
@@ -1880,7 +1876,7 @@
                 <div class="technics__wrap">
 
                     <a href="" class="technics__catalog-link">Скачать каталог</a> 
-                    <button class="technics__button">ЗАКАЗАТЬ</button>
+                    <button class="technics__button button-to-cart button--add" data-articul="t6">ЗАКАЗАТЬ</button>
 
                 </div>
 
@@ -1912,7 +1908,7 @@
                                 <p class="additional__price additional__price additional__price--details"></p>
                                 <div class="additional__details-container">
                                     <!-- <a href="details.html" class="additional__learnmore-link">Узнать больше</a> -->
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="d8">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -1933,7 +1929,7 @@
                                 <p class="additional__price additional__price additional__price--details"></p>
                                 <div class="additional__details-container">
                                     <!-- <a href="details.html" class="additional__learnmore-link">Узнать больше</a> -->
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="d9">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
@@ -1959,14 +1955,13 @@
                                 </p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s11">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>  
+                                        </svg><span>Добавить в заказ</span>  
                                 </button>
                                 </div>
                             </div>
@@ -1977,14 +1972,13 @@
                                 <p class="additional__services-desc">Демонтаж бетона и других строительных конструкций гидромолотом</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s10">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span> 
+                                        </svg> <span>Добавить в заказ</span> 
                                 </button>
                                 </div>
                             </div>
@@ -1995,14 +1989,13 @@
                                 <p class="additional__services-desc">Выкорчевывание деревьев, пней. Подарим вашему участку вторую жизнь!</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s3">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span> 
+                                        </svg><span>Добавить в заказ</span>  
                                 </button>
                                 </div>
                             </div>
@@ -2013,14 +2006,13 @@
                                 <p class="additional__services-desc">Погрузка и вывоз строительного мусора. Это как клининг, только лучше</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="t1">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span> 
+                                        </svg><span>Добавить в заказ</span> 
                                 </button>
                                 </div>
                             </div>
@@ -2031,14 +2023,13 @@
                                 <p class="additional__services-desc">Земляные работы любого объема: копка<br> фундамента, прудов, обустройство котлованов<br> и другие</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s7">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span> 
+                                        </svg><span>Добавить в заказ</span>  
                                 </button>
                                 </div>
                             </div>
@@ -2049,14 +2040,13 @@
                                 <p class="additional__services-desc">Разработка карьеров. Возьмем на себя все этапы: от проектирования<br> и самой разработки до ликвидации</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s12">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>  
+                                        </svg><span>Добавить в заказ</span>  
                                 </button>
                                 </div>
                             </div>
@@ -2067,14 +2057,13 @@
                                 <p class="additional__services-desc">Снятие плодородного слоя почвы. Благодаря правильной технологии срезки мы не повредим ценные слои грунта</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s4">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span> 
+                                        </svg><span>Добавить в заказ</span>  
                                 </button>
                                 </div>
                             </div>
@@ -2087,14 +2076,13 @@
                                 </p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s6">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>   
+                                        </svg> <span>Добавить в заказ</span> 
                                 </button>
                                 </div>
                             </div>
@@ -2105,14 +2093,13 @@
                                 <p class="additional__services-desc">Планировка участков. Воплотим в жизнь проект вашего ландшафтного дизайнера</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s8">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>   
+                                        </svg><span>Добавить в заказ</span>  
                                 </button>
                                 </div>
                             </div>
@@ -2123,14 +2110,13 @@
                                 <p class="additional__services-desc">Разработка траншей для разных целей</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s5">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>   
+                                        </svg><span>Добавить в заказ</span>  
                                 </button>
                                 </div>
                             </div>
@@ -2143,14 +2129,13 @@
                                 </p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s2">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>   
+                                        </svg><span>Добавить в заказ</span>  
                                 </button>
                                 </div>
                             </div>
@@ -2161,15 +2146,14 @@
                                 <p class="additional__services-desc">Проектирование и возведение фундамента</p>
                                 <div class="additional__services-container">
                                     <p class="additional__price additional__price--service">от 60 BYN в час без НДС</p>
-                                    <button class="additional__button additional__button--service">
+                                    <button class="additional__button additional__button--service button-to-cart" data-articul="s9">
                                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="additional__button--active-2" d="M1 7.89868L6.83333 9.90993L10.1667 19.1617H22.6667L26 9.90993" stroke="#EBEBEB" stroke-width="2"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 11.4168 23.9887)" fill="#EBEBEB"/>
                                             <ellipse class="additional__button--active" rx="2.08333" ry="2.01125" transform="matrix(1 0 0 -1 21.4168 23.9887)" fill="#EBEBEB"/>
                                             <path class="additional__button--active" d="M15.5404 11.4596C15.7942 11.7135 16.2058 11.7135 16.4596 11.4596L20.5962 7.32304C20.85 7.0692 20.85 6.65765 20.5962 6.40381C20.3424 6.14997 19.9308 6.14997 19.677 6.40381L16 10.0808L12.323 6.40381C12.0692 6.14997 11.6576 6.14997 11.4038 6.40381C11.15 6.65765 11.15 7.0692 11.4038 7.32304L15.5404 11.4596ZM15.35 0V11H16.65V0L15.35 0Z" fill="#EBEBEB"/>
-                                        </svg>
-                                        <span>Добавить в заказ</span>   
-                                    </button>
+                                        </svg><span>Добавить в заказ</span>  
+                                </button>
                                 </div>
                             </div>
                         </li>
@@ -2189,8 +2173,8 @@
 
             <div class="footer__section">
 
-                <a href="" class="footer__link">Перейти на Главную</a>
-                <a href="" class="footer__link footer__link--order">Перейти в Мои заказы</a>
+                <a href="index.html" class="footer__link">Перейти на Главную</a>
+                <a href="#" class="footer__link footer__link--order">Перейти в Мои заказы</a>
                 <ul class="footer__social-list">
                     <li class="footer__social-item">
                         <a class="contacts__social-link contacts__social-link--twitter" href="#">
@@ -2210,8 +2194,13 @@
 
     </footer>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <a href="#up" class="pageup"></a>
+
+    <div class="mini-cart"></div>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/technics.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>

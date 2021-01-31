@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ROCAT - О нас</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header id="up" class="header">
+
+            <div class="header__logo">
+
+                <a class="header__logo-link" href="index.html">
+                    <img class="header__logo-icon" src="icon/logotype.svg" alt="Логотип ROCAT">
+                </a>
+                <p class="header__logo-description">
+                    Когда мощь встречается с интеллектом
+                </p>
+
+            </div>
+
+            <nav  class="header__navigation navigation">
+
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="index.html">О НАС</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="technics.html">ТЕХНИКА</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="operators.html">операторы</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="services.html">УСЛУГИ</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="details.html">ДЕТАЛИ</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="contacts.html">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <a class="header__cart">
+
+                <span class="header__cart-quantity"></span>
+                <svg class="header__cart-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="24" viewBox="0 0 32 24"><g><path class="header__cart-svg1" d="M1 1.5L8 4L12 15.5H27L31 4" fill="none" stroke="#ebebeb" stroke-width="2"/><g/><g><path class="header__cart-svg2" fill="#ebebeb" d="M16 21.5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0z"/></g><g><path class="header__cart-svg2" fill="#ebebeb" d="M28 21.5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0z"/></g></g>
+                </svg>
+
+            </a>
+
+            <section class="modal">
+                <div class="modal__wrap">
+                    <p class="modal__text">Здравствуйте, у Вас пока нет заказов.</p>
+                    <p class="modal__text">Но вы можете выбрать и заказать</p>
+                    <ul class="modal__link-list">
+                        <li class="modal__link-item"><a class="modal__link" href="technics.html">Технику</a></li>
+                        <li class="modal__link-item"><a class="modal__link" href="services.html">Услугу</a></li>
+                        <li class="modal__link-item"><a class="modal__link" href="details.html">Деталь</a></li>
+                    </ul>
+                </div>
+                <button class="modal__close"></button>
+            </section>
+
+        </header>
+
+    </div>
+
+    <div class="container">
+
+        <main class="cart-index">
+
+            <h1 class="visually-hidden">Корзина покупок</h1>
+            <p class="cart__goods-title">Вы заказали <span class="cart__goods-value"></span> товар</p>
+    
+            <ul class="cart__list cart__list--technics"></ul>
+            <ul class="cart__list cart__list--details"></ul>
+            <ul class="cart__list cart__list--services"></ul>
+
+            <form class="form form-cart">
+
+                <fieldset class="form__rent-date form-cart__rent-date">
+                    <legend class="form__legend form-cart__legend">ДАТА АРЕНДЫ</legend>
+                    <input class="form__date form-cart__date" type="date" name="" id="" placeholder="ffffff">
+                    <input class="form__date form-cart__date" type="date" name="" id="">
+                    <div class="form__hour-wrap form-cart__hour-wrap">
+                        <button class="form__button-minus form-cart__button-minus">-</button>
+                        <input class="form__input-hour form-cart__input-hour" type="text" value="6">
+                        <button class="form__button-plus form-cart__button-plus">+</button> 
+                    </div>
+                </fieldset>
+                <input class="form__input form-cart__input" type="text" name="name" id="" placeholder="Имя*">
+                <input class="form__input form-cart__input" type="text" name="organization" id="" placeholder="Название организации">
+                <input class="form__input form-cart__input" type="text" name="phone" id="" placeholder="Телефон*">
+                <input class="form__input form-cart__input" type="email" name="e-mail" id="" placeholder="E-mail*">
+                <textarea class="form__textarea form-cart__textarea" name="comment" id="" placeholder="Комментарии"></textarea>
+                <button class="form__button form-cart__button" type="submit">ОФОРМИТЬ</button>
+
+            </form>
+    
+        </main>
+
+    </div>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer__section">
+
+                <a href="index.html" class="footer__link">Перейти на Главную</a>
+                <a href="#" class="footer__link footer__link--order">Перейти в Мои заказы</a>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a class="contacts__social-link contacts__social-link--twitter" href="#">
+                            <span class="visually-hidden">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="contacts__social-link contacts__social-link--facebook" href="#">
+                            <span class="visually-hidden">Facebook</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <a href="#up" class="pageup"></a>
+
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+
+</body>
+</html>

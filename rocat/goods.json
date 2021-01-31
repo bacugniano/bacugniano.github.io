@@ -1,0 +1,179 @@
+{
+    "t1" : {
+        "name" : "ЭКСКАВАТОР ГУСЕНИЧНЫЙ CAT 320 GC",
+        "description" : "Экскаваторы гусеничные",
+        "cost" : "70 BYN в час без учета НДС",
+        "image" : "image/technics/CAT320GC-cart.png",
+        "link" : "technics.html"
+    },
+    "t2" : {
+        "name" : "ЭКСКАВАТОР-ПОГРУЗЧИК CAT 434",
+        "description" : "Экскаваторы-погрузчики",
+        "cost" : "65 BYN в час без учета НДС",
+        "image" : "image/technics/CAT434-cart.png",
+        "link" : "technics.html"
+    },
+    "t3" : {
+        "name" : "ЭКСКАВАТОР-ПОГРУЗЧИК CAT 426 F2",
+        "description" : "Экскаваторы-погрузчики",
+        "cost" : "60 BYN в час без учета НДС",
+        "image" : "image/technics/CAT426F2-cart.png",
+        "link" : "technics.html"
+    },
+    "t4" : {
+        "name" : "ЭКСКАВАТОР-ПОГРУЗЧИК CAT 444 F2",
+        "description" : "Экскаваторы-погрузчики",
+        "cost" : "65 BYN в час без учета НДС",
+        "image" : "image/technics/CAT444F2-cart.png",
+        "link" : "technics.html"
+    },
+    "t5" : {
+        "name" : "ФРОНТАЛЬНЫЙ ПОГРУЗЧИК CAT SEM655d",
+        "description" : "Фронтальные погрузчики",
+        "cost" : "65 BYN в час без учета НДС",
+        "image" : "image/technics/CATSEM655d-cart.png",
+        "link" : "technics.html"
+    },
+    "t6" : {
+        "name" : "ФРОНТАЛЬНЫЙ ПОГРУЗЧИК CAT SEM636d",
+        "description" : "Фронтальные погрузчики",
+        "cost" : "65 BYN в час без учета НДС",
+        "image" : "image/technics/CATSEM636d-cart.png",
+        "link" : "technics.html"
+    },
+    "d1" : {
+        "name" : "ГИДРОМОЛОТ ROCKSON RS300",
+        "description" : "Детали для экскаваторов-погрузчиков",
+        "cost" : "90 BYN в час без учета НДС",
+        "image" : "image/details/Rockson-rs300-cart.png",
+        "link" : "details.html"
+    },
+    "d2" : {
+        "name" : "ГИДРОМОЛОТ ROCKSON RS300",
+        "description" : "Детали для экскаваторов-погрузчиков",
+        "cost" : "97 BYN в час без учета НДС",
+        "image" : "image/details/Rockson-rs300-cart.png",
+        "link" : "details.html"
+    },
+    "d3" : {
+        "name" : "вилы накидные",
+        "description" : "Детали для экскаваторов-погрузчиков",
+        "cost" : "",
+        "image" : "image/details/pitchfork-cart.png",
+        "link" : "details.html"
+    },
+    "d4" : {
+        "name" : "ЩЕТКА ROCKSON BR1850 БЕЗ БУНКЕРА",
+        "description" : "Детали для экскаваторов-погрузчиков",
+        "cost" : "",
+        "image" : "image/details/Rockson-BR1850-cart.png",
+        "link" : "details.html"
+    },
+    "d5" : {
+        "name" : "ковш",
+        "description" : "Детали для экскаваторов-погрузчиков",
+        "cost" : "",
+        "image" : "image/details/impulse-cart.png",
+        "link" : "details.html"
+    },
+    "d6" : {
+        "name" : "ВИБРОТРАМБОВКА ROCKSON VP10",
+        "description" : "Детали для экскаваторов-погрузчиков",
+        "cost" : "90 BYN в час без учета НДС",
+        "image" : "image/details/Rockson-VP10-cart.png",
+        "link" : "details.html"
+    },
+    "d7" : {
+        "name" : "ВИБРОТРАМБОВКА ROCKSON VP10",
+        "description" : "Детали для экскаваторов-погрузчиков",
+        "cost" : "97 BYN в час без учета НДС",
+        "image" : "image/details/Rockson-VP10-cart.png",
+        "link" : "details.html"
+    },
+    "d8" : {
+        "name" : "СТРЕЛА КРАНОВАЯ БЕЗБЛОЧНАЯ АДЗ-342С.54.00.000",
+        "description" : "Детали для фронтальных погрузчиков",
+        "cost" : "",
+        "image" : "image/details/crane-boom-pallet-forks-cart.png",
+        "link" : "details.html"
+    },
+    "d9" : {
+        "name" : "ВИЛЫ ПАЛЛЕТНЫЕ",
+        "description" : "Детали для фронтальных погрузчиков",
+        "cost" : "",
+        "image" : "image/details/pallet-forks-cart.png",
+        "link" : "details.html"
+    },
+    "s1" : {
+        "name" : "Погрузка и вывоз строительного мусора",
+        "cost" : "60 BYN в час",
+        "image" : "image/services/cleaning-cart.jpg",
+        "link" : "services.html"
+    },
+    "s2" : {
+        "name" : "Обратная засыпка земляных масс, заполнение пустот и пазух",
+        "cost" : "60 BYN в час",
+        "image" : "image/services/backfilling-cart.jpg",
+        "link" : "services.html"
+    },
+    "s3" : {
+        "name" : "Выкорчевывание деревьев, пней",
+        "cost" : "60 BYN в час",
+        "image" : "image/services/uprooting-cart.jpg",
+        "link" : "services.html"
+    },
+    "s4" : {
+        "name" : "Снятие плодородного слоя почвы",
+        "cost" : "60 BYN в час",
+        "image" : "image/services/removing-soil-cart.jpg",
+        "link" : "services.html"
+    },
+    "s5" : {
+        "name" : "Разработка траншей для разных целей",
+        "cost" : "60 BYN в час",
+        "image" : "image/services/trenching-cart.jpg",
+        "link" : "services.html"
+    },
+    "s6" : {
+        "name" : "Вертикальная планировка участка",
+        "cost" : "60 BYN в час",
+        "image" : "image/services/vertical-layout-cart.jpg",
+        "link" : "services.html"
+    },
+    "s7" : {
+        "name" : "Земляные работы ",
+        "cost" : "60 BYN в час",
+        "image" : "image/services/earthworks-cart.jpg",
+        "link" : "services.html"
+    },
+    "s8" : {
+        "name" : "Планировка участков",
+        "cost" : "60 BYN в час",
+        "image" : "image/services/planning-cart.jpg",
+        "link" : "services.html"
+    },
+    "s9" : {
+        "name" : "Проектирование и возведение фундамента",
+        "cost" : "60 BYN в час",
+        "image" : "image/services/foundation-erection-cart.jpg",
+        "link" : "services.html"
+    },
+    "s10" : {
+        "name" : "Демонтаж бетона и других строительных конструкций гидромолотом",
+        "cost" : "60 BYN в час",
+        "image" : "image/services/dismantling-cart.jpg",
+        "link" : "services.html"
+    },
+    "s11" : {
+        "name" : "Монтаж, планирование, обустраивание шахт водостоков и водоотводов, колец для канализаций, септиков",
+        "cost" : "60 BYN в час",
+        "image" : "image/services/mounting-cart.jpg",
+        "link" : "services.html"
+    },
+    "s12" : {
+        "name" : "Разработка карьеров",
+        "cost" : "60 BYN в час",
+        "image" : "image/services/quarrying-cart.jpg",
+        "link" : "services.html"
+    }
+}

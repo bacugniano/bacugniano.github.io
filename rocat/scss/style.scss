@@ -58,9 +58,54 @@ body {
     
 }
 
+.pageup {
+
+    display: none;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    border: 1px solid rgba(134, 134, 134, 0.4);
+    bottom: 5vh;
+    right: 5vw;
+    transition: .2s all;
+    background-image: url('../icon/arrow-top.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &:hover {
+
+        background-color: $active;
+
+    }
+
+}
+
+.button--add {
+
+    &[disabled] {
+
+        background-color: $hover-bg;
+        background-image: url('../icon/done.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        outline: none;
+        cursor: default;
+        transition: none;
+
+        &:hover {
+
+            border: none;
+
+        }
+
+    }
+
+}
+
 @import 'blocks/common/header';
 @import 'blocks/common/navigation';
 @import 'blocks/common/footer';
+@import 'blocks/common/modal';
 @import 'blocks/index/main-index';
 @import 'blocks/index/results';
 @import 'blocks/index/about-us';
@@ -80,3 +125,5 @@ body {
 @import 'blocks/details/main-details';
 @import 'blocks/details/table';
 @import 'blocks/details/details';
+@import 'blocks/cart/cart';
+@import 'blocks/cart/form-cart';

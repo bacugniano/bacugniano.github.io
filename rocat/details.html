@@ -57,13 +57,26 @@
 
             </nav>
 
-            <div class="header__cart">
+            <a class="header__cart">
 
-                <span class="header__cart-quantity">0</span>
-                <svg class="header__cart-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="24" viewBox="0 0 32 24"><g><path d="M1 1.5L8 4L12 15.5H27L31 4" fill="none" stroke="#ebebeb" stroke-width="2"/><g/><g><path fill="#ebebeb" d="M16 21.5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0z"/></g><g><path fill="#ebebeb" d="M28 21.5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0z"/></g></g>
+                <span class="header__cart-quantity"></span>
+                <svg class="header__cart-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="24" viewBox="0 0 32 24"><g><path class="header__cart-svg1" d="M1 1.5L8 4L12 15.5H27L31 4" fill="none" stroke="#ebebeb" stroke-width="2"/><g/><g><path class="header__cart-svg2" fill="#ebebeb" d="M16 21.5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0z"/></g><g><path class="header__cart-svg2" fill="#ebebeb" d="M28 21.5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0z"/></g></g>
                 </svg>
 
-            </div>
+            </a>
+
+            <section class="modal">
+                <div class="modal__wrap">
+                    <p class="modal__text">Здравствуйте, у Вас пока нет заказов.</p>
+                    <p class="modal__text">Но вы можете выбрать и заказать</p>
+                    <ul class="modal__link-list">
+                        <li class="modal__link-item"><a class="modal__link" href="technics.html">Технику</a></li>
+                        <li class="modal__link-item"><a class="modal__link" href="services.html">Услугу</a></li>
+                        <li class="modal__link-item"><a class="modal__link" href="details.html">Деталь</a></li>
+                    </ul>
+                </div>
+                <button class="modal__close"></button>
+            </section>
 
         </header>
 
@@ -78,7 +91,7 @@
             <div class="main-details__tab-navigation tab-navigation">
     
                 <div class="tab-navigation__wrap">
-                    <p class="tab-navigation__header">Навесное оборудование для экскаваторов-погрузчиков</p>
+                    <p class="tab-navigation__header tab-navigation__header--details">Навесное оборудование для экскаваторов-погрузчиков</p>
                     <ul class="tab-navigation__list">
                         <li class="tab-navigation__item tab-navigation__item--active" data-tab-name="details--RS300">
                             <button class="tab-navigation__button">
@@ -114,7 +127,7 @@
                 </div>
 
                 <div class="tab-navigation__wrap">
-                    <p class="tab-navigation__header">Навесное оборудование для ФРОНТАЛЬНЫХ погрузчиков</p>
+                    <p class="tab-navigation__header tab-navigation__header--details">Навесное оборудование для ФРОНТАЛЬНЫХ погрузчиков</p>
                     <ul class="tab-navigation__list">
                         <li class="tab-navigation__item" data-tab-name="details--crane">
                             <button class="tab-navigation__button">
@@ -179,7 +192,7 @@
                         <p class="details__price">97 BYN в час без учета НДС</p>
                         <p class="detail__price-desc">(при заказе с экскаваторами CAT 434, CAT 444 F2)</p>
                     </div>
-                    <button class="details__button">ЗАКАЗАТЬ</button>
+                    <button class="details__button button-to-cart button--add" data-articul="d2">ЗАКАЗАТЬ</button>
 
                 </div>
 
@@ -189,7 +202,7 @@
                         <p class="details__price">90 BYN в час без учета НДС</p>
                         <p class="detail__price-desc">(при заказе с экскаватором CAT 426 F2)</p>
                     </div>
-                    <button class="details__button">ЗАКАЗАТЬ</button>
+                    <button class="details__button button-to-cart button--add" data-articul="d1">ЗАКАЗАТЬ</button>
 
                 </div>
 
@@ -224,7 +237,7 @@
                     <div class="details__price-wrap">
                         <p class="details__price">Можно заказать без дополнительной оплаты</p>
                     </div>
-                    <button class="details__button">ЗАКАЗАТЬ</button>
+                    <button class="details__button button-to-cart button--add" data-articul="d3">ЗАКАЗАТЬ</button>
 
                 </div>
 
@@ -263,7 +276,7 @@
                     <div class="details__price-wrap">
                         <p class="details__price">Можно заказать без дополнительной оплаты</p>
                     </div>
-                    <button class="details__button">ЗАКАЗАТЬ</button>
+                    <button class="details__button button-to-cart button--add" data-articul="d4">ЗАКАЗАТЬ</button>
 
                 </div>
 
@@ -296,7 +309,7 @@
                     <div class="details__price-wrap">
                         <p class="details__price">Можно заказать без дополнительной оплаты</p>
                     </div>
-                    <button class="details__button">ЗАКАЗАТЬ</button>
+                    <button class="details__button button-to-cart button--add" data-articul="d5">ЗАКАЗАТЬ</button>
 
                 </div>
 
@@ -342,7 +355,7 @@
                         <p class="details__price">97 BYN в час без учета НДС</p>
                         <p class="detail__price-desc">(при заказе с экскаваторами CAT 434, CAT 444 F2)</p>
                     </div>
-                    <button class="details__button">ЗАКАЗАТЬ</button>
+                    <button class="details__button button-to-cart button--add" data-articul="d7">ЗАКАЗАТЬ</button>
 
                 </div>
 
@@ -352,7 +365,7 @@
                         <p class="details__price">90 BYN в час без учета НДС</p>
                         <p class="detail__price-desc">(при заказе с экскаватором CAT 426 F2)</p>
                     </div>
-                    <button class="details__button">ЗАКАЗАТЬ</button>
+                    <button class="details__button button-to-cart button--add" data-articul="d6">ЗАКАЗАТЬ</button>
 
                 </div>
 
@@ -395,7 +408,7 @@
                     <div class="details__price-wrap">
                         <p class="details__price">Можно заказать без дополнительной оплаты</p>
                     </div>
-                    <button class="details__button">ЗАКАЗАТЬ</button>
+                    <button class="details__button button-to-cart button--add" data-articul="d8">ЗАКАЗАТЬ</button>
 
                 </div>
 
@@ -424,7 +437,7 @@
                     <div class="details__price-wrap">
                         <p class="details__price">Можно заказать без дополнительной оплаты</p>
                     </div>
-                    <button class="details__button">ЗАКАЗАТЬ</button>
+                    <button class="details__button button-to-cart button--add" data-articul="d9">ЗАКАЗАТЬ</button>
 
                 </div>
 
@@ -440,8 +453,8 @@
 
             <div class="footer__section">
 
-                <a href="" class="footer__link">Перейти на Главную</a>
-                <a href="" class="footer__link footer__link--order">Перейти в Мои заказы</a>
+                <a href="index.html" class="footer__link">Перейти на Главную</a>
+                <a href="#" class="footer__link footer__link--order">Перейти в Мои заказы</a>
                 <ul class="footer__social-list">
                     <li class="footer__social-item">
                         <a class="contacts__social-link contacts__social-link--twitter" href="#">
@@ -461,8 +474,10 @@
 
     </footer>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/details.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>

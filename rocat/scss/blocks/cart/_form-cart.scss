@@ -1,0 +1,98 @@
+.form-cart {
+
+    margin-top: 50px;
+    padding: 0;
+    width: 850px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: transparent;
+
+    &__rent-date {
+
+        position: relative;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        margin-bottom: 69px;
+
+    }
+
+    &__legend {
+
+        margin-bottom: 28px;
+
+    }
+
+    &__date {
+
+        width: 387px;
+        height: 90px;
+        border: 1px solid rgba(134, 134, 134, 0.4);
+        background: transparent;
+        color: $main;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding-left: 16px;
+        padding-bottom: 16px;
+        padding-top: 55px;
+
+    }
+
+    &__hour-wrap {
+
+        position: absolute;
+        right: -220px;
+        width: 164px;
+        height: 90px;
+        display: flex;
+        border: 1px solid rgba(134, 134, 134, 0.4);
+
+    }
+
+    &__button-plus,
+    &__button-minus {
+
+        width: 40px;
+        font-size: 24px;
+        color: $main;
+        border: none;
+        background: transparent;
+
+    }
+
+    &__input-hour {
+
+        text-align: center;
+        width: 84px;
+        border: none;
+        background: transparent;
+        font-size: 24px;
+        color: $main;
+    }
+
+    &__input {
+
+        width: 387px;
+        margin-bottom: 27px;
+
+    }
+
+    &__textarea {
+
+        width: 100%;
+        margin-top: 45px;
+
+    }
+
+    &__button {
+
+        margin-top: 32px;
+        width: 175px;
+        height: 64px;
+
+    }
+
+}

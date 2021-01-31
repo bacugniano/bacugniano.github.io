@@ -1,0 +1,111 @@
+.modal {
+
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 606px;
+    height: 324px;
+    background-color: $hover-bg;
+    padding: 85px;
+
+    &__wrap {
+
+        height: 148px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    &__text {
+
+        font-size: 24px;
+        line-height: 33.6px;
+        letter-spacing: 0.2px;
+
+    }
+
+    &__link {
+
+        font-weight: 700;
+        line-height: 23.4px;
+        color: $main;
+
+        &:hover {
+
+            color: $active;
+
+        }
+
+        &:active {
+
+            color: $disable-txt;
+
+        }
+
+    }
+
+    &__link-list {
+
+        width: 388px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &--active {
+
+        display: block;
+
+    }
+
+    &__close {
+
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+
+        &::before,
+        &::after {
+
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background-color: $main;
+            top: 10px;
+            left: 0;
+            transform: rotate(45deg);
+
+        }
+
+        &::after {
+
+            transform: rotate(-45deg);
+
+        }
+
+        &:hover::before,
+        &:hover::after {
+
+            background-color: $second;
+
+        }
+
+        &:active::before,
+        &:active::after {
+
+            background-color: $disable-txt;
+
+        }
+
+    }
+
+}

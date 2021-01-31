@@ -2,10 +2,30 @@
 
     width: 100%;
 
+    &__header {
+
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        transform: translateY(-50%);
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        font-size: 48px;
+
+    }
+
     &__banner {
 
         width: 100%;
+        // margin-top: -160px;
+    }
+
+    &__banner-section {
+
         margin-top: -160px;
+        position: relative;
+        z-index: -1;
+
     }
 
     &__about-us {
