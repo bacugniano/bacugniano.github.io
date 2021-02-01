@@ -98,6 +98,7 @@ $.getJSON('goods.json', function (data) {
             for (var key in cart) {
                 val += cart[key];
             }
+
             $('.cart__list--technics').html(technics);
             $('.cart__list--details').html(details);
             $('.cart__list--services').html(services);
@@ -106,10 +107,65 @@ $.getJSON('goods.json', function (data) {
             $('.cart__button-plus').on('click', plusGoods);
             $('.cart__button-minus').on('click', minusGoods);
             $('.cart__button-delete').on('click', deleteGoods);
+            
 
             if (val >= 10) {
                 $('.header__cart-quantity').addClass('header__cart-quantity--more');
               } else $('.header__cart-quantity').removeClass('header__cart-quantity--more');
+
+            
+            $('.datepicker-here').datepicker({
+                // Можно выбрать тольо даты, идущие за сегодняшним днем, включая сегодня
+                minDate: new Date(),
+                prevHtml: '<img src="icon/arrow-left.svg">',
+                nextHtml: '<img src="icon/arrow-right.svg">'
+            }).datepicker("setDate", new Date());
+
+            
+
+            function declOfNum(n, text_forms) {  
+                n = Math.abs(n) % 100; var n1 = n % 10;
+                if (n > 10 && n < 20) { return text_forms[2]; }
+                if (n1 > 1 && n1 < 5) { return text_forms[1]; }
+                if (n1 == 1) { return text_forms[0]; }
+                return text_forms[2];
+            }
+            
+            $('.goods-value').html(declOfNum(val, ['товар', 'товара', 'товаров']));
+            $('.paragraph--word1').html(declOfNum(val, ['этим', 'этими', 'этими']));
+            $('.paragraph--word2').html(declOfNum(val, ['товаром', 'товарами', 'товарами']));
+
+            $('.form-cart__button-minus').click(function () {
+                var $input = $(this).parent().find('input');
+                var count = parseInt($input.val()) - 1;
+                count = count < 1 ? 1 : count;
+                $input.val(count);
+                $input.change();
+                if ($input.val() < 23) {
+                    $('.form-cart__button-plus').attr('disabled', false);
+                } 
+                if ($input.val() <= 6) {
+                    $('.form-cart__button-minus').attr('disabled', true);
+                } 
+                return false;
+            });
+
+            $('.form-cart__button-plus').click(function () {
+                var $input = $(this).parent().find('input');
+                $input.val(parseInt($input.val()) + 1);
+                $input.change();
+                // return false;
+                if ($input.val() >= 23) {
+                    $('.form-cart__button-plus').attr('disabled', true);
+                } 
+
+                if ($input.val() > 6) {
+                    $('.form-cart__button-minus').attr('disabled', false);
+                }
+
+                return false;
+            });
+            
         }
     }
 

@@ -106,6 +106,13 @@
 
         }
 
+        &--paragraph {
+
+            font-size: 18px;
+            font-weight: 900;
+
+        }
+
     }
 
     &__value-wrap {
@@ -189,6 +196,14 @@
         letter-spacing: 0.2px;
         margin-top: 40px;
         margin-bottom: 24px;
+
+    }
+
+    &__paragraph {
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-weight: 700;
 
     }
 

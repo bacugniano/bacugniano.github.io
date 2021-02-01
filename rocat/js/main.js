@@ -25,6 +25,15 @@ $('document').ready(function(){
       else $('.modal').toggleClass('modal--active');    
     });
 
+    $(".footer__link--order").click(function () {
+      var clickCart = $('.header__cart-quantity').text();
+      if (clickCart > 0) {
+        $('.footer__link--order').attr('href', "cart.html");
+      }
+
+      else $('.modal--footer').toggleClass('modal--active');    
+    });
+
     $(".modal__close").click(function () {
       $('.modal').removeClass('modal--active'); 
     });

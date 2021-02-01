@@ -18,6 +18,19 @@
         border: none;
         margin-bottom: 69px;
 
+        &::after {
+
+            content: '';
+            position: absolute;
+            background-image: url('../icon/arrow-right.svg');
+            width: 26px;
+            height: 8px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%);
+
+        }
+
     }
 
     &__legend {
@@ -28,6 +41,7 @@
 
     &__date {
 
+        position: relative;
         width: 387px;
         height: 90px;
         border: 1px solid rgba(134, 134, 134, 0.4);
@@ -38,6 +52,53 @@
         padding-left: 16px;
         padding-bottom: 16px;
         padding-top: 55px;
+
+        &::placeholder {
+
+            color: $main;
+
+        }
+
+        &-wrap  {
+
+            position: relative;
+
+            &::before {
+
+                content: 'Дата начала аренды';
+                position: absolute;
+                font-size: 14px;
+                line-height: 18px;
+                color: $third;
+                top: 16px;
+                left: 16px;
+
+            }
+
+            &::after {
+
+                content: '';
+                position: absolute;
+                width: 25px;
+                height: 27px;
+                right: 19px;
+                bottom: 19px;
+                background-image: url('../icon/calendar.svg');
+                z-index: 2;
+    
+            }
+
+            &--end {
+
+                &::before{
+
+                content: 'Дата окончания аренды';
+                
+                }
+
+            }
+
+        }
 
     }
 
@@ -50,6 +111,25 @@
         display: flex;
         border: 1px solid rgba(134, 134, 134, 0.4);
 
+        &::after {
+
+            content: '* Если срок аренды техники не более чем 1 день';
+            position: absolute;
+            font-size: 14px;
+            line-height: 18px;
+            width: 189px;
+            color: $third;
+            letter-spacing: 0.2px;
+            bottom: -52px;
+
+        }
+
+        &--active {
+
+            display: flex;
+
+        }
+
     }
 
     &__button-plus,
@@ -60,6 +140,28 @@
         color: $main;
         border: none;
         background: transparent;
+        cursor: pointer;
+        outline: none;
+
+        &:hover {
+
+            background: $active;
+
+        }
+
+    }
+
+    &__button-plus[disabled],
+    &__button-minus[disabled] {
+
+        color: $disable-txt;
+        cursor: default;
+
+        &:hover {
+
+            background: transparent;
+
+        }
 
     }
 
@@ -96,3 +198,9 @@
     }
 
 }
+
+// .datepicker-here {
+
+//     // width: 100% !important;
+
+// }

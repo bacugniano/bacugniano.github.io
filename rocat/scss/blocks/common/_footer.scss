@@ -6,6 +6,7 @@
 
     &__section {
 
+        position: relative;
         height: 120px;
         display: flex;
         align-items: center;
@@ -19,6 +20,8 @@
         line-height: 20px;
         letter-spacing: 0.2px;
         transition: .2s all;
+        text-decoration: underline;
+        cursor: pointer;
 
         &:hover {
 
