@@ -165,7 +165,8 @@ $.getJSON('goods.json', function (data) {
 
                 return false;
             });
-            
+
+                       
         }
     }
 

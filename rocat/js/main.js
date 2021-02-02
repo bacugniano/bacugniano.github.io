@@ -1,5 +1,7 @@
 var cart = {};
 
+new WOW().init();
+
 $('document').ready(function(){
     //скролл вверх
     $(window).scroll(function() {
@@ -22,7 +24,7 @@ $('document').ready(function(){
         $('.header__cart').attr('href', "cart.html");
       }
 
-      else $('.modal').toggleClass('modal--active');    
+      else $('.modal--top').fadeToggle();    
     });
 
     $(".footer__link--order").click(function () {
@@ -31,11 +33,11 @@ $('document').ready(function(){
         $('.footer__link--order').attr('href', "cart.html");
       }
 
-      else $('.modal--footer').toggleClass('modal--active');    
+      else $('.modal--footer').fadeToggle();    
     });
 
     $(".modal__close").click(function () {
-      $('.modal').removeClass('modal--active'); 
+      $('.modal').fadeToggle();
     });
 
     $(".additional__button").click(function () {

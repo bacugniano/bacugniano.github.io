@@ -15,6 +15,12 @@
         background-color: $hover-bg;
         margin-bottom: 30px;
 
+        &-2 {
+
+            animation-delay: .5s;
+
+        }
+
     }
 
     &__information {

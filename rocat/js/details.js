@@ -20,7 +20,7 @@ let tab = function () {
 
     function selectTabContent(tabName) {
         tabContent.forEach(item => {
-            item.classList.contains(tabName) ? item.classList.add('details--active') : item.classList.remove('details--active');
+            item.classList.contains(tabName) ? item.classList.add('details--active', 'wow', 'animate__animated', 'animate__fadeIn') : item.classList.remove('details--active', 'wow', 'animate__animated', 'animate__fadeIn');
         })
     }
 

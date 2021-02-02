@@ -48,7 +48,7 @@ let tab = function () {
 
     function selectTabContent(tabName) {
         tabContent.forEach(item => {
-            item.classList.contains(tabName) ? item.classList.add('technics--active') : item.classList.remove('technics--active');
+            item.classList.contains(tabName) ? item.classList.add('technics--active', 'wow', 'animate__animated', 'animate__fadeIn') : item.classList.remove('technics--active', 'wow', 'animate__animated', 'animate__fadeIn');
         })
     }
 
