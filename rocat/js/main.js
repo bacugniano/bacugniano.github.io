@@ -40,14 +40,19 @@ $('document').ready(function(){
       $('.modal').fadeToggle();
     });
 
-    $(".additional__button").click(function () {
-      $(this).attr('disabled', true);
+    // $(window).on('load', function () {
+    //   $('body').addClass('loaded_hiding');
+    //   window.setTimeout(function () {
+    //     $('body').addClass('loaded');
+    //     $('body').removeClass('loaded_hiding');
+    //   }, 500);
+    // });
+
+    $(window).on('load', function() {
+      $('.preloader').fadeOut().end().delay(500).fadeOut('slow');
     });
 
-    $(".button--add").click(function () {
-      $(this).attr('disabled', true);
-      $(this).text('');
-    });
+    
 
     loadGoods();
     checkCart();
@@ -99,3 +104,12 @@ function showMiniCart(){
       $('.header__cart-quantity').addClass('header__cart-quantity--more');
     } else $('.header__cart-quantity').removeClass('header__cart-quantity--more');
 }
+
+$(".additional__button").click(function () {
+  $(this).attr('disabled', true);
+});
+
+$(".button--add").click(function () {
+  $(this).attr('disabled', true);
+  $(this).text('');
+});

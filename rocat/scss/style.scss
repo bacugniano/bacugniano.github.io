@@ -121,6 +121,56 @@ body {
 
 }
 
+.preloader {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: #121212;
+    z-index: 1001;
+  }
+  
+  .preloader__image {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }
+
+  input.error {
+
+    // position: relative;
+    border-bottom: 1px solid $active;
+
+  }
+  input.form-cart__date.error {
+
+    border: 1px solid $active;
+
+  }
+
+  label.error {
+
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+
+  }
+
+  textarea.error {
+
+    border: 1px solid $active;
+
+  }
+
+
 @import 'blocks/common/header';
 @import 'blocks/common/navigation';
 @import 'blocks/common/footer';

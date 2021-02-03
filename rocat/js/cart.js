@@ -42,7 +42,7 @@ $.getJSON('goods.json', function (data) {
                     technics += '<button class="cart__value-button cart__button-plus" data-articul="' + key + '">+</button>';
                     technics += '</li>';
                     technics += '</ul>';
-                    technics += '<button class="cart__button-delete data-articul="' + key + '">Удалить</button>';
+                    technics += '<button class="cart__button-delete" data-articul="' + key + '">Удалить</button>';
                     technics += '</div>';
                     technics += '</li>';
                 }
@@ -72,7 +72,7 @@ $.getJSON('goods.json', function (data) {
                     details += '<button class="cart__value-button cart__button-plus" data-articul="' + key + '">+</button>';
                     details += '</li>';
                     details += '</ul>';
-                    details += '<button class="cart__button-delete data-articul="' + key + '">Удалить</button>';
+                    details += '<button class="cart__button-delete" data-articul="' + key + '">Удалить</button>';
                     details += '</div>';
                     details += '</li>';
                 }
@@ -88,7 +88,7 @@ $.getJSON('goods.json', function (data) {
                     services += '<p class="cart__title">' + goods[key].name + '</p>';
                     services += '<div class="cart__price-wrap">';
                     services += '<p class="cart__price">' + goods[key].cost + '</p>';
-                    services += '<button class="cart__button-delete cart__button-delete--services data-articul="' + key + '">Удалить</button>';
+                    services += '<button class="cart__button-delete cart__button-delete--services" data-articul="' + key + '">Удалить</button>';
                     services += '</div>';
                     services += '</div>';
                     services += '</li>';
@@ -113,6 +113,9 @@ $.getJSON('goods.json', function (data) {
                 $('.header__cart-quantity').addClass('header__cart-quantity--more');
               } else $('.header__cart-quantity').removeClass('header__cart-quantity--more');
 
+            if (val > 0) {
+              $('.header__cart').addClass('header__cart--active');
+            }
             
             $('.datepicker-here').datepicker({
                 // Можно выбрать тольо даты, идущие за сегодняшним днем, включая сегодня
@@ -166,7 +169,40 @@ $.getJSON('goods.json', function (data) {
                 return false;
             });
 
-                       
+            $(function(){
+                $(".form__input--phone").mask("+375 (99) 999-99-99");
+            });
+
+            $(".form-cart").validate({
+                rules: {
+                  name: {
+                    required: true,
+                    minlength: 2
+                  },
+                  phone: "required",
+                  date_begin: "required",
+                  phone: "required",
+                  message: {
+                    required: true,
+                    minlength: 10
+                  },
+                  email: {
+                    required: true,
+                    email: true
+                  }
+                },
+          
+                messages: {
+                  name: "Введите Ваше имя",
+                  phone: "Ведите номер телефона",
+                  date_begin: "Выберите дату",
+                  email: {
+                    required: "Пожалуйта, введите e-mail",
+                    email: "E-mail введен некорректно"
+                  }
+                }
+            });
+            
         }
     }
 
