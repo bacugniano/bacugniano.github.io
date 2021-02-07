@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body class="cart__body">
 
     <div class="container">
 
@@ -110,14 +110,20 @@
                     </div>
                 </fieldset>
                 <div class="form-cart__input-container">
-                    <input class="form__input form-cart__input" type="text" name="name" id="" placeholder="Имя*">
-                </div>
-                <input class="form__input form-cart__input" type="text" name="organization" id="" placeholder="Название организации">
-                <div class="form-cart__input-container">
-                    <input class="form__input form-cart__input form__input--phone" type="tel" name="phone" id="" placeholder="Телефон*">
+                    <input class="form__input form-cart__input" type="text" name="name" id="" required>
+                    <label class="form__label form__label--name">Имя*</label>
                 </div>
                 <div class="form-cart__input-container">
-                    <input class="form__input form-cart__input" type="email" name="email" id="" placeholder="E-mail*">
+                    <input class="form__input form-cart__input form-cart__input--company" type="text" name="organization" id="" required>
+                    <label class="form__label form__label--name">Название организации</label>
+                </div>
+                <div class="form-cart__input-container">
+                    <input class="form__input form-cart__input form__input--phone" type="text" name="phone" id="" required>
+                    <label class="form__label form__label--name">Телефон*</label>
+                </div>
+                <div class="form-cart__input-container">
+                    <input class="form__input form-cart__input" type="text" name="email" id="" required>
+                    <label class="form__label form__label--name">E-mail*</label>
                 </div>
                 <textarea class="form__textarea form-cart__textarea" name="comment" id="" placeholder="Комментарии"></textarea>
                 <button class="form__button form-cart__button" type="submit">ОФОРМИТЬ</button>

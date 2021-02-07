@@ -51,3 +51,60 @@
     }
     
 }
+
+@media (max-width: 1200px) {
+
+    .navigation {
+
+        margin-left: auto;
+
+    }
+
+} 
+
+@media (max-width: 1010px) {
+
+    .navigation {
+
+        width: 62%;
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-grow: 1;
+
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    .navigation {
+
+        width: 62%;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 16px;
+        flex-grow: 1;
+
+        &__item {
+    
+            &--active {
+
+                font-size: 16px;
+    
+            }
+    
+        }
+
+    }
+
+}
+
+@media (max-width:730px) {
+
+    .navigation {
+
+        display: none;
+
+    }
+
+}

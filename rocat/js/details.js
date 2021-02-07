@@ -1,5 +1,4 @@
 //Табы в навигации
-
 let tab = function () {
     let tabNav = document.querySelectorAll('.tab-navigation__item'),
         tabContent = document.querySelectorAll('.details'),
@@ -26,5 +25,6 @@ let tab = function () {
 
 };
 
-
+$('document').ready(function(){
 tab();
+});

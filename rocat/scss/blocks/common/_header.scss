@@ -8,7 +8,7 @@
 
     &__logo {
 
-        width: 276px;
+        width: 250px;
         height: 51px;
         display: flex;
         flex-direction: column;
@@ -19,6 +19,18 @@
             font-size: 13px;
             font-weight: 500;
             letter-spacing: 0.1px;
+
+        }
+
+        &-link {
+
+            height: auto;
+
+        }
+
+        &-icon {
+
+            width: 100%;
 
         }
 
@@ -81,6 +93,113 @@
             .header__cart-svg2 {
 
                 fill: $active;
+
+            }
+
+        }
+
+    }
+
+    &__hamburger {
+
+        display: none;
+
+    }
+
+}
+
+@media (max-width: 1010px) {
+
+    .header {
+
+        &__logo {
+
+            width: 25%;
+            height: auto;
+
+            &-description {
+
+                display: none;
+
+            }
+
+        }
+
+    }
+
+} 
+
+@media (max-width: 805px) {
+
+    .header {
+
+        &__logo {
+
+            width: 20%;
+            height: auto;
+
+        }
+
+    }
+
+}
+
+@media (max-width: 730px) {
+
+    .header {
+
+        min-height: 75px;
+
+        &__logo {
+
+            width: 110px;
+            height: auto;
+
+        }
+
+        &__humburger {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 14px;
+            margin-left: 20px;
+
+            &-line {
+
+                width: 30px;
+                height: 2px;
+                background-color: $main;
+
+            }
+
+        }
+
+        &__cart {
+
+            font-size: 12px;
+            line-height: 18px;
+            margin-bottom: 0;
+
+            &-icon {
+
+                width: 22px;
+                height: 20px;
+
+            }
+
+            &-quantity {
+
+                top: -5px;
+                left: 38%;
+
+                &--more {
+
+                    font-size: 11px;
+                    left: 32%;
+
+                }
 
             }
 

@@ -16,7 +16,7 @@
 <body>
 
     <div class="preloader">
-        <svg class="preloader__image wow animate__animated animate__flip animate__infinite" role="img" width="70" height="48" viewBox="0 0 70 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="preloader__image" role="img" width="70" height="48" viewBox="0 0 70 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M70 43.5132H0V48.0001H70V43.5132Z" fill="#E42320"/>
             <path opacity="0.85" d="M70 34.1111H0V37.7576H70V34.1111Z" fill="#E42320"/>
             <path opacity="0.75" d="M70 24.6382H0V28.3561H70V24.6382Z" fill="#E42320"/>
@@ -126,10 +126,22 @@
                 <form class="contacts__form form" action="https://echo.htmlacademy.ru" method="POST">
                 
                     <legend class="form__legend">ОСТАВЬТЕ НАМ СООБЩЕНИЕ</legend>
-                    <input class="form__input form__input--name" name="name" id="name" type="text" placeholder="Имя*">
-                    <input class="form__input form__input--phone" name="phone" id="phone" type="tel" placeholder="Телефон*">
-                    <input class="form__input form__input--email" name="email" id="email" type="email" placeholder="E-mail*">
-                    <textarea class="form__textarea" name="message" id="message" placeholder="Введите текст сообщения*"></textarea>
+                    <div class="form__input-container">
+                        
+                        <input class="form__input form__input--name" name="name" id="name-contact" type="text" required>
+                        <label class="form__label form__label--name">Имя*</label>
+                    </div>
+                    <div class="form__input-container">
+                        <input class="form__input form__input--phone" name="phone" id="phone-contact" type="text" required>
+                        <label class="form__label form__label--phone">Телефон*</label>
+                    </div>
+                    <div class="form__input-container">
+                        <input class="form__input form__input--email" name="email" id="email-contact" type="text" required>
+                        <label class="form__label form__label--email">E-mail*</label>
+                    </div>
+                    <div class="form__textarea-container">
+                        <textarea class="form__textarea" name="message" id="message-contact" placeholder="Введите текст сообщения*"></textarea>
+                    </div>
                     <button class="form__button" type="submit">ОТПРАВИТЬ</button>
 
 
@@ -208,17 +220,17 @@
         $(".contacts__form").validate({
         rules: {
             name: {
-            required: true,
-            minlength: 2
-            },
+                required: true,
+                minlength: 2
+                },
             phone: "required",
             message: {
-            required: true,
-            minlength: 10
-            },
+                required: true,
+                minlength: 7
+                },
             email: {
-            required: true,
-            email: true
+                required: true,
+                email: true
             }
         },
 
@@ -227,7 +239,7 @@
             phone: "Ведите номер телефона",
             message: "Ведите сообщение",
             email: {
-            required: "Пожалуйта, введите e-mail",
+            required: "Пожалуйста, введите e-mail",
             email: "E-mail введен некорректно"
             }
         }

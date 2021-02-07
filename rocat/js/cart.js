@@ -5,15 +5,12 @@ $.getJSON('goods.json', function (data) {
     // console.log(goods);
     checkCart();
     //console.log(cart);
-    showCart(); //вывожу товары на страницу
+     //вывожу товары на страницу
     // showMiniCart();
+    showCart();
+    
+
     function showCart() {
-        if ($.isEmptyObject(cart)) {
-            //корзина пуста
-            var out = 'Корзина пуста. Добавьте товар в корзину <a href="index.html">главная страница</a>';
-            $('#my-cart').html(out);
-        }
-        else {
             var technics = '';
             var details = '';
             var services = '';
@@ -116,7 +113,16 @@ $.getJSON('goods.json', function (data) {
             if (val > 0) {
               $('.header__cart').addClass('header__cart--active');
             }
-            
+
+            if (val == 0) {
+                $('.header__cart').removeClass('header__cart--active');
+                $('.cart__goods-title').html('Корзина пуста. Выберите <a class="cart__link cart__link--header" href="technics.html">технику</a>');
+                $('.cart__paragraph').hide();
+                $('.form-cart').hide();
+                $('.footer').addClass('cart__footer');
+              }
+
+                        
             $('.datepicker-here').datepicker({
                 // Можно выбрать тольо даты, идущие за сегодняшним днем, включая сегодня
                 minDate: new Date(),
@@ -189,21 +195,23 @@ $.getJSON('goods.json', function (data) {
                   email: {
                     required: true,
                     email: true
+                  },
+                  organization: {
+                      required: false
                   }
                 },
           
                 messages: {
-                  name: "Введите Ваше имя",
+                  name: "Введите имя",
                   phone: "Ведите номер телефона",
                   date_begin: "Выберите дату",
                   email: {
-                    required: "Пожалуйта, введите e-mail",
+                    required: "Пожалуйста, введите e-mail",
                     email: "E-mail введен некорректно"
                   }
                 }
             });
             
-        }
     }
 
     function plusGoods() {
@@ -223,7 +231,7 @@ $.getJSON('goods.json', function (data) {
         }
         saveCartToLS();//сохраняю корзину в localStorage
         showCart();
-    }
+    }  
 
     function deleteGoods() {
         var articul = $(this).attr('data-articul');
@@ -232,16 +240,15 @@ $.getJSON('goods.json', function (data) {
         showCart();
     }
 
-
 });
 
-function checkCart() {
-    //проверяю наличие корзины в localStorage;
-    if (localStorage.getItem('cart') != null) {
-        cart = JSON.parse(localStorage.getItem('cart'));
+    function checkCart() {
+        //проверяю наличие корзины в localStorage;
+        if (localStorage.getItem('cart') != null) {
+            cart = JSON.parse(localStorage.getItem('cart'));
+        }
     }
-}
 
-function saveCartToLS() {
-    localStorage.setItem('cart', JSON.stringify(cart));
-}
+    function saveCartToLS() {
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }

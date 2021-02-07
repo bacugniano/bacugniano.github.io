@@ -16,7 +16,7 @@
 <body>
 
     <div class="preloader">
-        <svg class="preloader__image wow animate__animated animate__flip animate__infinite" role="img" width="70" height="48" viewBox="0 0 70 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="preloader__image" role="img" width="70" height="48" viewBox="0 0 70 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M70 43.5132H0V48.0001H70V43.5132Z" fill="#E42320"/>
             <path opacity="0.85" d="M70 34.1111H0V37.7576H70V34.1111Z" fill="#E42320"/>
             <path opacity="0.75" d="M70 24.6382H0V28.3561H70V24.6382Z" fill="#E42320"/>
@@ -74,6 +74,12 @@
 
             </a>
 
+            <div class="header__humburger">
+                <div class="header__humburger-line"></div>
+                <div class="header__humburger-line"></div>
+                <div class="header__humburger-line"></div>
+            </div>
+
             <section class="modal modal--top">
                 <div class="modal__wrap">
                     <p class="modal__text">Здравствуйте, у Вас пока нет заказов.</p>
@@ -97,7 +103,13 @@
 
             <h1 class="main-index__header">Аренда техники CAT</h1>
 
-            <img class="main-index__banner" src="image/main-banner_2.jpg" alt="Баннер">
+            <!-- <img class="main-index__banner" src="image/main-banner_2.jpg" alt="Баннер"> -->
+            <picture class="main-index__banner">
+                <source 
+                    media="(max-width: 360px)"
+                    srcset="image/main-banner_mobile.jpg">
+                <img class="main-index__banner" src="image/main-banner_2.jpg" alt="Баннер">
+            </picture>
 
         </div>
 
@@ -106,20 +118,20 @@
             <div class="container">
 
                 <ul class="results__list">
-                    <li class="resuls__item">
+                    <li class="results__item results__item--first">
                         <p class="results__title">2020</p>
-                        <p class="results_description">
-                            год выпуска всей<br> нашей техники
+                        <p class="results__description">
+                            год выпуска всей<br class="results__br-main"> нашей техники
                         </p>
                     </li>
-                    <li class="resuls__item">
+                    <li class="results__item results__item--second">
                         <p class="results__title">110%</p>
-                        <p class="results_description">операторов нацелены <br>на результат
+                        <p class="results__description">операторов нацелены <br class="results__br-main">на результат
                         </p>
                     </li>
-                    <li class="resuls__item">
+                    <li class="results__item results__item--third">
                         <p class="results__title">CAT</p>
-                        <p class="results_description">техника <br>премиум-класса</p>
+                        <p class="results__description">техника <br class="results__br-main">премиум-класса</p>
                     </li>
                 </ul>
 

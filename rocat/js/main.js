@@ -37,20 +37,20 @@ $('document').ready(function(){
     });
 
     $(".modal__close").click(function () {
-      $('.modal').fadeToggle();
+      $('.modal').fadeOut();
     });
 
-    // $(window).on('load', function () {
-    //   $('body').addClass('loaded_hiding');
-    //   window.setTimeout(function () {
-    //     $('body').addClass('loaded');
-    //     $('body').removeClass('loaded_hiding');
-    //   }, 500);
+    
+    $(window).on('load', function () {
+      $('body').addClass('loaded_hiding');
+      window.setTimeout(function () {
+        $('body').addClass('loaded');
+        $('body').removeClass('loaded_hiding');
+      }, 400);
+    });
+    // $(window).on('load', function() {
+    //   $('.preloader').fadeOut().end().delay(500).fadeOut('slow');
     // });
-
-    $(window).on('load', function() {
-      $('.preloader').fadeOut().end().delay(500).fadeOut('slow');
-    });
 
     
 

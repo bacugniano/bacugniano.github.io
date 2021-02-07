@@ -179,12 +179,34 @@
 
         width: 387px;
 
+        &-container {
+
+            position: relative;
+            margin-bottom: 30px;
+
+        }
+
+        &:focus~.form__label,
+        &:not(:focus):valid~.form__label {
+
+        bottom: 32px;
+        font-size: 14px;
+        line-height: 27px;
+        color: $disable-bg;
+        opacity: 1;
+        
+        }
+
     }
 
-    &__input-container {
+    &__label {
 
-        position: relative;
-        margin-bottom: 27px;
+        position: absolute;
+        bottom: 8px;
+        left: 0;
+        color: $third;
+        pointer-events: none;
+        transition: 0.2s ease all;
 
     }
 
