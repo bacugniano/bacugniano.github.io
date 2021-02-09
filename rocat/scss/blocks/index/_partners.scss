@@ -6,7 +6,7 @@
 
     }
 
-    &__slder {
+    &__slider {
 
         display: flex !important;
         justify-content: space-between !important;
@@ -47,6 +47,36 @@
         //     margin-right: 56px;
 
         // }
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .partners {
+
+        &__title {
+
+            margin-bottom: 22px;
+    
+        }
+
+        &__slide {
+
+            height: 60px !important;
+            margin-right: 16px !important;
+
+        }
+
+        &__logotype {
+
+            &--victoria {
+
+                padding-bottom: 10px;
+            }    
+
+        }
 
     }
 

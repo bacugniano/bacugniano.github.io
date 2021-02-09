@@ -8,16 +8,25 @@
 
     &__list {
 
-        width: 815px;
+        width: 840px;
         min-height: 210px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-left: auto;
-        margin-top: -170px;
+        // margin-top: -170px;
         background-color: $hover-bg;
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 50px;
+        padding-right: 50px;
+
+    }
+
+    &__item {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 110px;
 
     }
 
@@ -33,6 +42,20 @@
 
         font-size: 18px;
         font-weight: 400;
+
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .results {
+
+        &__list {
+
+            width: 68.68%;
+
+        }
 
     }
 
@@ -81,6 +104,12 @@
 
         } 
         
+        &__item {
+
+            height: auto;
+
+        }
+
         &__title {
 
             font-size: 24px;

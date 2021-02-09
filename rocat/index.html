@@ -26,7 +26,7 @@
             </svg>
     </div>
 
-    <div class="container">
+    <div class="container container-header">
 
         <header id="up" class="header">
 
@@ -74,11 +74,11 @@
 
             </a>
 
-            <div class="header__humburger">
-                <div class="header__humburger-line"></div>
-                <div class="header__humburger-line"></div>
-                <div class="header__humburger-line"></div>
-            </div>
+            <button class="header__hamburger header__hamburger--spin" type="button">
+                <span class="header__hamburger-box">
+                    <span class="header__hamburger-inner"></span>
+                </span>
+            </button>
 
             <section class="modal modal--top">
                 <div class="modal__wrap">
@@ -101,23 +101,9 @@
 
         <div class="main-index__banner-section">
 
-            <h1 class="main-index__header">Аренда техники CAT</h1>
-
-            <!-- <img class="main-index__banner" src="image/main-banner_2.jpg" alt="Баннер"> -->
-            <picture class="main-index__banner">
-                <source 
-                    media="(max-width: 360px)"
-                    srcset="image/main-banner_mobile.jpg">
-                <img class="main-index__banner" src="image/main-banner_2.jpg" alt="Баннер">
-            </picture>
-
-        </div>
-
-        <section class="main-index__results results">
-
-            <div class="container">
-
-                <ul class="results__list">
+            <div class="container main-index__header-container">
+                <h1 class="main-index__header">Аренда<br> техники CAT</h1>
+                <ul class="main-index__results-list results__list">
                     <li class="results__item results__item--first">
                         <p class="results__title">2020</p>
                         <p class="results__description">
@@ -134,10 +120,17 @@
                         <p class="results__description">техника <br class="results__br-main">премиум-класса</p>
                     </li>
                 </ul>
-
             </div>
 
-        </section>
+            <!-- <img class="main-index__banner" src="image/main-banner_2.jpg" alt="Баннер"> -->
+            <!-- <picture class="main-index__banner">
+                <source 
+                    media="(max-width: 360px)"
+                    srcset="image/main-banner_mobile.jpg">
+                <img class="main-index__banner" src="image/main-banner_2.jpg" alt="Баннер">
+            </picture> -->
+
+        </div>
 
         <section class="main-index__about-us about-us">
 
@@ -168,32 +161,32 @@
 
         </section>
 
-        <div class="container">
+            <div class="container">
 
             <section class="main-index__features features">
 
                 <p class="main-index__subtitle features__header">ПОЧЕМУ МЫ?</p>
                 <h2 class="main-index__title features__title">НАШИ ВОЗМОЖНОСТИ И ПРЕИМУЩЕСТВА</h2> 
                 <ul class="features__list">
-                    <li class="features__item wow animate__animated animate__fadeInLeft">
+                    <li class="features__item">
                         <div class="features__icon features__icon--technics"></div>
                         <p class="features__description">
                             Достойный ассортимент спецтехники в наличии. <br>Тут все не вместим: смотрите вкладку Техника.
                         </p>
                     </li>
-                    <li class="features__item wow animate__animated animate__fadeInLeft">
+                    <li class="features__item">
                         <div class="features__icon features__icon--team"></div>
                         <p class="features__description">
                             Хорошая команда = половина успеха, вторая половина за техникой. <br>Мы располагаем и тем, и другим!
                         </p>
                     </li>
-                    <li class="features__item wow animate__animated animate__fadeInRight">
+                    <li class="features__item">
                         <div class="features__icon features__icon--prize"></div>
                         <p class="features__description">
                             САТ. Когда название говорит само за себя.
                         </p>
                     </li>
-                    <li class="features__item wow animate__animated animate__fadeInRight">
+                    <li class="features__item">
                         <div class="features__icon features__icon--result"></div>
                         <p class="features__description">
                             Результат — наша<br> главная цель. И<br> добавить тут нечего.
@@ -202,7 +195,8 @@
                 </ul>               
 
             </section>
-
+            
+            </div>
             <section class="main-index__partners partners">
 
                 <div class="container">
@@ -213,53 +207,123 @@
                     <div class="partners__slider">
                         <div class="partners__slide">
                             <a href="https://zeppelin.com.by/" target="_blank">
-                                <img class="partners__logotype" src="image/zeppelin-cat.jpg" alt="Логотип «Zeppelin CAT»">
+                                <picture>
+                                    <source 
+                                        class="partners__logotype"
+                                        media="(max-width: 480px)"
+                                        srcset="image/zeppelin-cat-mobile.jpg">
+                                    <img class="partners__logotype" src="image/zeppelin-cat.jpg" alt="Логотип «Zeppelin CAT»">
+                                </picture>
+                                <!-- <img class="partners__logotype" src="image/zeppelin-cat.jpg" alt="Логотип «Zeppelin CAT»"> -->
                             </a>
                             
                         </div>
                         <div class="partners__slide">
                             <a href="https://beltelecom.by/" target="_blank">
-                                <img class="partners__logotype" src="image/beltelecom.png" alt="Логотип «Белтелеком»">
+                                <picture>
+                                    <source 
+                                        class="partners__logotype"
+                                        media="(max-width: 480px)"
+                                        srcset="image/beltelecom-mobile.png">
+                                    <img class="partners__logotype" src="image/beltelecom.png" alt="Логотип «Белтелеком»">
+                                </picture>
+                                <!-- <img class="partners__logotype" src="image/beltelecom.png" alt="Логотип «Белтелеком»"> -->
                             </a>
                         </div>
                         <div class="partners__slide">
                             <a href="https://jv-dominik.com/" target="_blank">
-                                <img class="partners__logotype" src="image/dominik.jpg" alt="Логотип «DOMINIK»">
+                                <picture>
+                                    <source
+                                        class="partners__logotype" 
+                                        media="(max-width: 480px)"
+                                        srcset="image/dominik-mobile.jpg">
+                                    <img class="partners__logotype" src="image/dominik.jpg" alt="Логотип «DOMINIK»">
+                                </picture>
+                                <!-- <img class="partners__logotype" src="image/dominik.jpg" alt="Логотип «DOMINIK»"> -->
                             </a>
                         </div>
                         <div class="partners__slide">
                             <a href="http://www.victoria91.by/" target="_blank">
-                                <img class="partners__logotype partners__logotype--victoria" src="image/victoria91.png" alt="Логотип «Виктория 91»">
+                                <picture>
+                                    <source 
+                                        class="partners__logotype partners__logotype--victoria"
+                                        media="(max-width: 480px)"
+                                        srcset="image/victoria91-mobile.png">
+                                    <img class="partners__logotype partners__logotype--victoria" src="image/victoria91.png" alt="Логотип «Виктория 91»">
+                                </picture>
+                                <!-- <img class="partners__logotype partners__logotype--victoria" src="image/victoria91.png" alt="Логотип «Виктория 91»"> -->
                             </a>
                         </div>
                         <div class="partners__slide">
                             <a href="https://www.sit.by/" target="_blank">
-                                <img class="partners__logotype" src="image/c-trading.png" alt="Логотип «СИ-трейдинг»">
+                                <picture>
+                                    <source 
+                                        class="partners__logotype"
+                                        media="(max-width: 480px)"
+                                        srcset="image/c-trading-mobile.png">
+                                    <img class="partners__logotype" src="image/c-trading.png" alt="Логотип «СИ-трейдинг»">
+                                </picture>
+                                <!-- <img class="partners__logotype" src="image/c-trading.png" alt="Логотип «СИ-трейдинг»"> -->
                             </a>
                         </div>
                         <div class="partners__slide">
                             <a href="#" target="_blank">
-                                <img class="partners__logotype" src="image/belstroynaladka.jpg" alt="Логотип «Белстройналадка»">
+                                <picture>
+                                    <source 
+                                        class="partners__logotype"
+                                        media="(max-width: 480px)"
+                                        srcset="image/belstroynaladka-mobile.jpg">
+                                    <img class="partners__logotype" src="image/belstroynaladka.jpg" alt="Логотип «Белстройналадка»">
+                                </picture>
+                                <!-- <img class="partners__logotype" src="image/belstroynaladka.jpg" alt="Логотип «Белстройналадка»"> -->
                             </a>
                         </div>
                         <div class="partners__slide">
                             <a href="https://bir.by/" target="_blank">
-                                <img class="partners__logotype" src="image/danaholdings.png" alt="Логотип «Dana Holdings»">
+                                <picture>
+                                    <source 
+                                        class="partners__logotype"
+                                        media="(max-width: 480px)"
+                                        srcset="image/danaholdings-mobile.png">
+                                    <img class="partners__logotype" src="image/danaholdings.png" alt="Логотип «Dana Holdings»">
+                                </picture>
+                                <!-- <img class="partners__logotype" src="image/danaholdings.png" alt="Логотип «Dana Holdings»"> -->
                             </a>
                         </div>
                         <div class="partners__slide">
                             <a href="https://volna.by/" target="_blank">
-                                <img class="partners__logotype" src="image/volna.png" alt="Логотип «Вольна»">
+                                <picture>
+                                    <source
+                                        class="partners__logotype" 
+                                        media="(max-width: 480px)"
+                                        srcset="image/volna-mobile.png">
+                                    <img class="partners__logotype" src="image/volna.png" alt="Логотип «Вольна»">
+                                </picture>
+                                <!-- <img class="partners__logotype" src="image/volna.png" alt="Логотип «Вольна»"> -->
                             </a>
                         </div>
                         <div class="partners__slide">
                             <a href="http://gelatin.by/" target="_blank">
-                                <img class="partners__logotype" src="image/mozhelit.png" alt="Логотип «Можелит»">
+                                <picture>
+                                    <source
+                                        class="partners__logotype" 
+                                        media="(max-width: 480px)"
+                                        srcset="image/mozhelit-mobile.png">
+                                    <img class="partners__logotype" src="image/mozhelit.png" alt="Логотип «Можелит»">
+                                </picture>
+                                <!-- <img class="partners__logotype" src="image/mozhelit.png" alt="Логотип «Можелит»"> -->
                             </a>
                         </div>
                         <div class="partners__slide">
                             <a href="https://www.belorusneft.by/" target="_blank">
-                                <img class="partners__logotype partners__logotype--belarusneft" src="image/belarusneft.png" alt="Логотип «Белоруснефть»">
+                                <picture>
+                                    <source
+                                        class="partners__logotype partners__logotype--belarusneft" 
+                                        media="(max-width: 480px)"
+                                        srcset="image/belarusneft-mobile.png">
+                                    <img class="partners__logotype partners__logotype--belarusneft" src="image/belarusneft.png" alt="Логотип «Белоруснефть»">
+                                </picture>
+                                <!-- <img class="partners__logotype partners__logotype--belarusneft" src="image/belarusneft.png" alt="Логотип «Белоруснефть»"> -->
                             </a>
                         </div>
 
@@ -269,8 +333,6 @@
 
             </section>
 
-        </div>
-
     </main>
 
     <footer class="footer">
@@ -279,8 +341,10 @@
 
             <div class="footer__section">
 
-                <a href="index.html" class="footer__link">Перейти на Главную</a>
-                <a class="footer__link footer__link--order">Перейти в Мои заказы</a>
+                <div class="footer__link-wrap">
+                    <a href="index.html" class="footer__link">Перейти на Главную</a>
+                    <a class="footer__link footer__link--order">Перейти в Мои заказы</a>
+                </div>
                 <ul class="footer__social-list">
                     <li class="footer__social-item">
                         <a class="contacts__social-link contacts__social-link--twitter" href="#">
