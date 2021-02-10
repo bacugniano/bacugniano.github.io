@@ -129,11 +129,13 @@ window.addEventListener('DOMContentLoaded', () => {
   menuItem = document.querySelectorAll('.navigation__item'),
   hamburger = document.querySelector('.header__hamburger');
   header = document.querySelector('.container-header');
+  // body = document.querySelector('body');
 
   hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('is-active');
       menu.classList.toggle('navigation--active');
       header.classList.toggle('container-header--active');
+      // body.classList.toggle('body--active');
   });
 
   menuItem.forEach(item => {
@@ -141,6 +143,7 @@ window.addEventListener('DOMContentLoaded', () => {
           hamburger.classList.toggle('is-active');
           menu.classList.toggle('navigation--active');
           header.classList.toggle('container-header--active');
+          // body.classList.toggle('body--active');
       })
   })
 })

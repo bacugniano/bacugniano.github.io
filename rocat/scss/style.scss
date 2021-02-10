@@ -231,11 +231,24 @@ body {
 
   }
 
+  // .body--active {
+
+  //   overflow: hidden;
+
+  // }
+
   .pageup {
 
     width: 40px;
     height: 40px;
     right: 14px;
+
+  }
+
+  label.error {
+
+    font-size: 12px;
+    bottom: -15px;
 
   }
 

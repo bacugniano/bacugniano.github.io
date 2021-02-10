@@ -101,7 +101,7 @@
         
         <h1 class="visually-hidden"></h1>
 
-        <div class="container">
+        <div class="container main-contacts__container">
 
             <section class="main-contacts__contacts contacts">
 
@@ -129,7 +129,7 @@
                     </li>
                 </ul>
 
-                <form class="contacts__form form" action="https://echo.htmlacademy.ru" method="POST">
+                <form class="form contacts__form" action="https://echo.htmlacademy.ru" method="POST">
                 
                     <legend class="form__legend">ОСТАВЬТЕ НАМ СООБЩЕНИЕ</legend>
                     <div class="form__input-container">
@@ -158,8 +158,15 @@
         </div>
 
         <section class="main-contacts__map map">
-
-            <img src="image/map.jpg" alt="Карта" class="map">
+            <picture>
+                <source 
+                     class="map"
+                    class="partners__logotype"
+                    media="(max-width: 360px)"
+                    srcset="image/map-mobile.jpg">
+                <img class="map" src="image/map.jpg" alt="Карта">
+            </picture>
+            <!-- <img src="image/map.jpg" alt="Карта" > -->
             <div class="map" id="map"></div>        
 
         </section>
@@ -172,8 +179,10 @@
 
             <div class="footer__section">
 
-                <a href="index.html" class="footer__link">Перейти на Главную</a>
-                <a class="footer__link footer__link--order">Перейти в Мои заказы</a>
+                <div class="footer__link-wrap">
+                    <a href="index.html" class="footer__link">Перейти на Главную</a>
+                    <a class="footer__link footer__link--order">Перейти в Мои заказы</a>
+                </div>
                 <ul class="footer__social-list">
                     <li class="footer__social-item">
                         <a class="contacts__social-link contacts__social-link--twitter" href="#">
@@ -187,8 +196,7 @@
                     </li>
                 </ul>
 
-
-                <section class="modal modal--footer">
+                <section class="modal modal--footer wow animate__animated animate__fadeIn">
                     <div class="modal__wrap">
                         <p class="modal__text">Здравствуйте, у Вас пока нет заказов.</p>
                         <p class="modal__text">Но вы можете выбрать и заказать</p>

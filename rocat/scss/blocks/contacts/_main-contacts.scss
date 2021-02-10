@@ -1,0 +1,22 @@
+@media (max-width: 560px) {
+
+    .main-contacts {
+
+        display: flex;
+        flex-direction: column;
+
+        &__map {
+
+            order: 1;
+
+        }
+
+        &__container {
+
+            order: 2;
+
+        }
+
+    }
+
+}

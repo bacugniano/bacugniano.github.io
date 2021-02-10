@@ -7,3 +7,17 @@
     }
 
 }
+
+@media (max-width: 460px) {
+
+    .services-index {
+
+        &__subtitle {
+
+            margin-top: 0;
+
+        }
+
+    }    
+
+}
