@@ -9,10 +9,34 @@
 
     }
 
-    &__technics {
+    // &__technics {
 
-        margin-top: 35px;
+    //  margin-top: 35px;
+
+    // }
+
+}
+
+@media (max-width: 360px) {
+
+    .main-technics {
+
+        padding-top: 0;
+
+        &__tab-navigation {
+
+            margin-right: 0;
+    
+        }
+
+        &__technics {
+
+            margin-top: 0;
+
+        }
 
     }
+
+    
 
 }

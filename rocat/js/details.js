@@ -26,5 +26,21 @@ let tab = function () {
 };
 
 $('document').ready(function(){
-tab();
+
+    if ($(window).width() < 361) {
+        $('.technics').removeClass('technics--active');
+        $('.additional__details-item--invisible').remove();
+    }
+
+    $(".tab-navigation__button").click(function () {
+        $('.tab-navigation').addClass('tab-navigation--none');
+    });
+
+    $(".technics__back").click(function () {
+        $('.tab-navigation').removeClass('tab-navigation--none');
+        $('.technics').removeClass('technics--active');
+    });
+
+    tab();
+
 });
