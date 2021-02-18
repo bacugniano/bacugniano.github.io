@@ -20,7 +20,6 @@
         &--services {
 
             width: 284px;
-            height: 100%;
 
         }
 
@@ -211,9 +210,16 @@
 
     &__paragraph {
 
+        display: none;
         margin-top: 30px;
         margin-bottom: 30px;
         font-weight: 700;
+
+        &--active {
+
+            display: block;
+
+        }
 
     }
 

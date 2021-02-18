@@ -83,7 +83,7 @@
         width: 100%;
         min-height: 91px;
         display: flex;
-        justify-content: center;
+        // justify-content: center;
         padding: 17px 0;
         background-color: $hover-bg;
 
@@ -95,19 +95,16 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
-        &:nth-child(2) {
-
-            margin: 0 48px;
-
-        }
+        width: 33%;
+        min-height: 58px;
+        padding-left: 37px;
 
         &:nth-child(2)::before,
         &:nth-child(2)::after {
-
+    
             content: '';
             position: absolute;
-            width: 2px;
+            width: 1px;
             height: 43px;
             top: 50%;
             transform: translateY(-50%);
@@ -115,20 +112,51 @@
         }
 
         &:nth-child(2)::before {
-
-            left: -24px;
+    
+            left: 0;
 
         }
 
         &:nth-child(2)::after {
 
-            right: -24px;
+            right: 0;
+
+        }
+
+        &--excavator {
+
+            &:first-child {
+
+                width: 33.5%;
+
+            }
+
+            &:nth-child(2) {
+
+                padding-left: 15px;
+                padding-right: 15px;
+                flex-grow: 1;
+    
+            }
+
+            &:last-child {
+
+                width: 32%;
+
+            }
 
         }
 
         &--loader {
 
-            height: 80px;
+            min-height: 80px;
+
+            &:first-child {
+
+                width: 33.5%;
+                // padding-right: 37px;
+
+            }
 
             &:nth-child(2)::before,
             &:nth-child(2)::after {
@@ -145,12 +173,6 @@
 
         color: $third;
         font-weight: 400;
-
-        &--loader {
-
-            width: 169px;
-
-        }
 
     }
 
@@ -325,6 +347,34 @@
 
             }
 
+            &--excavator {
+
+                &:first-child {
+
+                    width: 100%;
+
+                }
+
+                &:last-child {
+
+                    width: 100%;
+
+                }
+
+            }
+
+            &--loader {
+
+                min-height: 58px;
+
+                &:first-child {
+
+                    width: 100%;
+
+                }
+
+            }
+
         }
 
         &__characteristics-description {
@@ -385,6 +435,7 @@
             background-repeat: no-repeat;
             border: none;
             outline: none;
+            z-index: 999;
 
         }
 

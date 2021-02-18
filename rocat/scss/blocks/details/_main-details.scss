@@ -6,7 +6,23 @@
     &__tab-navigation {
 
         width: 310px;
-        margin-right: 75px;
+        margin-right: 90px;
+
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    .main-details {
+
+        padding-top: 0;
+
+        &__tab-navigation {
+
+            margin-right: 0;
+    
+        } 
 
     }
 

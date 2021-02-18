@@ -166,56 +166,69 @@
             </div>
             
             <section class="details details--RS300 details--active">
-
+                <button class="technics__back"></button>
                 <div class="details__picture-wrap">
-                    <img class="details__picture" src="image/details/Rockson-rs300.png" alt="ROCKSON RS300">
+                    <picture>
+                        <source 
+                            class="details__picture"
+                            media="(max-width: 480px)"
+                            srcset="image/details/Rockson-rs300-mobile.png">
+                        <img class="details__picture" src="image/details/Rockson-rs300.png" alt="ROCKSON RS300">
+                    </picture>
                 </div>
+                <p class="details__price">90 BYN* и 97 BYN** в час без учета НДС</p>
                 <h2 class="details__header">ГИДРОМОЛОТ ROCKSON RS300</h2>
 
-                <table class="details__table table">
-
-                    <tr class="table__row">
-                        <th class="table__header">Базовая машина</th>
-                        <td class="table__value">5-6 т</td>
-                        <th class="table__header table__header--second-cell">Энергия удара</th>
-                        <td class="table__value table__value--second-cell">850 Дж</td>
-                    </tr>
-                    <tr class="table__row">
-                        <th class="table__header">Рабочее давление</th>
-                        <td class="table__value">90-130 бар</td>
-                        <th class="table__header table__header--second-cell">Частота ударов</th>
-                        <td class="table__value table__value--second-cell">400-900 уд/мин</td>
-                    </tr>
-                    <tr class="table__row">
-                        <th class="table__header">Поток масла</th>
-                        <td class="table__value">30-50 л/мин</td>
-                        <th class="table__header table__header--second-cell">Диаметр пики</th>
-                        <td class="table__value table__value--second-cell">68 мм</td>
-                    </tr>
-                    <tr class="table__row">
-                        <th class="table__header">Масса гидромолота</th>
-                        <td class="table__value">5-6 т</td>
-                        <th class="table__header table__header--second-cell">Корпус</th>
-                        <td class="table__value table__value--second-cell">открытый</td>
-                    </tr>
-                    <tr class="table__row">
-                        <th class="table__header">Рабочая длина инструмента</th>
-                        <td class="table__value">350 мм</td>
-                    </tr>
-
-                </table>
+                <ul class="details__characteristics-list">
+                    <li class="details__characteristics-item">
+                        <p class="details__characteristics-description">Базовая машина</p>
+                        <p class="details__characteristics-value">5-6 т</p>
+                    </li>
+                    <li class="details__characteristics-item details__characteristics-item--center">
+                        <p class="details__characteristics-description">Поток масла</p>
+                        <p class="details__characteristics-value">30-50 л/мин</p>
+                    </li>
+                    <li class="details__characteristics-item">
+                        <p class="details__characteristics-description">Рабочая длина</p>
+                        <p class="details__characteristics-value">320 мм</p>
+                    </li>
+                    <li class="details__characteristics-item">
+                        <p class="details__characteristics-description">Рабочее давление</p>
+                        <p class="details__characteristics-value">90-130 бар</p>
+                    </li>
+                    <li class="details__characteristics-item details__characteristics-item--center">
+                        <p class="details__characteristics-description">Масса гидромолота</p>
+                        <p class="details__characteristics-value">320 кг</p>
+                    </li>
+                    <li class="details__characteristics-item">
+                        <p class="details__characteristics-description">Энергия удара</p>
+                        <p class="details__characteristics-value">850 Дж</p>
+                    </li>
+                    <li class="details__characteristics-item details__characteristics-item--last">
+                        <p class="details__characteristics-description">Частота ударов</p>
+                        <p class="details__characteristics-value">400-900 уд/мин</p>
+                    </li>
+                    <li class="details__characteristics-item details__characteristics-item--center details__characteristics-item--last">
+                        <p class="details__characteristics-description">Диаметр пики</p>
+                        <p class="details__characteristics-value">68 мм</p>
+                    </li>
+                    <li class="details__characteristics-item details__characteristics-item--last">
+                        <p class="details__characteristics-description">Корпус</p>
+                        <p class="details__characteristics-value">открытый</p>
+                    </li>
+                </ul>
 
                 <div class="details__wrap">
 
                     <div class="details__price-wrap">
-                        <p class="details__price">97 BYN в час без учета НДС</p>
-                        <p class="detail__price-desc">(при заказе с экскаваторами CAT 434, CAT 444 F2)</p>
+                        <p class="details__price-note">*при заказе с экскаватором CAT 426 F2</p>
+                        <p class="details__price-note">**при заказе с экскаваторами CAT 434, CAT 444 F2</p>
                     </div>
-                    <button class="details__button button-to-cart button--add" data-articul="d2">ЗАКАЗАТЬ</button>
+                    <button class="details__button button-to-cart button--add" data-articul="d1">ЗАКАЗАТЬ</button>
 
                 </div>
 
-                <div class="details__wrap">
+                <!-- <div class="details__wrap">
                     
                     <div class="details__price-wrap">
                         <p class="details__price">90 BYN в час без учета НДС</p>
@@ -223,18 +236,39 @@
                     </div>
                     <button class="details__button button-to-cart button--add" data-articul="d1">ЗАКАЗАТЬ</button>
 
-                </div>
+                </div> -->
 
             </section>
 
             <section class="details details--pitchfork">
-
+                <button class="technics__back"></button>
                 <div class="details__picture-wrap">
-                    <img class="details__picture details__picture--pitchfork" src="image/details/pitchfork.png" alt="Вилы накидные">
+                    <picture>
+                        <source 
+                            class="details__picture"
+                            media="(max-width: 480px)"
+                            srcset="image/details/pitchfork-mobile.png">
+                        <img class="details__picture details__picture--pitchfork" src="image/details/pitchfork.png" alt="Вилы накидные">
+                    </picture>
                 </div>
+                <p class="details__price">Можно заказать без дополнительной оплаты</p>
                 <h2 class="details__header">Вилы накидные</h2>
 
-                <table class="details__table table">
+                <ul class="details__characteristics-list">
+                    <li class="details__characteristics-item details__characteristics-item--last">
+                        <p class="details__characteristics-description">Длина</p>
+                        <p class="details__characteristics-value">1200 мм</p>
+                    </li>
+                    <li class="details__characteristics-item details__characteristics-item--center details__characteristics-item--last">
+                        <p class="details__characteristics-description">Грузоподъемность</p>
+                        <p class="details__characteristics-value">2-4 т</p>
+                    </li>
+                    <li class="details__characteristics-item details__characteristics-item--last">
+                        <p class="details__characteristics-description">Подходит для</p>
+                        <p class="details__characteristics-value">экскаватора- погрузчика</p>
+                    </li>
+                </ul>
+                <!-- <table class="details__table table">
 
                     <tr class="table__row">
                         <th class="table__header table__header--pitchfork">Длина</th>
@@ -249,12 +283,11 @@
                         <td class="table__value table__value--pitchfork table__value--pitchfork-second-cell">2 т</td>
                     </tr>
                     
-                </table>
+                </table> -->
 
                 <div class="details__wrap">
 
                     <div class="details__price-wrap">
-                        <p class="details__price">Можно заказать без дополнительной оплаты</p>
                     </div>
                     <button class="details__button button-to-cart button--add" data-articul="d3">ЗАКАЗАТЬ</button>
 
@@ -263,13 +296,43 @@
             </section>
 
             <section class="details details--BR1850">
-
+                <button class="technics__back"></button>
                 <div class="details__picture-wrap">
-                    <img class="details__picture details__picture--BR1850" src="image/details/Rockson-BR1850.png" alt="ROCKSON BR1850">
+                    <picture>
+                        <source 
+                            class="details__picture"
+                            media="(max-width: 480px)"
+                            srcset="image/details/Rockson-BR1850-mobile.png">
+                        <img class="details__picture details__picture--BR1850" src="image/details/Rockson-BR1850.png" alt="ROCKSON BR1850">
+                    </picture>
                 </div>
+                <p class="details__price">Можно заказать без дополнительной оплаты</p>
                 <h2 class="details__header">ЩЕТКА ROCKSON BR1850 БЕЗ БУНКЕРА</h2>
 
-                <table class="details__table table">
+                
+                <ul class="details__characteristics-list">
+                    <li class="details__characteristics-item">
+                        <p class="details__characteristics-description">Масса</p>
+                        <p class="details__characteristics-value">215 кг</p>
+                    </li>
+                    <li class="details__characteristics-item details__characteristics-item--center">
+                        <p class="details__characteristics-description">Поворотный механизм</p>
+                        <p class="details__characteristics-value">механический</p>
+                    </li>
+                    <li class="details__characteristics-item">
+                        <p class="details__characteristics-description">Рабочая ширина</p>
+                        <p class="details__characteristics-value">1850 мм</p>
+                    </li>
+                    <li class="details__characteristics-item details__characteristics-item--last">
+                        <p class="details__characteristics-description">Диаметр щетины</p>
+                        <p class="details__characteristics-value">550 мм</p>
+                    </li>
+                    <li class="details__characteristics-item details__characteristics-item--center details__characteristics-item--last">
+                        <p class="details__characteristics-description">Угол поворота</p>
+                        <p class="details__characteristics-value">± 25°</p>
+                    </li>
+                </ul>
+                <!-- <table class="details__table table">
 
                     <tr class="table__row">
                         <th class="table__header table__header--BR1850">Масса</th>
@@ -288,12 +351,11 @@
                         <td class="table__value table__value--BR1850">550 мм</td>
                     </tr>
                     
-                </table>
+                </table> -->
 
                 <div class="details__wrap">
 
                     <div class="details__price-wrap">
-                        <p class="details__price">Можно заказать без дополнительной оплаты</p>
                     </div>
                     <button class="details__button button-to-cart button--add" data-articul="d4">ЗАКАЗАТЬ</button>
 
@@ -302,13 +364,34 @@
             </section>
 
             <section class="details details--impulse">
-
+                <button class="technics__back"></button>
                 <div class="details__picture-wrap">
-                    <img class="details__picture details__picture--impulse" src="image/details/impulse.png" alt="ПЛАНИРОВОЧНЫЙ КОВШ IMPULSE">
+                    <picture>
+                        <source 
+                            class="details__picture"
+                            media="(max-width: 480px)"
+                            srcset="image/details/impulse-mobile.png">
+                        <img class="details__picture details__picture--impulse" src="image/details/impulse.png" alt="ПЛАНИРОВОЧНЫЙ КОВШ IMPULSE">
+                    </picture>
                 </div>
+                <p class="details__price">Можно заказать без дополнительной оплаты</p>
                 <h2 class="details__header">ПЛАНИРОВОЧНЫЙ КОВШ IMPULSE</h2>
 
-                <table class="details__table table">
+                <ul class="details__characteristics-list">
+                    <li class="details__characteristics-item details__characteristics-item--last">
+                        <p class="details__characteristics-description">Диаметр щетины</p>
+                        <p class="details__characteristics-value">550 мм</p>
+                    </li>
+                    <li class="details__characteristics-item details__characteristics-item--center details__characteristics-item--last">
+                        <p class="details__characteristics-description">Угол поворота</p>
+                        <p class="details__characteristics-value">± 25°</p>
+                    </li>
+                    <li class="details__characteristics-item details__characteristics-item--last">
+                        <p class="details__characteristics-description">Рабочая ширина</p>
+                        <p class="details__characteristics-value">1850 мм</p>
+                    </li>
+                </ul>
+                <!-- <table class="details__table table">
 
                     <tr class="table__row">
                         <th class="table__header table__header--impulse">Ширина</th>
@@ -321,12 +404,11 @@
                         <td class="table__value table__value--impulse">192 кг</td>
                     </tr>
                     
-                </table>
+                </table> -->
 
                 <div class="details__wrap">
 
                     <div class="details__price-wrap">
-                        <p class="details__price">Можно заказать без дополнительной оплаты</p>
                     </div>
                     <button class="details__button button-to-cart button--add" data-articul="d5">ЗАКАЗАТЬ</button>
 
@@ -335,13 +417,54 @@
             </section>
 
             <section class="details details--VP10">
-
+                <button class="technics__back"></button>
                 <div class="details__picture-wrap">
-                    <img class="details__picture details__picture--VP10" src="image/details/Rockson-VP10.png" alt="ПЛАНИРОВОЧНЫЙ КОВШ IMPULSE">
+                    <picture>
+                        <source 
+                            class="details__picture"
+                            media="(max-width: 480px)"
+                            srcset="image/details/Rockson-VP10-mobile.png">
+                        <img class="details__picture details__picture--VP10" src="image/details/Rockson-VP10.png" alt="Rockson VP10">
+                    </picture>
                 </div>
+                <p class="details__price">90 BYN* и 97 BYN** в час без учета НДС</p>
                 <h2 class="details__header">ВИБРОТРАМБОВКА ROCKSON VP10</h2>
 
-                <table class="details__table table">
+                <ul class="details__characteristics-list">
+                    <li class="details__characteristics-item">
+                        <p class="details__characteristics-description">Базовая машина</p>
+                        <p class="details__characteristics-value">7-12 т</p>
+                    </li>
+                    <li class="details__characteristics-item details__characteristics-item--center">
+                        <p class="details__characteristics-description">Поток масла</p>
+                        <p class="details__characteristics-value">60-80 л/мин</p>
+                    </li>
+                    <li class="details__characteristics-item">
+                        <p class="details__characteristics-description">Кол-во импульсов</p>
+                        <p class="details__characteristics-value">2400 в мин.</p>
+                    </li>
+                    <li class="details__characteristics-item">
+                        <p class="details__characteristics-description">Рабочее давление</p>
+                        <p class="details__characteristics-value">90-130 атм.</p>
+                    </li>
+                    <li class="details__characteristics-item details__characteristics-item--center">
+                        <p class="details__characteristics-description">Масса</p>
+                        <p class="details__characteristics-value">350 кг</p>
+                    </li>
+                    <li class="details__characteristics-item">
+                        <p class="details__characteristics-description">Объем трамбования</p>
+                        <p class="details__characteristics-value">0, 2 м3</p>
+                    </li>
+                    <li class="details__characteristics-item details__characteristics-item--last">
+                        <p class="details__characteristics-description">Частота ударов</p>
+                        <p class="details__characteristics-value">400-900 уд/мин</p>
+                    </li>
+                    <li class="details__characteristics-item details__characteristics-item--center details__characteristics-item--last">
+                        <p class="details__characteristics-description">Усилие трамбования</p>
+                        <p class="details__characteristics-value">2-3 т</p>
+                    </li>
+                </ul>
+                <!-- <table class="details__table table">
 
                     <tr class="table__row">
                         <th class="table__header table__header--VP10">Базовая машина</th>
@@ -366,9 +489,9 @@
                         <td class="table__value table__value--VP10">60-80 л/мин</td>
                     </tr>
                     
-                </table>
+                </table> -->
 
-                <div class="details__wrap">
+                <!-- <div class="details__wrap">
 
                     <div class="details__price-wrap">
                         <p class="details__price">97 BYN в час без учета НДС</p>
@@ -376,13 +499,15 @@
                     </div>
                     <button class="details__button button-to-cart button--add" data-articul="d7">ЗАКАЗАТЬ</button>
 
-                </div>
+                </div> -->
 
                 <div class="details__wrap">
                     
                     <div class="details__price-wrap">
-                        <p class="details__price">90 BYN в час без учета НДС</p>
-                        <p class="detail__price-desc">(при заказе с экскаватором CAT 426 F2)</p>
+                        <div class="details__price-wrap">
+                            <p class="details__price-note">*при заказе с экскаватором CAT 426 F2</p>
+                            <p class="details__price-note">**при заказе с экскаваторами CAT 434, CAT 444 F2</p>
+                        </div>
                     </div>
                     <button class="details__button button-to-cart button--add" data-articul="d6">ЗАКАЗАТЬ</button>
 
@@ -391,13 +516,42 @@
             </section>
 
             <section class="details details--crane">
-
+                <button class="technics__back"></button>
                 <div class="details__picture-wrap">
-                    <img class="details__picture details__picture--crane" src="image/details/crane-boom-pallet-forks.png" alt="СТРЕЛА КРАНОВАЯ БЕЗБЛОЧНАЯ">
+                    <picture>
+                        <source 
+                            class="details__picture"
+                            media="(max-width: 480px)"
+                            srcset="image/details/crane-boom-pallet-forks-mobile.png">
+                        <img class="details__picture details__picture--crane" src="image/details/crane-boom-pallet-forks.png" alt="СТРЕЛА КРАНОВАЯ БЕЗБЛОЧНАЯ">
+                    </picture>
                 </div>
+                <p class="details__price">Можно заказать без дополнительной оплаты</p>
                 <h2 class="details__header">СТРЕЛА КРАНОВАЯ БЕЗБЛОЧНАЯ АДЗ-342С.54.00.000</h2>
 
-                <table class="details__table table">
+                <ul class="details__characteristics-list">
+                    <li class="details__characteristics-item details__characteristics-item--crane">
+                        <p class="details__characteristics-description">Грузоподъемность при min вылете крюка</p>
+                        <p class="details__characteristics-value">2000 кг</p>
+                    </li>
+                    <li class="details__characteristics-item details__characteristics-item--crane details__characteristics-item--center">
+                        <p class="details__characteristics-description">Грузоподъемность при среднем вылете крюка</p>
+                        <p class="details__characteristics-value">1500 кг</p>
+                    </li>
+                    <li class="details__characteristics-item details__characteristics-item--crane">
+                        <p class="details__characteristics-description">Грузоподъемность при max вылете крюка</p>
+                        <p class="details__characteristics-value">1200 кг</p>
+                    </li>
+                    <li class="details__characteristics-item details__characteristics-item--crane details__characteristics-item--last">
+                        <p class="details__characteristics-description">Габаритные размеры</p>
+                        <p class="details__characteristics-value">3720×1220×940 мм</p>
+                    </li>
+                    <li class="details__characteristics-item details__characteristics-item--crane details__characteristics-item--center details__characteristics-item--last">
+                        <p class="details__characteristics-description">Масса</p>
+                        <p class="details__characteristics-value">330 кг</p>
+                    </li>
+                </ul>
+                <!-- <table class="details__table table">
 
                     <tr class="table__row">
                         <th class="table__header table__header--crane">Грузоподъемность:</th>
@@ -420,12 +574,11 @@
                         <td class="table__value table__value--crane">1200 кг</td>
                     </tr>
                     
-                </table>
+                </table> -->
 
                 <div class="details__wrap">
 
                     <div class="details__price-wrap">
-                        <p class="details__price">Можно заказать без дополнительной оплаты</p>
                     </div>
                     <button class="details__button button-to-cart button--add" data-articul="d8">ЗАКАЗАТЬ</button>
 
@@ -434,13 +587,34 @@
             </section>
 
             <section class="details details--pallet-forks">
-
+                <button class="technics__back"></button>
                 <div class="details__picture-wrap">
-                    <img class="details__picture details__picture--pallet-forks" src="image/details/pallet-forks.png" alt="СТРЕЛА КРАНОВАЯ БЕЗБЛОЧНАЯ">
+                    <picture>
+                        <source 
+                            class="details__picture"
+                            media="(max-width: 480px)"
+                            srcset="image/details/pallet-forks-mobile.png">
+                        <img class="details__picture details__picture--pallet-forks" src="image/details/pallet-forks.png" alt="Вилы паллетные">
+                    </picture>
                 </div>
+                <p class="details__price">Можно заказать без дополнительной оплаты</p>
                 <h2 class="details__header">Вилы паллетные</h2>
 
-                <table class="details__table table">
+                <ul class="details__characteristics-list">
+                    <li class="details__characteristics-item details__characteristics-item--last">
+                        <p class="details__characteristics-description">Длина</p>
+                        <p class="details__characteristics-value">1200 мм</p>
+                    </li>
+                    <li class="details__characteristics-item details__characteristics-item--center details__characteristics-item--last">
+                        <p class="details__characteristics-description">Грузоподъемность</p>
+                        <p class="details__characteristics-value">3 т</p>
+                    </li>
+                    <li class="details__characteristics-item details__characteristics-item--last">
+                        <p class="details__characteristics-description">Класс</p>
+                        <p class="details__characteristics-value">3 А</p>
+                    </li>
+                </ul>
+                <!-- <table class="details__table table">
 
                     <tr class="table__row">
                         <th class="table__header table__header--pallet-forks">Длина</th>
@@ -449,12 +623,11 @@
                         <td class="table__value table__value--pallet-forks table__value--pallet-forks-second-cell">3 т</td>
                     </tr>
                     
-                </table>
+                </table> -->
 
                 <div class="details__wrap">
 
                     <div class="details__price-wrap">
-                        <p class="details__price">Можно заказать без дополнительной оплаты</p>
                     </div>
                     <button class="details__button button-to-cart button--add" data-articul="d9">ЗАКАЗАТЬ</button>
 

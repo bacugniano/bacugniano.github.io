@@ -44,7 +44,7 @@
     "d1" : {
         "name" : "ГИДРОМОЛОТ ROCKSON RS300",
         "description" : "Детали для экскаваторов-погрузчиков",
-        "cost" : "90 BYN в час без учета НДС",
+        "cost" : "от 90 BYN в час без учета НДС",
         "image" : "image/details/Rockson-rs300-cart.png",
         "link" : "details.html"
     },
@@ -79,7 +79,7 @@
     "d6" : {
         "name" : "ВИБРОТРАМБОВКА ROCKSON VP10",
         "description" : "Детали для экскаваторов-погрузчиков",
-        "cost" : "90 BYN в час без учета НДС",
+        "cost" : "от 90 BYN в час без учета НДС",
         "image" : "image/details/Rockson-VP10-cart.png",
         "link" : "details.html"
     },

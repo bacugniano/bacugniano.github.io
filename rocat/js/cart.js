@@ -96,6 +96,29 @@ $.getJSON('goods.json', function (data) {
                 val += cart[key];
             }
 
+            for (var key in cart) {
+               if (key=='t2' || key=='t3' || key=='t4') {
+
+                    $('.cart__paragraph').addClass('cart__paragraph--active');
+
+               }
+               else if (key=='t5' || key=='t6') {
+
+
+               }
+
+               else if ((key=='t2' || key=='t3' || key=='t4') && (key=='t5' || key=='t6')) {
+
+
+               }   
+               else {
+
+               $('.cart__paragraph').removeClass('cart__paragraph--active');
+
+               }
+
+            }
+
             $('.cart__list--technics').html(technics);
             $('.cart__list--details').html(details);
             $('.cart__list--services').html(services);
