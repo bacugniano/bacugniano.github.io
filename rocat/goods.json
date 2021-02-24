@@ -4,6 +4,7 @@
         "description" : "Экскаваторы гусеничные",
         "cost" : "70 BYN в час без учета НДС",
         "image" : "image/technics/CAT320GC-cart.png",
+        "imageMobile" : "image/technics/CAT320GC-cart-mobile.png",
         "link" : "technics.html"
     },
     "t2" : {
@@ -11,6 +12,7 @@
         "description" : "Экскаваторы-погрузчики",
         "cost" : "65 BYN в час без учета НДС",
         "image" : "image/technics/CAT434-cart.png",
+        "imageMobile" : "image/technics/CAT434-cart-mobile.png",
         "link" : "technics.html"
     },
     "t3" : {
@@ -18,6 +20,7 @@
         "description" : "Экскаваторы-погрузчики",
         "cost" : "60 BYN в час без учета НДС",
         "image" : "image/technics/CAT426F2-cart.png",
+        "imageMobile" : "image/technics/CAT426F2-cart-mobile.png",
         "link" : "technics.html"
     },
     "t4" : {
@@ -25,6 +28,7 @@
         "description" : "Экскаваторы-погрузчики",
         "cost" : "65 BYN в час без учета НДС",
         "image" : "image/technics/CAT444F2-cart.png",
+        "imageMobile" : "image/technics/CAT444F2-cart-mobile.png",
         "link" : "technics.html"
     },
     "t5" : {
@@ -32,6 +36,7 @@
         "description" : "Фронтальные погрузчики",
         "cost" : "65 BYN в час без учета НДС",
         "image" : "image/technics/CATSEM655d-cart.png",
+        "imageMobile" : "image/technics/CATSEM655d-cart-mobile.png",
         "link" : "technics.html"
     },
     "t6" : {
@@ -39,6 +44,7 @@
         "description" : "Фронтальные погрузчики",
         "cost" : "65 BYN в час без учета НДС",
         "image" : "image/technics/CATSEM636d-cart.png",
+        "imageMobile" : "image/technics/CATSEM636d-cart-mobile.png",
         "link" : "technics.html"
     },
     "d1" : {
@@ -46,6 +52,7 @@
         "description" : "Детали для экскаваторов-погрузчиков",
         "cost" : "от 90 BYN в час без учета НДС",
         "image" : "image/details/Rockson-rs300-cart.png",
+        "imageMobile" : "image/details/Rockson-rs300-cart-mobile.png",
         "link" : "details.html"
     },
     "d2" : {
@@ -53,6 +60,7 @@
         "description" : "Детали для экскаваторов-погрузчиков",
         "cost" : "97 BYN в час без учета НДС",
         "image" : "image/details/Rockson-rs300-cart.png",
+        "imageMobile" : "image/details/Rockson-rs300-cart-mobile.png",
         "link" : "details.html"
     },
     "d3" : {
@@ -60,6 +68,7 @@
         "description" : "Детали для экскаваторов-погрузчиков",
         "cost" : "",
         "image" : "image/details/pitchfork-cart.png",
+        "imageMobile" : "image/details/pitchfork-cart-mobile.png",
         "link" : "details.html"
     },
     "d4" : {
@@ -67,13 +76,15 @@
         "description" : "Детали для экскаваторов-погрузчиков",
         "cost" : "",
         "image" : "image/details/Rockson-BR1850-cart.png",
+        "imageMobile" : "image/details/Rockson-BR1850-cart-mobile.png",
         "link" : "details.html"
     },
     "d5" : {
-        "name" : "ковш",
+        "name" : "ПЛАНИРОВОЧНЫЙ КОВШ IMPULSE",
         "description" : "Детали для экскаваторов-погрузчиков",
         "cost" : "",
         "image" : "image/details/impulse-cart.png",
+        "imageMobile" : "image/details/impulse-cart-mobile.png",
         "link" : "details.html"
     },
     "d6" : {
@@ -81,6 +92,7 @@
         "description" : "Детали для экскаваторов-погрузчиков",
         "cost" : "от 90 BYN в час без учета НДС",
         "image" : "image/details/Rockson-VP10-cart.png",
+        "imageMobile" : "image/details/Rockson-VP10-cart-mobile.png",
         "link" : "details.html"
     },
     "d7" : {
@@ -88,6 +100,7 @@
         "description" : "Детали для экскаваторов-погрузчиков",
         "cost" : "97 BYN в час без учета НДС",
         "image" : "image/details/Rockson-VP10-cart.png",
+        "imageMobile" : "image/details/Rockson-VP10-cart-mobile.png",
         "link" : "details.html"
     },
     "d8" : {
@@ -95,6 +108,7 @@
         "description" : "Детали для фронтальных погрузчиков",
         "cost" : "",
         "image" : "image/details/crane-boom-pallet-forks-cart.png",
+        "imageMobile" : "image/details/crane-boom-pallet-forks-cart-mobile.png",
         "link" : "details.html"
     },
     "d9" : {
@@ -102,6 +116,7 @@
         "description" : "Детали для фронтальных погрузчиков",
         "cost" : "",
         "image" : "image/details/pallet-forks-cart.png",
+        "imageMobile" : "image/details/pallet-forks-cart-mobile.png",
         "link" : "details.html"
     },
     "s1" : {

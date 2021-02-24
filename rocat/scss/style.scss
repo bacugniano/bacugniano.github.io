@@ -33,10 +33,10 @@ body {
     font-size: 18px;
     color: $main;
     background-color: #121212;
-    // background-image: url('../image/background_2.jpg');
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-attachment: fixed;
+    background-image: url('../image/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .container {
@@ -228,14 +228,15 @@ body {
   body {
 
     background-color: #060606;
+    background-image: none;
 
   }
 
-  // .body--active {
+  .body--active {
 
-  //   overflow: hidden;
+    overflow: hidden;
 
-  // }
+  }
 
   .pageup {
 
