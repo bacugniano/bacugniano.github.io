@@ -104,7 +104,7 @@
             
             
 
-            <form class="form form-cart" action="https://echo.htmlacademy.ru" method="POST">
+            <form class="form form-cart"  method="POST">
 
             <h1 class="visually-hidden">Корзина покупок</h1>
             <p class="cart__goods-title">Вы заказали <span class="cart__goods-value"></span> <span class="goods-value">товар</span></p>
@@ -424,7 +424,7 @@
                     </div>
                 </fieldset>
                 <div class="form-cart__input-container">
-                    <input class="form__input form-cart__input" type="text" name="name" id="" required>
+                    <input class="form__input form-cart__input form__input-name" type="text" name="name" id="" required>
                     <label class="form__label form__label--name">Имя*</label>
                 </div>
                 <div class="form-cart__input-container">
@@ -436,14 +436,28 @@
                     <label class="form__label form__label--name">Телефон*</label>
                 </div>
                 <div class="form-cart__input-container">
-                    <input class="form__input form-cart__input" type="text" name="email" id="" required>
+                    <input class="form__input form-cart__input form-cart__input-mail" type="text" name="email" id="" required>
                     <label class="form__label form__label--name">E-mail*</label>
                 </div>
                 <textarea class="form__textarea form-cart__textarea" name="comment" id="" placeholder="Комментарии"></textarea>
                 <button class="form__button form-cart__button" type="submit">ОФОРМИТЬ</button>
 
             </form>
-    
+
+            <div class="cart__done">
+                <div class="cart__done-text">
+                    <p class="cart__done-paragraph">
+                        Благодарим!<br> 
+                        Ваш заказ успешно оформлен и направлен на обработку.
+                    </p>
+                    <p class="cart__done-paragraph">
+                        С вами свяжется наш оператор.
+                    </p>
+                    <a class="cart__link cart__done-link" href="index.html">На главную</a>
+                </div>
+                <img class="cart__done-img" src="image/done.jpg" alt="">
+            </div>
+
         </main>
 
     </div>
@@ -508,6 +522,7 @@
     <script src="js/jquery.validate.min.js"></script>
     <!-- <script src="js/main.js"></script> -->
     <script src="js/cart.js"></script>
+    <!-- <script src="js/form.js"></script> -->
 
 </body>
 </html>

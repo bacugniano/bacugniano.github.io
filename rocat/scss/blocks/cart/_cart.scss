@@ -288,6 +288,48 @@
 
     }
 
+    &__done {
+
+        width: 1080px;
+        height: 418px;
+        margin: 0 auto;
+        padding-left: 64px;
+        display: none;
+        justify-content: space-between;
+        background-color: $hover-bg;
+
+        &-text {
+
+            width: 378px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 88px 0;    
+
+        }
+
+        &-paragraph {
+
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: 0.2px;
+
+        }
+
+        &-link {
+
+            font-size: 18px;
+
+        }
+
+        &--active {
+
+            display: flex;
+
+        }
+
+    }
+
 }
 
 .slick-prev,
@@ -486,6 +528,44 @@
 
         }
 
+        &__done {
+
+            padding: 20px;
+            width: 100%;
+            height: auto;
+    
+            &-text {
+    
+                margin: 0;
+                width: 100%;
+    
+            }
+    
+            &-img {
+    
+                display: none;
+    
+            }
+
+            &-paragraph {
+
+                font-size: 14px;
+                line-height: 20px;
+
+            }
+
+            &-link {
+
+                position: static;
+                display: block;
+                font-size: 14px;
+
+            }
+    
+        }
+
     }
+
+    
 
 }
