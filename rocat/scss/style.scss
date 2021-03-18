@@ -212,6 +212,7 @@ body {
 @import 'blocks/details/details';
 @import 'blocks/cart/cart';
 @import 'blocks/cart/form-cart';
+@import 'blocks/common/error';
 
 @media (max-width: 1200px) {
 
@@ -221,6 +222,16 @@ body {
         padding: 0 16px;
 
     }
+
+    // .container-header {
+
+    //   &--active {
+
+    //     background-color: #060606;  
+
+    //   }
+
+    // }
 
 } 
 

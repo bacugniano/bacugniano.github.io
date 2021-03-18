@@ -124,27 +124,36 @@ $(".button--add").click(function () {
   $(this).text('');
 });
 
-window.addEventListener('DOMContentLoaded', () => {
-  const menu = document.querySelector('.navigation'),
-  menuItem = document.querySelectorAll('.navigation__item'),
-  hamburger = document.querySelector('.header__hamburger');
-  header = document.querySelector('.container-header');
-  body = document.querySelector('body');
+// window.addEventListener('DOMContentLoaded', () => {
+//   const menu = document.querySelector('.navigation'),
+//   menuItem = document.querySelectorAll('.navigation__item'),
+//   hamburger = document.querySelector('.header__hamburger');
+//   header = document.querySelector('.container-header');
+//   // body = document.querySelector('body');
 
-  hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('is-active');
-      menu.classList.toggle('navigation--active');
-      header.classList.toggle('container-header--active');
-      body.classList.toggle('body--active');
+//   hamburger.addEventListener('click', () => {
+//       hamburger.classList.toggle('is-active');
+//       menu.classList.toggle('navigation--active');
+//       header.classList.toggle('container-header--active');
+//       // body.classList.toggle('body--active');
+//   });
+
+//   menuItem.forEach(item => {
+//       item.addEventListener('click', () => {
+//           hamburger.classList.toggle('is-active');
+//           menu.classList.toggle('navigation--active');
+//           header.classList.toggle('container-header--active');
+//           // body.classList.toggle('body--active');
+//       })
+//   })
+// })
+
+$(document).ready(function() {
+  $(".header__hamburger").click(function() {
+    $(this).toggleClass("is-active");
+    $('.navigation').toggleClass('navigation--active');
+    $('.body').toggleClass('body--active');
+    $('.container-header').toggleClass('container-header--active');
   });
-
-  menuItem.forEach(item => {
-      item.addEventListener('click', () => {
-          hamburger.classList.toggle('is-active');
-          menu.classList.toggle('navigation--active');
-          header.classList.toggle('container-header--active');
-          body.classList.toggle('body--active');
-      })
-  })
-})
+});
 

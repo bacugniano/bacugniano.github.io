@@ -12,7 +12,7 @@
 
 }
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
 
     .main-details {
 
@@ -21,6 +21,7 @@
         &__tab-navigation {
 
             margin-right: 0;
+            width: 100%;
     
         } 
 
