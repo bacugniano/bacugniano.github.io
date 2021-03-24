@@ -1,0 +1,53 @@
+.video-presentation {
+
+    margin-top: 312px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__text {
+
+        width: 795px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        text-align: center;
+        font-size: 45px;
+        line-height: 58.5px;
+        font-weight: 800;
+
+    }
+
+    &__video {
+
+        display: inline-block;
+        width: 1000px;
+        margin: 0 auto;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .video-presentation {
+
+        margin-top: 87px;
+
+        &__text {
+
+            width: 318px;
+            font-size: 20px;
+            line-height: 26px;
+            margin-bottom: 40px;
+
+        }
+
+        &__video {
+
+            width: 300px;
+
+        }
+
+    }
+
+}

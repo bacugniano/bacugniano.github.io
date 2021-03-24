@@ -1,0 +1,303 @@
+.main-information {
+
+    width: 100%;
+    height: 485px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__text-wrap {
+
+        height: 344px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__header {
+
+        font-size: 100px;
+        line-height: 120px;
+        font-weight: 700;
+        margin-bottom: 40px;
+
+    }
+
+    &__text {
+
+        width: 650px;
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 39px;
+
+    }
+
+    &__link-wrap {
+
+        margin-top: auto;
+        width: 317px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &__order-link {
+
+        width: 142px;
+        height: 45px;
+        border-radius: 90px;
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 700;
+        @include button;
+        @include transition;
+
+        &:hover {
+
+            @include button_hover;
+
+        }
+
+        &:active {
+
+            @include button_active;
+
+        }
+
+    }
+
+    &__video-link {
+
+        display: flex;
+        align-items: center;
+        color: $third;
+        font-size: 15px;
+        font-weight: 700;
+        text-decoration: none;
+        @include transition;
+
+        &:hover {
+
+            color: $second;
+
+        }
+
+        &:hover .main-information__circle {
+
+            border: 2px solid $second;   
+
+        }
+
+        &:hover svg path {
+
+            fill: $second;
+
+        }
+
+        svg path {
+
+            @include transition;
+
+        }
+
+    }
+
+    &__circle {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 17px;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        border: 2px solid $third;
+        @include transition;
+
+    }
+
+}
+
+@media (max-width: 1250px) {
+
+    .main-information {
+
+        &__header {
+
+            font-size: 80px;
+            margin-bottom: 0;
+
+        }
+
+        &__text {
+
+            font-size: 20px;
+            width: 400px;
+
+        }
+
+        &__banner {
+
+            width: 350px;
+
+        }
+
+    }
+
+}
+
+@media (max-width: 920px) {
+
+    .main-information {
+
+        &__text-wrap {
+
+            height: 200px;
+
+        }
+
+        &__header {
+
+            font-size: 48px;
+            line-height: 64px;
+
+        }
+
+        &__text {
+
+            font-size: 18px;
+            line-height: 24px;
+            width: 350px;
+
+        }
+
+        &__banner {
+
+            width: 250px;
+
+        }
+
+        &__order-link {
+
+            height: 35px;
+
+        }
+
+    }
+
+}
+
+@media (max-width: 685px) {
+
+    .main-information {
+
+        &__text-wrap {
+
+            height: 160px;
+
+        }
+
+        &__header {
+
+            font-size: 36px;
+            line-height: 48px;
+
+        }
+
+        &__text {
+
+            font-size: 14px;
+            line-height: 20px;
+            width: 300px;
+
+        }
+
+        &__banner {
+
+            width: 210px;
+
+        }
+
+        &__order-link {
+
+            height: 35px;
+
+        }
+
+        &__link-wrap {
+
+            width: 280px;
+
+        }
+
+        &__circle {
+
+            margin-left: 5px;
+
+        }
+
+    }
+
+}
+
+@media (max-width: 560px) {
+
+    .main-information {
+
+        &__text-wrap {
+
+            height: auto;
+
+        }
+
+        &__banner {
+
+            display: none;
+
+        }
+
+        &__header {
+
+            font-size: 50px;
+            line-height: 50px;
+            margin-bottom: 40px;
+
+        }
+
+        &__text {
+
+            font-size: 15px;
+            line-height: 22.5px;
+            width: 260px;
+            margin-bottom: 46px;
+
+        }
+
+        &__link-wrap {
+
+            width: 121px;
+            flex-direction: column;
+
+        }
+
+        &__order-link {
+
+            width: 121px;
+            height: 45px;
+            font-size: 13px;
+            line-height: 20.8px;
+
+        }
+
+        &__video-link {
+
+            font-size: 13px;
+            line-height: 20.8px;
+            margin-top: 32px;
+
+        }
+
+    }
+
+}
