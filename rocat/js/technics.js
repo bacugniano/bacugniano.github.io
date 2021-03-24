@@ -8,7 +8,7 @@ $(document).ready(function(){
           .closest('section.additional').find('ul.additional__list').removeClass('additional__list--active').eq($(this).index()).addClass('additional__list--active');
       });
 
-    if ($(window).width() < 361) {
+    if ($(window).width() < 481) {
         $('.technics').removeClass('technics--active');
         $('.additional__details-item--invisible').remove();
     }
@@ -153,5 +153,5 @@ let tab2 = function () {
 
 };
 
-if ($(window).width() < 361) tab2();
+if ($(window).width() < 481) tab2();
 else tab();

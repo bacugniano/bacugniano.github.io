@@ -3,6 +3,12 @@
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
+$dataBegin = $_POST['dataBegin'];
+$dataEnd = $_POST['dataEnd'];
+$hours = $_POST['hours'];
+$nameCompany = $_POST['nameCompany'];
+$comment = $_POST['comment'];
+$bascet = $_POST['bascet'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -10,16 +16,16 @@ $mail->CharSet = 'utf-8';
 
 // $mail->SMTPDebug = 3;                              	// Enable verbose debug output
 
-$mail->isSMTP();                                      	// Set mailer to use SMTP
+/* $mail->isSMTP();                                      	// Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';                      	// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               	// Enable SMTP authentication
 $mail->Username = '';                 				 	// Наш логин
 $mail->Password = '';                                 	// Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                           	// Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465;                                    	// TCP port to connect to
+$mail->Port = 465;        */                             	// TCP port to connect to
  
-$mail->setFrom('', 'Pulse');                          	// От кого письмо 
-$mail->addAddress('');                                	// Add a recipient
+$mail->setFrom('фывфыв', 'Pulse');                          	// От кого письмо 
+$mail->addAddress('bakunzevs@mail.ru');                                	// Add a recipient
 //$mail->addAddress('ellen@example.com');             	// Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -30,10 +36,10 @@ $mail->isHTML(true);                                  	// Set email format to HT
 
 $mail->Subject = 'Данные';
 $mail->Body    = '
-		Пользователь оставил данные <br> 
+	Пользователь оставил данные <br> 
 	Имя: ' . $name . ' <br>
 	Номер телефона: ' . $phone . '<br>
-	E-mail: ' . $email . '';
+	E-mail: ' . $email . '<br> Название компании: ';
 
 if(!$mail->send()) {
     return false;

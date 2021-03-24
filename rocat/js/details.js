@@ -53,7 +53,7 @@ let tab2 = function () {
 
 $('document').ready(function(){
 
-    if ($(window).width() < 361) {
+    if ($(window).width() < 481) {
         $('.details').removeClass('details--active');
         $('.additional__details-item--invisible').remove();
     }
@@ -71,5 +71,5 @@ $('document').ready(function(){
 
 
 
-if ($(window).width() < 361) tab2();
+if ($(window).width() < 481) tab2();
 else tab();

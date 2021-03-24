@@ -5,13 +5,13 @@
     top: 100%;
     right: 0;
     width: 606px;
-    height: 324px;
+    height: 378px;
     background-color: $hover-bg;
     padding: 84px;
 
     &__wrap {
 
-        height: 148px;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -28,13 +28,30 @@
 
     &__link {
 
+        height: 68px;
         font-weight: 700;
         line-height: 23.4px;
         color: $main;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
 
         &:hover {
 
             color: $active;
+
+        }
+
+        &:hover .modal__icon--active {
+
+            stroke: $active;
+
+        }
+
+        &:hover .modal__icon--active2 {
+
+            fill: $active;
 
         }
 
@@ -44,10 +61,22 @@
 
         }
 
+        &--technics {
+
+            svg {
+
+                width: 39px;
+                height: 37px;
+
+            }
+
+        }
+
     }
 
     &__link-list {
 
+        // margin-top: 40px;
         width: 388px;
         display: flex;
         justify-content: space-between;
@@ -172,9 +201,9 @@
 
     .modal {
 
-        width: 80%;
+        width: 60%;
         padding: 15px;
-        height: 120px;
+        height: 150px;
 
         &__text {
 
@@ -193,14 +222,33 @@
 
             font-size: 12px;
             line-height: 20px;
+            height: 40px;
+
+            svg {
+
+                width: 30px;
+
+            }
 
         }
 
         &__close {
 
-            top: 5px;
+            width: 10px;
+            height: 10px;
+            top: 2px;
             right: 5px;
-
+                
+            &::before,
+            &::after {
+    
+                
+                width: 10px;
+                height: 1px;
+                
+    
+            }
+        
         }
 
         &--footer {
