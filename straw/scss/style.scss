@@ -45,12 +45,17 @@ body {
 .wrapper {
 
     max-width: 1920px;
+    padding-bottom: 175px;
     background-image: url('../img/svg/bg-cloud-1.svg'), 
                       url('../img/svg/bg-yellow.svg'),
-                      url('../img/svg/bg-cloud-2.svg');
+                      url('../img/svg/bg-cloud-2.svg'),
+                      url('../img/svg/bg-blue.svg'),
+                      url('../img/svg/bg-cloud-3.svg');
     background-position: right top,
                          left 1250px,
-                         left 1705px;
+                         left 1705px,
+                         right 3090px,
+                         right 100%;
     background-repeat: no-repeat;
 
 }
@@ -84,8 +89,11 @@ body {
 @import 'blocks/navigation';
 @import 'blocks/main-information';
 @import 'blocks/video-presentation';
-@import 'blocks/problem';
-@import 'blocks/solution';
+@import 'blocks/section';
+@import 'blocks/_about-us';
+@import 'blocks/order';
+@import 'blocks/footer';
+@import 'blocks/how-work';
 
 
 @media (max-width: 1400px) {
@@ -103,12 +111,17 @@ body {
 
   .wrapper {
 
+    padding-bottom: 90px;
     background-size: 150%,
                      0,
-                     150%;
-    background-position: -90px 100px,
+                     150%,
+                     0,
+                     120%;
+    background-position: -90px 90px,
                          0 0,
-                         -70px 1020px;
+                         -70px 1010px,
+                         0 0,
+                         -70px 99.5%;
 
 
   }

@@ -1,0 +1,59 @@
+.how-work {
+
+    margin-top: 230px;
+
+    &__header {
+
+        width: 710px;
+        text-align: center;
+        font-size: 66px;
+        line-height: 110%;
+        font-weight: 700;
+        margin: 0 auto;
+        margin-bottom: 80px;
+
+    }    
+
+    &__container {
+
+        margin: 0 auto;
+        width: 774px;
+        height: 774px;
+        background-image: url('../icon/circles.svg');
+
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .how-work {
+
+        &__header {
+
+            font-size: 30px;
+            line-height: 30px;
+            width: 100%;
+
+        }
+
+        &__container {
+
+            width: 280px;
+            height: 280px;
+            background-position: center;
+            background-size: contain;
+
+        }
+
+        &__img {
+
+            width: 246px;
+            height: 246px;
+
+        }
+
+    }
+
+}

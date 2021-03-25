@@ -6,6 +6,7 @@
     color: #ffffff;
     text-decoration: none;
     background-color: $third;
+    @include transition;
 
 }
 
