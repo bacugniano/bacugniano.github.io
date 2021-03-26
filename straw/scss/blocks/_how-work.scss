@@ -26,15 +26,48 @@
 
 }
 
+@media (max-width: 775px) {
+
+    .how-work {
+
+        &__container {
+
+            width: 100%;
+            height: auto;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+        }
+
+        &__header {
+
+            width: 100%;
+
+        }
+
+        &__img {
+
+            width: 90%;
+            height: auto;
+
+        }
+
+    }
+
+}
+
 @media (max-width: 480px) {
 
     .how-work {
+
+        margin-top: 56px;
 
         &__header {
 
             font-size: 30px;
             line-height: 30px;
-            width: 100%;
+            margin-bottom: 59px;
 
         }
 
