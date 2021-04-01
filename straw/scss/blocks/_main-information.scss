@@ -117,6 +117,13 @@
 
     }
 
+    &__gif {
+
+        width: 485px; 
+        border-radius: 30px; 
+
+    }
+
 }
 
 @media (max-width: 1400px) {
@@ -168,7 +175,7 @@
 
         }
 
-        &__banner {
+        &__gif {
 
             width: 450px;
 
@@ -188,7 +195,7 @@
 
     .main-information {
 
-        &__banner {
+        &__gif {
 
             width: 400px;
 
@@ -229,7 +236,7 @@
 
         }
 
-        &__banner {
+        &__gif {
 
             width: 350px;
 
@@ -257,7 +264,7 @@
 
         }
 
-        &__banner {
+        &__gif {
 
             width: 300px;
 
@@ -292,7 +299,7 @@
 
         }
 
-        &__banner {
+        &__gif {
 
             width: 260px;
 
@@ -324,7 +331,7 @@
 
     .main-information {
 
-        &__banner {
+        &__gif {
 
             width: 230px;
 
@@ -344,7 +351,7 @@
 
         }
 
-        &__banner {
+        &__gif {
 
             display: none;
 
