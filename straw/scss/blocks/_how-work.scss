@@ -1,18 +1,52 @@
 .how-work {
 
     margin-top: 230px;
+    width: 100%;
+
+    &__wrapper {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
 
     &__header {
 
+        padding-top: 100px;
         width: 710px;
         text-align: center;
         font-size: 66px;
         line-height: 110%;
         font-weight: 700;
         margin: 0 auto;
-        margin-bottom: 80px;
+        margin-bottom: 40px;
 
-    }    
+    }   
+    
+    &__canvas-wrap {
+
+        width: 900px;
+        height: 900px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../icon/circles.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    &__canvas {
+
+        width: 868px;
+        height: 434px;
+        margin: 0 auto;
+
+    }
+
 
     &__container {
 
@@ -101,6 +135,8 @@
 
 
 }
+
+
 
 @media (max-width:1470px) {
 
@@ -193,6 +229,21 @@
                 left: 480px
 
             }
+
+        }
+
+    }
+
+}
+
+@media (max-width: 868px) {
+
+    .how-work {
+
+        &__canvas {
+
+            width: 100%;
+            height: auto;
 
         }
 
