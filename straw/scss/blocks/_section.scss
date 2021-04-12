@@ -59,6 +59,34 @@
 }
 
 
+@media (max-width: 1400px) {
+
+    .section {
+
+        &__picture {
+
+            width: 500px;
+            height: auto;
+
+        }
+
+        &__text-wrap {
+
+            width: 500px;
+
+        }
+
+        &__text {
+
+            width: 100%;
+            font-size: 18px;
+
+        }
+
+    }
+
+}
+
 @media (max-width: 1270px) {
 
     .section {

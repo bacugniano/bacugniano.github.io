@@ -52,7 +52,8 @@ body {
     position: relative;
     max-width: 1920px;
     margin: 0 auto;
-    padding-bottom: 175px;
+    padding-bottom: 80px;
+    background-image: url('../5-layers_1.jpg');
     background-image: url('../img/svg/bg-cloud-1.svg'), 
                       url('../img/svg/bg-yellow.svg'),
                       url('../img/svg/bg-cloud-2.svg'),
@@ -66,7 +67,6 @@ body {
                          right 100%,
                          right 1230px;
     background-repeat: no-repeat;
-
 }
 
 .parallax-img {
@@ -287,7 +287,50 @@ body {
 
   .container {
 
+    width: 1200px;
     padding: 0 40px;
+
+  }
+
+  .wrapper {
+
+    background-position: right top,
+                         left 1250px,
+                         left 1705px,
+                         right 3090px,
+                         right 110%,
+                         right 1230px;    
+
+  }
+
+}
+
+@media (max-width: 1200px) {
+
+  .container {
+
+    width: 100%;
+    padding: 0 60px;
+
+  }
+
+}
+
+@media (max-width: 990px) {
+
+  .container {
+
+    padding: 0 40px;
+
+  }
+
+}
+
+@media (max-width: 680px) {
+
+  .wrapper {
+
+      padding-bottom: 50px;
 
   }
 
@@ -297,7 +340,7 @@ body {
 
   .wrapper {
 
-    padding-bottom: 90px;
+    padding-bottom: 30px;
     background-size: 150%,
                      0,
                      150%,
@@ -318,15 +361,17 @@ body {
 
 @media (max-width: 480px) {
 
+  .container {
+
+    padding: 0 20px;
+
+  }
+
   .parallax-img {
 
-    position: absolute;
-    z-index: -1;
-  
     &--1 {
   
-      top: 181px;
-      right: 54px;
+      display: none;
   
     }
   

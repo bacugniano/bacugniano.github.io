@@ -160,6 +160,23 @@
 
 }
 
+@media (max-width: 1400px) {
+
+    .how-work {
+
+        margin-top: 150px;
+
+        &__header {
+
+            padding-top: 70px;
+            margin-bottom: 0;
+
+        }
+
+    }
+
+}
+
 @media (max-width:1300px) {
 
     .how-work {
@@ -185,6 +202,13 @@
 @media (max-width:1110px) {
 
     .how-work {
+
+
+        &__header {
+
+            padding-top: 50px;
+
+        }
 
         &__text-wrap {
 
@@ -215,6 +239,12 @@
 @media (max-width:940px) {
 
     .how-work {
+
+        &__header {
+
+            font-size: 48px;
+
+        }
 
         &__text-wrap {
 
@@ -373,6 +403,7 @@
 
         &__header {
 
+            padding-top: 70px;
             font-size: 30px;
             line-height: 30px;
             margin-bottom: 59px;

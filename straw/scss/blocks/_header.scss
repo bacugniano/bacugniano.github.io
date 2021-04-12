@@ -23,6 +23,16 @@
 
 }
 
+@media (max-width: 1400px) {
+
+  .header {
+
+    margin-bottom: 100px;
+
+  }
+
+}
+
 @media (max-width: 920px) {
 
   .header {
@@ -37,6 +47,7 @@
 
 .header {
 
+    margin-bottom: 50px;
     min-height: 83px;
 
     &__name {
