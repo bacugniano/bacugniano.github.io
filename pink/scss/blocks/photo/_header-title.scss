@@ -1,0 +1,19 @@
+.header-title {
+    margin: 0;
+    padding: 75px 0 111px 0;
+    font-size: 50px;
+    font-weight: 300;
+    color: $white;
+    text-align: center;
+}
+
+@media (max-width: 320px) {
+
+    .header-title {
+
+        font-size: 24px;
+        padding: 35px 0 80px 0;
+
+    }
+
+}

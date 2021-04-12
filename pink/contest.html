@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+
+        <nav class="main-nav">
+            <div class="main-nav__wrapper container">
+                <picture >
+                    <source 
+                        class="main-nav__logo"
+                        media="(max-width: 320px)"
+                        srcset="img/logotype-mobile.png">
+                    <source 
+                        class="main-nav__logo"
+                        media="(max-width: 660px)"
+                        srcset="img/logotype-tablet.png">
+                    <img class="main-nav__logo" src="img/logotype-desktop.png" alt="Логотип">
+                </picture>
+                <ul class="main-nav__list">
+                    <li class="main-nav__item"><a href="index.html">Главная</a></li>
+                    <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+                    <li class="main-nav__item main-nav__item--active">Конкурс</li>
+                    <li class="main-nav__item"><a href="https://htmlacademy.ru" target="_blink">HTML Academy</a></li>
+                </ul>
+            </div>
+
+            <button class="main-nav__menu-burger"></button>
+
+        </nav>
+
+        <h1 class="header-title">Конкурс на самое безбашенное<br> путешествие с Пинк</h1>
+
+    </header>
+
+    <main class="contest-main">
+
+        <p class="contest-main__text">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на<br> вашу бонусную карту! Пожалуйста, заполните форму ниже:
+        </p>
+
+        <div class="container">
+            <form class="contest-form" action="https://echo.htmlacademy.ru" method="POST">
+        
+                <fieldset class="contest-form__fieldset fullname-form">
+
+                    <div class="fullname-form__wrap">
+                        <label class="contest-form__label fullname-form__label fullname-form__label--surname" for="surname">Фамилия:</label>
+                        <input class="contest-form__input fullname-form__input fullname-form__input--surname" name="surname" id="surname" type="text" placeholder="Укажите фамилию *">
+                    </div>
+
+                    <div class="fullname-form__wrap">
+                        <label class="contest-form__label fullname-form__label fullname-form__label--name" for="name">Имя:</label>
+                        <input class="contest-form__input fullname-form__input fullname-form__input--name" name="name" id="name" type="text" placeholder="Введите ваше имя *">
+                    </div>
+
+                    <div class="fullname-form__wrap">
+                        <label class="contest-form__label fullname-form__label fullname-form__label--patronymic" for="patronymic">Отчество:</label>
+                        <input class="contest-form__input fullname-form__input fullname-form__input--patronymic" name="patronymic" id="patronymic" type="text" placeholder="Ну и отчество тоже">
+                    </div>     
+
+                </fieldset>
+        
+                <fieldset class="contest-form__fieldset useapp-form">
+
+                    <legend class="contest-form__legend useapp-form__legend">С каким приложением путешествовали?</legend>
+
+                    <label class="useapp-form__label">
+                        <input class="useapp-form__input visually-hidden" type="radio" name="app" value="Pink для iOS">
+                        <span class="useapp-form__indicator"></span>
+                        Pink для iOS
+                    </label>
+
+                    <label class="useapp-form__label">
+                        <input class="useapp-form__input visually-hidden" type="radio" name="app" value="Pink на Android">
+                        <span class="useapp-form__indicator"></span>
+                        Pink на Android
+                    </label>
+
+                    <label class="useapp-form__label">
+                        <input class="useapp-form__input visually-hidden" type="radio" name="app" value="Windows Phone">
+                        <span class="useapp-form__indicator"></span>
+                        Windows Phone
+                    </label>
+
+                </fieldset>
+
+                <fieldset class="contest-form__fieldset contacts-form">
+
+                    <legend class="contest-form__legend contacts-form__legend">Контактная информация</legend>
+
+                    <label class="contest-form__label contacts-form__label">
+                        <input class="contest-form__input contacts-form__input contacts-form__input--phone" name="phone" id="phone" type="text" placeholder="Номер, пожалуйста">
+                        <span class="contacts-form__icon contacts-form__icon--phone"></span>
+                        <span class="contacts-form__label-text">номер телефона</span>
+                    </label>
+
+                    <label class="contest-form__label contacts-form__label">
+                        <input class="contest-form__input contacts-form__input contacts-form__input--email" name="email" id="email" type="email" placeholder="Введите почту *">
+                        <span class="contacts-form__icon contacts-form__icon--email"></span>
+                        <span class="contacts-form__label-text">Адрес почты</span>  
+                    </label>
+
+                </fieldset>
+
+                <fieldset class="contest-form__fieldset achievments-form">
+
+                    <legend class="contest-form__legend achievments-form__legend">Ваши безбашенные достижения в путешествии</legend>    
+
+                    <label class="achievments-form__label">
+                        <input class="achievments-form__input visually-hidden" type="checkbox" name="achievments" value="Сделал селфи с акулой">
+                        <span class="achievments-form__indicator"></span>
+                        Сделал селфи с акулой
+                    </label>
+                    
+                    <label class="achievments-form__label">
+                        <input class="achievments-form__input visually-hidden" type="checkbox" name="achievments" value="Видел Чака Норриса">
+                        <span class="achievments-form__indicator"></span>
+                        Видел Чака Норриса
+                    </label>
+
+                    <label class="achievments-form__label">
+                        <input class="achievments-form__input visually-hidden" type="checkbox" name="achievments" value="Удержал башню">
+                        <span class="achievments-form__indicator"></span>
+                        Удержал башню
+                    </label>
+
+                    <label class="achievments-form__label">
+                        <input class="achievments-form__input visually-hidden" type="checkbox" name="achievments" value="Обгорел на пляже">
+                        <span class="achievments-form__indicator"></span>
+                        Обгорел на пляже
+                    </label>
+
+                    <label class="achievments-form__label">
+                        <input class="achievments-form__input visually-hidden" type="checkbox" name="achievments" value="Накупил сувениров">
+                        <span class="achievments-form__indicator"></span>
+                        Накупил сувениров
+                    </label>
+
+                    <label class="achievments-form__label">
+                        <input class="achievments-form__input visually-hidden" type="checkbox" name="achievments" value="Разгромил отель">
+                        <span class="achievments-form__indicator"></span>
+                        Разгромил отель
+                    </label>
+
+                </fieldset>
+
+                <fieldset class="contest-form__fieldset emotion-form">
+
+                    <legend class="contest-form__legend emotion-form__legend">Опишите свои эмоции</legend>
+
+                    <label class="contest-form__label emotion-form__label visually-hidden" for="emotion-text">Опишите свои эмоции</label>
+                    <textarea class="contest-form__textarea emotion-form__textarea" name="emotion" id="emotion-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>            
+
+                </fieldset>
+
+                <div class="contest-form__button-wrap">
+                    <button class="contest-form__button" type="submit">Отправить форму</button>
+                    <p class="contest-form__form-desc"><span>*</span> — обязательные <span class="form contest-form__form-desc--none">для заполнения</span> поля</p>
+                </div>      
+
+            </form>
+        </div>
+
+    </main>
+    
+    <footer class="footer container">
+
+        <picture class="footer__logo">
+            <source
+                media="(max-width: 660px)"
+                srcset="img/logotype-tablet-footer.png">
+            <img src="img/logotype-desktop-footer.png" alt="Логотип">
+        </picture>
+        <ul class="footer__social-list">
+            <li class="footer__social-item"><a class="footer__social-link" href="#"><img src="img/twitter.png" alt="twitter"><span class="visually-hidden">Твиттер</span></a></li>
+            <li class="footer__social-item"><a class="footer__social-link" href="#"><img src="img/facebook.png" alt="facebook"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li class="footer__social-item"><a class="footer__social-link" href="#"><img src="img/youtube.png" alt="youtube"><span class="visually-hidden">Ютьюб</span></a></li>
+        </ul>
+        <div class="footer__copyright">
+            <p>Разработано</p>
+            <a href="https://htmlacademy.ru" target="_blank"><img src="img/htmlacademy.png" alt=""></a>
+        </div>
+
+    </footer>
+
+</body>
+</html>

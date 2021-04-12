@@ -1,0 +1,245 @@
+.photo {
+
+    &__list {
+
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    &__item {
+
+        position: relative;
+        flex-grow: 1;
+        width: 33.33%;
+
+        &--first {
+
+            width: 100%;
+            margin-bottom: -4px;
+
+        }
+
+    }
+
+    &__img {
+
+        width: 100%;
+
+    }
+
+    &__description {
+
+        width: 100%;
+        min-height: 80px;
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 2;
+
+    }
+
+    &__name {
+
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $white;
+
+    }
+
+    &__author {
+
+        font-size: 14px;
+        line-height: 24px;
+        color: $black-light;
+        color: $white;
+
+    }
+
+    &__like {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 63px;
+        height: 21px;
+
+        &-amount {
+
+            padding-top: 3px;
+            height: 21px;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 21px;
+            color: $white;
+
+        }
+
+        &-button {
+
+            padding: 0;
+            width: 23px;
+            height: 21px;
+            background: none;
+            background-image: url('../icon/like-icon.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s all;
+            outline: none;
+
+            &:hover {
+
+                opacity: 0.6;
+
+            }
+
+            &:active {
+
+                opacity: 0.3;
+
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .photo {
+
+        &__list {
+
+            padding: 0 60px;
+
+        }
+
+        &__item {
+
+            width: 50%;
+            flex-grow: 0;
+
+            &--first {
+
+                width: 100%;
+
+            }
+
+        }
+
+        &__description {
+
+            position: static;
+            background-color: $gray-light;
+            margin-top: -3px;
+    
+        }
+    
+        &__name {
+
+            color: $black;
+    
+        }
+    
+        &__author {
+    
+            color: $black-light;
+    
+        }
+    
+        &__like {
+    
+            flex-direction: row-reverse;
+    
+            &-amount {
+
+                color: $black;
+    
+            }
+    
+            &-button {
+    
+                background-image: url('../icon/like-icon-black.png');
+                opacity: 0.3;
+    
+                &:hover {
+    
+                    opacity: 1;
+    
+                }
+    
+                &:active {
+    
+                    opacity: 0.6;
+    
+                }
+    
+            }
+    
+        }
+
+    }
+
+}
+
+@media (max-width: 548px) {
+
+    .photo {
+
+        &__list {
+
+            padding: 0;
+            
+
+        }
+
+        &__item {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding-top: 20px;
+            border-top: 1px solid $gray-light;
+            border-bottom: 1px solid $gray-light;
+            margin-bottom: -1px;
+
+            &--first {
+
+                margin: 0;
+
+            }
+
+        }
+
+        &__img {
+
+            width: 280px;
+
+        }
+
+        &__description {
+
+            width: 280px;
+            padding: 20px 0;
+            flex-direction: column;
+            align-items: start;
+            min-height: 112px;
+            background-color: $white;
+
+        }
+
+    }
+
+}

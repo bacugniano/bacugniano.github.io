@@ -1,0 +1,106 @@
+.useapp-form {
+
+    width: 431px;
+    height: 297px;
+    padding: 56px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__label {
+        position: relative;
+        padding-left: 135px;
+        line-height: 36px;
+        vertical-align: center;
+    }
+
+    &__input + &__indicator {
+        position: absolute;
+        margin-left: 76px;
+        top: 0;
+        left: 0;
+        width: 36px;
+        height: 36px;
+        border: 2px solid $form-border;
+        background-color: $white;
+        border-radius: 50%;
+    }
+    
+    &__input:checked + &__indicator {
+        background-image: url('../img/shape_7.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        
+    }
+    
+    &__input:hover + &__indicator {
+        border: 2px solid $color-text;
+        transition: none;
+        
+    }
+    
+    &__input:focus + &__indicator {
+        border: 2px solid $red;
+        
+    }
+
+}
+
+@media (max-width: 660px) {
+
+    .useapp-form {
+
+        width: 100%;
+
+        &__label {
+
+            padding-left: 120px;
+
+        }
+
+        &__input + &__indicator {
+
+            margin-left: 60px;
+
+        }
+
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .useapp-form {
+
+        padding: 40px 20px;
+        padding-top: 110px;
+        position: relative;
+        order: 3;
+        background-color: $gray;
+
+        &__legend {
+
+            position: absolute;
+            width: 180px;
+            padding: 0;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+
+        &__label {
+
+            padding-left: 70px;
+
+        }
+
+        &__input + &__indicator {
+
+            margin-left: 0;
+
+        }
+
+    }
+
+}
