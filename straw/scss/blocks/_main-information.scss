@@ -8,7 +8,7 @@
 
     &__text-wrap {
 
-        height: inherit;
+        height: 363.75px;
         display: flex;
         flex-direction: column;
 
@@ -34,7 +34,7 @@
 
     &__link-wrap {
 
-        margin-top: 40px;
+        margin-top: auto;
         width: 317px;
         display: flex;
         justify-content: space-between;
@@ -50,6 +50,7 @@
         font-size: 15px;
         line-height: 24px;
         font-weight: 700;
+        padding-top: 5px;
         @include button;
         @include transition;
 
@@ -74,6 +75,7 @@
         color: $third;
         font-size: 15px;
         font-weight: 700;
+        padding-top: 5px;
         text-decoration: none;
         @include transition;
 

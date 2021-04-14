@@ -93,9 +93,6 @@
 
         &__picture {
 
-            width: 500px;
-            height: auto;
-
             &--problem {
 
                 margin-left: 20px;
@@ -107,12 +104,6 @@
                 margin-right: 20px;
 
             }
-
-        }
-
-        &__text-wrap {
-
-            width: 560px;
 
         }
 
@@ -147,7 +138,7 @@
 
         &__text-wrap {
 
-            width: auto;
+            width: 460px;
 
         }
 

@@ -8,9 +8,11 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/7.4.1/smooth-scrollbar.css">
     <link rel="stylesheet" href="css/style.min.css">
+
 </head>
-<body class="body">
+<body  class="body">
 
     <!-- <div class="wrapper" id="wrapper">
         <div class="canvass" id="canvas">
@@ -20,7 +22,7 @@
 
     <div class="wrapper">
 
-        <div class="container">
+        <div class="container" id="my-scrollbar" data-scrollbar>
 
             <header class="header" id="up">
 
@@ -116,15 +118,15 @@
                         
                             <canvas class="how-work__canvas" id="hero-section" ></canvas>
                         
-                        <!-- <div class="how-work__text-wrap">
+                        <div class="how-work__text-wrap how-work__text-wrap--first" id="steel">
                             <h3 class="how-work__text-header">Stainless steel</h3>
                             <p class="how-work__text">Stainless steel is the most basic durable material that resists oxidation and corrosion. Made of food grade material, a 304 stainless steel straw is a safe and affordable option to drink out of.</p>
                         </div>
 
-                        <div class="how-work__text-wrap how-work__text-wrap--second">
+                        <div class="how-work__text-wrap how-work__text-wrap--second" id="filter">
                             <h3 class="how-work__text-header">The filter</h3>
                             <p class="how-work__text"> The filter keeps out the smallest plastic particles. It is a very small mesh made of innovative metal. It is so small that a human hair cannot fit through it. </p>
-                        </div> -->
+                        </div>
 
                         <!-- <div class="how-work__container">
                             <img class="how-work__img" src="img/stick.png" alt="stick">
@@ -214,7 +216,7 @@
         </div>
 
 
-        <img  class="rellax parallax-img parallax-img--1" data-rellax-speed="-3" src="img/svg/parallax/1.svg" alt="">
+        <!-- <img  class="rellax parallax-img parallax-img--1" data-rellax-speed="-3" src="img/svg/parallax/1.svg" alt="">
         
         <img class="rellax parallax-img parallax-img--2" data-rellax-speed="-1" src="img/svg/parallax/2.svg" alt="">
         <img class="rellax parallax-img parallax-img--3" data-rellax-speed="-2" src="img/svg/parallax/3.svg" alt="">
@@ -235,7 +237,7 @@
         <img class="rellax parallax-img parallax-img--18" data-rellax-speed="2" src="img/svg/parallax/18.svg" alt="">
         <img class="rellax parallax-img parallax-img--19" data-rellax-speed="3" src="img/svg/parallax/19.svg" alt="">
         <img class="rellax parallax-img parallax-img--20" data-rellax-speed="3" src="img/svg/parallax/20.svg" alt="">
-        <img class="rellax parallax-img parallax-img--21" data-rellax-speed="2" src="img/svg/parallax/21.svg" alt="">
+        <img class="rellax parallax-img parallax-img--21" data-rellax-speed="2" src="img/svg/parallax/21.svg" alt=""> -->
 
         <a href="#up" class="pageup"></a>
 
@@ -243,14 +245,20 @@
 
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/rellax.min.js"></script>
+    <!-- <script src="js/tweenmax.min.js"></script>
+    <script src="js/animation.gsap.min.js"></script> -->
     <script src="js/scrollmagic.min.js"></script>
-    <script src="js/debug.addIndicators.min.js"></script>    
+    <!-- <script src="js/debug.addIndicators.min.js"></script> -->
+    <!-- <script src="js/velocity.min.js"></script> -->
+    <script src="js/smooth-scrollbar.js"></script>
     <script src="js/app.js"></script>
     <script>
 
         var rellax = new Rellax('.rellax');
 
         $(document).ready(function() {
+
+            $('.how-work__text-wrap--second').addClass('how-work__text-wrap--second--active');
 
             $(window).scroll(function() {
                 if ($(this).scrollTop() > 1600) {
@@ -260,10 +268,18 @@
                 }
             });
 
-            $("a[href^='#']").click(function(){
-                var _href = $(this).attr("href");
-                $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
-                return false;
+            // $("a[href^='#']").click(function(){
+            //     var _href = $(this).attr("href");
+            //     $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+            //     return false;
+            // });
+
+            $("a[href^='#']").on("click", function(e){
+                e.preventDefault();
+                var anchor = $(this).attr('href');
+                $('html, body').stop().animate({
+                    scrollTop: $(anchor).offset().top - 60
+                }, 1200);
             });
             
             $(".header__hamburger").click(function() {
@@ -282,6 +298,19 @@
         });
 
     </script>
+    <!-- <script>
+        var Scrollbar = window.Scrollbar;
+      
+        var options = {
+
+            'damping': 0.01
+
+        }
+
+        Scrollbar.init(document.querySelector('#my-scrollbar'));
+      </script> -->
+
+      
 
 </body>
 </html>

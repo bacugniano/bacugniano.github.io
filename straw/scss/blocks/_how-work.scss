@@ -14,14 +14,14 @@
 
     &__header {
 
-        padding-top: 100px;
+        padding-top: 80px;
         width: 710px;
         text-align: center;
         font-size: 66px;
         line-height: 110%;
         font-weight: 700;
         margin: 0 auto;
-        margin-bottom: 40px;
+        // margin-bottom: 40px;
 
     }   
     
@@ -97,8 +97,6 @@
     &__text-wrap {
 
         position: absolute;
-        top: 207px;
-        right: 676px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -108,9 +106,45 @@
         border-radius: 42px;
         padding: 0 45px;
 
+        &--first {
+
+            top: 30%;
+            left: 0;
+            transition: .8s all;
+            // transform: translateX(-1000%);
+            opacity: 0;
+            visibility: hidden;
+            transition: visibility 0s linear .4s, opacity .4s ease-in;
+
+            &-active {
+
+                // transform: translateX(0);
+                opacity: 1;
+                visibility: visible;
+                transition-delay: 0s;
+
+            }
+
+        }
+
         &--second {
 
-            left: 705px;
+            top: 70%;
+            right: 0;
+            // transform: translateX(0);
+            // transition: .8s all;
+            opacity: 1;
+            visibility: visible;
+            transition-delay: 0s;
+            
+
+            &-active {
+                // transform: translateX(+1000%);
+                opacity: 0;
+                visibility: hidden;
+                transition: visibility 0s linear .4s, opacity .4s ease-in;
+
+            }
 
         }
 
@@ -138,27 +172,27 @@
 
 
 
-@media (max-width:1470px) {
+// @media (max-width:1470px) {
 
-    .how-work {
+//     .how-work {
 
-        &__text-wrap {
+//         &__text-wrap {
 
-            top: 70px;
-            right: 622px;
+//             top: 70px;
+//             right: 622px;
 
-            &--second {
+//             &--second {
 
-                top: 340px;
-                left: 600px;
+//                 top: 340px;
+//                 left: 600px;
 
-            }
+//             }
 
-        }
+//         }
 
-    }
+//     }
 
-}
+// }
 
 @media (max-width: 1400px) {
 
@@ -168,8 +202,25 @@
 
         &__header {
 
-            padding-top: 70px;
+            padding-top: 40px;
             margin-bottom: 0;
+
+        }
+
+        &__text-wrap {
+
+            &--first {
+
+                top: 20%;
+                left: -5%;
+
+            }
+
+            &--second {
+
+                top: 65%;
+
+            }
 
         }
 
@@ -179,23 +230,23 @@
 
 @media (max-width:1300px) {
 
-    .how-work {
+    // .how-work {
 
-        &__text-wrap {
+    //     &__text-wrap {
 
-            top: 60px;
-            right: 520px;
+    //         top: 60px;
+    //         right: 520px;
 
-            &--second {
+    //         &--second {
 
-                top: 340px;
-                left: 520px
+    //             top: 340px;
+    //             left: 520px
 
-            }
+    //         }
 
-        }
+    //     }
 
-    }
+    // }
 
 }
 
@@ -212,17 +263,16 @@
 
         &__text-wrap {
 
-            right: 480px;
             padding: 0 25px;
             width: 373px;
             height: 190px;
 
-            &--second {
+            // &--second {
 
-                top: 340px;
-                left: 480px
+            //     top: 340px;
+            //     left: 480px
 
-            }
+            // }
 
         }
 
@@ -248,17 +298,16 @@
 
         &__text-wrap {
 
-            right: 480px;
             padding: 25px;
             width: 250px;
             height: auto;
 
-            &--second {
+            // &--second {
 
-                top: 340px;
-                left: 480px
+            //     top: 340px;
+            //     left: 480px
 
-            }
+            // }
 
         }
 
@@ -318,18 +367,7 @@
 
         }
 
-        &__text-wrap {
-
-            left: 2%;
-
-            &--second {
-
-                top: 300px;
-                left: 63%;
-
-            }
-
-        }
+        
 
     }
 
@@ -340,8 +378,11 @@
 
     .how-work {
 
+        margin-bottom: 300px;
+
         &__text-wrap {
 
+            // position: static;
             height: auto;
             left: 50%;
             top: calc(100% + 42px);

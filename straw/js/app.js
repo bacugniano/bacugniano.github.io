@@ -1,3 +1,7 @@
+//////////////////////////
+// scroll slider 
+//////////////////////////
+
 const html = document.documentElement;
 const canvas = document.getElementById("hero-section");
 const context = canvas.getContext("2d");
@@ -41,7 +45,9 @@ window.addEventListener('scroll', () => {
 
 preloadImages()
 
-// var controller = new ScrollMagic.Controller();
+/////////////////////////// 
+// animation
+////////////////////////// 
 
 var controller = new ScrollMagic.Controller({
   globalSceneOptions: {
@@ -53,8 +59,24 @@ $(function () { // wait for document ready
   // build scene
   var scene = new ScrollMagic.Scene({
                                       triggerElement: "#trigger", 
-                                      duration: 4000
+                                      duration: 4000,
+                                      // triggerHook: 0.1
                                     })
                              .setPin("#pin")
                              .addTo(controller);
-});       
+
+  var scene = new ScrollMagic.Scene({
+                                      triggerElement: "#trigger", 
+                                      duration: 2000
+                                    })
+                             .setClassToggle(".how-work__text-wrap--first", "how-work__text-wrap--first-active")
+                             .addTo(controller);
+
+  var scene = new ScrollMagic.Scene({
+                                      triggerElement: "#trigger", 
+                                      duration: 2000
+                                    })
+                             .setClassToggle(".how-work__text-wrap--second", "how-work__text-wrap--second-active")
+                             .addTo(controller);
+
+}); 
