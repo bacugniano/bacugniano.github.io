@@ -8,7 +8,7 @@
 
     &__text-wrap {
 
-        height: 363.75px;
+        height: auto;
         display: flex;
         flex-direction: column;
 
@@ -16,19 +16,20 @@
 
     &__header {
 
-        font-size: 100px;
-        line-height: 120px;
+        font-size: 90px;
+        line-height: 120%;
         font-weight: 700;
-        margin-bottom: 40px;
 
     }
 
     &__text {
 
         width: 650px;
-        font-size: 26px;
+        font-size: 24px;
         font-weight: 500;
-        line-height: 39px;
+        line-height: 150%;
+        margin-top: 40px;
+        margin-bottom: 66px;
 
     }
 
@@ -121,7 +122,8 @@
 
     &__gif {
 
-        width: 485px; 
+        width: 492px; 
+        height: 365px;
         border-radius: 30px; 
 
     }
@@ -135,14 +137,11 @@
         &__header {
 
             font-size: 72px;
-            line-height: 100px;
-            margin-bottom: 30px;
 
         }
 
         &__text {
 
-            font-size: 24px;
             width: 600px;
 
         }
@@ -158,7 +157,6 @@
         &__header {
 
             font-size: 60px;
-            margin-bottom: 20px;
 
         }
 
@@ -172,12 +170,7 @@
         &__gif {
 
             width: 450px;
-
-        }
-
-        &__text-wrap {
-
-            height: 300px;
+            height: auto;
 
         }
 
@@ -195,6 +188,13 @@
 
         }
 
+        &__text {
+
+            margin-top: 34px;
+            margin-bottom: 60px;
+
+        }
+
     }
 
 }
@@ -209,6 +209,13 @@
 
         }
 
+        &__text {
+
+            margin-top: 18px;
+            margin-bottom: 35px;
+
+        }
+
     }
 
 }
@@ -217,23 +224,15 @@
 
     .main-information {
 
-        &__text-wrap {
-
-            height: 240px;
-
-        }
-
         &__header {
 
             font-size: 48px;
-            line-height: 64px;
 
         }
 
         &__text {
 
             font-size: 18px;
-            line-height: 24px;
             width: 350px;
 
         }
@@ -261,20 +260,19 @@
         &__header {
 
             font-size: 36px;
-            line-height: 48px;
-            margin-bottom: 10px;
-
-        }
-
-        &__text-wrap {
-
-            height: 210px;
 
         }
 
         &__gif {
 
             width: 300px;
+
+        }
+
+        &__text {
+
+            margin-top: 11px;
+            margin-bottom: 28px; 
 
         }
 
@@ -286,23 +284,15 @@
 
     .main-information {
 
-        &__text-wrap {
-
-            height: 160px;
-
-        }
-
         &__header {
 
             font-size: 36px;
-            line-height: 48px;
 
         }
 
         &__text {
 
             font-size: 14px;
-            line-height: 20px;
             width: 300px;
 
         }
@@ -345,6 +335,13 @@
 
         }
 
+        &__text {
+
+            margin-top: 7px;
+            margin-bottom: 24px; 
+
+        }
+
     } 
 
 }
@@ -352,12 +349,6 @@
 @media (max-width: 560px) {
 
     .main-information {
-
-        &__text-wrap {
-
-            height: auto;
-
-        }
 
         &__gif {
 
@@ -367,25 +358,28 @@
 
         &__header {
 
-            font-size: 50px;
-            line-height: 50px;
-            margin-bottom: 40px;
+            font-size: 55px;
+            line-height: 100%;
+            margin-bottom: 49px;
+            text-align: center;
 
         }
 
         &__text {
 
             font-size: 15px;
-            line-height: 22.5px;
-            width: 260px;
-            margin-bottom: 40px;
+            width: 100%;
+            padding: 0 20px;
+            text-align: center;
+            margin-bottom: 42px;
 
         }
 
         &__link-wrap {
 
-            width: 121px;
+            width: 100%;
             flex-direction: column;
+            align-items: center;
 
         }
 
@@ -402,7 +396,7 @@
 
             font-size: 13px;
             line-height: 20.8px;
-            margin-top: 32px;
+            margin-top: 20px;
 
         }
 
