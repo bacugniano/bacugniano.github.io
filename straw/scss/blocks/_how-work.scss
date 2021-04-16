@@ -122,11 +122,11 @@
 
             top: 30%;
             left: 0;
-            transition: .8s all;
+            // transition: .8s all;
             // transform: translateX(-1000%);
-            opacity: 0;
-            visibility: hidden;
-            transition: visibility 0s linear .4s, opacity .4s ease-in;
+            // opacity: 0;
+            // visibility: hidden;
+            // transition: visibility 0s linear .4s, opacity .4s ease-in;
 
             &-active {
 
@@ -148,7 +148,7 @@
             // opacity: 1;
             // visibility: visible;
             // transition-delay: 0s;
-            display: flex;
+            // display: flex;
             
 
             &-active {
@@ -473,6 +473,8 @@
             background-color: #fff;
             align-items: center;
 
+            &--steel,
+            &--material,
             &--filter,
             &--mesh {
 
@@ -482,6 +484,7 @@
 
             }
 
+            &--material,
             &--mesh {
 
                 margin: 0;
