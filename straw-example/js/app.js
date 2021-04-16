@@ -14,19 +14,19 @@ $(function () { // wait for document ready
                              .setPin("#stick-pin")
                              .addTo(controller);
 
-  var scene = new ScrollMagic.Scene({
-                                      triggerElement: "#stick", 
-                                      duration: 2000
-                                    })
-                             .setClassToggle("#steel", "how-work__text-wrap--steel-active")
-                             .addTo(controller);
+  // var scene = new ScrollMagic.Scene({
+  //                                     triggerElement: "#stick", 
+  //                                     duration: 2000
+  //                                   })
+  //                            .setClassToggle("#steel", "how-work__text-wrap--steel-active")
+  //                            .addTo(controller);
 
-  var scene = new ScrollMagic.Scene({
-                                      triggerElement: "#stick", 
-                                      duration: 2000
-                                    })
-                             .setClassToggle("#material", "how-work__text-wrap--material-active")
-                             .addTo(controller);
+  // var scene = new ScrollMagic.Scene({
+  //                                     triggerElement: "#stick", 
+  //                                     duration: 2000
+  //                                   })
+  //                            .setClassToggle("#material", "how-work__text-wrap--material-active")
+  //                            .addTo(controller);
 
 
   // var scene = new ScrollMagic.Scene({
