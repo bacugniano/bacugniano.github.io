@@ -122,11 +122,6 @@
 
             top: 30%;
             left: 0;
-            // transition: .8s all;
-            // transform: translateX(-1000%);
-            // opacity: 0;
-            // visibility: hidden;
-            // transition: visibility 0s linear .4s, opacity .4s ease-in;
 
             &-active {
 
@@ -148,7 +143,7 @@
             // opacity: 1;
             // visibility: visible;
             // transition-delay: 0s;
-            // display: flex;
+         
             
 
             &-active {
@@ -463,18 +458,17 @@
 
         &__text-wrap {
 
-            // position: static;
+            position: static;
             height: auto;
-            left: 50%;
-            top: calc(100% + 42px);
-            transform: translateX(-50%);
+            // left: 50%;
+            // top: calc(100% + 42px);
+            // transform: translateX(-50%);
             width: 100%;
             padding: 0;
             background-color: #fff;
             align-items: center;
+            margin: 40px 0;
 
-            &--steel,
-            &--material,
             &--filter,
             &--mesh {
 

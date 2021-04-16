@@ -6,9 +6,9 @@ const html = document.documentElement;
 const canvas = document.getElementById("stick-canvas");
 const context = canvas.getContext("2d");
 
-const frameCount = 300;
+const frameCount = 170;
 const currentFrame = index => (
-  `img/canvas/stick-jpg-2/${index.toString().padStart(4, '0')}.jpg`
+  `img/canvas/stick-jpg/${index.toString().padStart(4, '0')}.jpg`
 )
 
 const preloadImages = () => {
@@ -49,45 +49,45 @@ preloadImages()
 // Scroll slider filter
 //////////////////////////////
 
-const htmlFilter = document.documentElement;
-const canvasFilter = document.getElementById("filter-canvas");
-const contextFilter = canvasFilter.getContext("2d");
+// const htmlFilter = document.documentElement;
+// const canvasFilter = document.getElementById("filter-canvas");
+// const contextFilter = canvasFilter.getContext("2d");
 
-const frameCountFilter = 300;
-const currentFrameFilter = index => (
-  `img/canvas/stick-jpg-2/${index.toString().padStart(4, '0')}.jpg`
-)
+// const frameCountFilter = 170;
+// const currentFrameFilter = index => (
+//   `img/canvas/filter-png/${index.toString().padStart(4, '0')}.png`
+// )
 
-const preloadImagesFilter = () => {
-  for (let i = 1; i < frameCountFilter; i++) {
-    const imgFilter = new Image();
-    imgFilter.src = currentFrameFilter(i);
-  }
-};
+// const preloadImagesFilter = () => {
+//   for (let i = 1; i < frameCountFilter; i++) {
+//     const imgFilter = new Image();
+//     imgFilter.src = currentFrameFilter(i);
+//   }
+// };
 
-const imgFilter = new Image()
-imgFilter.src = currentFrameFilter(1);
-canvasFilter.width=868;
-canvasFilter.height=434;
-imgFilter.onload=function(){
-  contextFilter.drawImage(img, 0, 0);
-}
+// const imgFilter = new Image()
+// imgFilter.src = currentFrameFilter(1);
+// canvasFilter.width=868;
+// canvasFilter.height=434;
+// imgFilter.onload=function(){
+//   contextFilter.drawImage(img, 0, 0);
+// }
 
-const updateImageFilter = index => {
-  imgFilter.src = currentFrameFilter(index);
-  contextFilter.drawImage(img, 0, 0);
-}
+// const updateImageFilter = index => {
+//   imgFilter.src = currentFrameFilter(index);
+//   contextFilter.drawImage(img, 0, 0);
+// }
 
-window.addEventListener('scroll', () => {  
-  const scrollTopFilter = htmlFilter.scrollTop;
-  const maxScrollTopFilter = htmlFilter.scrollHeight - window.innerHeight;
-  const scrollFractionFilter = scrollTopFilter / maxScrollTopFilter;
-  const frameIndexFilter = Math.min(
-    frameCountFilter - 1,
-    Math.ceil(scrollFractionFilter * frameCountFilter)
-  );
+// window.addEventListener('scroll', () => {  
+//   const scrollTopFilter = htmlFilter.scrollTop;
+//   const maxScrollTopFilter = htmlFilter.scrollHeight - window.innerHeight;
+//   const scrollFractionFilter = scrollTopFilter / maxScrollTopFilter;
+//   const frameIndexFilter = Math.min(
+//     frameCountFilter - 1,
+//     Math.ceil(scrollFractionFilter * frameCountFilter)
+//   );
   
-  requestAnimationFrame(() => updateImageFilter(frameIndexFilter + 1))
-});
+//   requestAnimationFrame(() => updateImageFilter(frameIndexFilter + 1))
+// });
 
-preloadImagesFilter()
+// preloadImagesFilter()
