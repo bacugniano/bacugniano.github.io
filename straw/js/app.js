@@ -1,4 +1,4 @@
-/////////////////////////
+//////////////////////////
 // scroll slider stick
 //////////////////////////
 
@@ -45,7 +45,6 @@ window.addEventListener('scroll', () => {
 
 preloadImages()
 
-//scrollmagic
 
 var controller = new ScrollMagic.Controller({
   globalSceneOptions: {
@@ -62,5 +61,6 @@ $(function () { // wait for document ready
                                     })
                              .setPin("#stick-pin")
                              .addTo(controller);
+
 
 }); 
