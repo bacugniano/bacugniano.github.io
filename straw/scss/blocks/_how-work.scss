@@ -10,12 +10,6 @@
         flex-direction: column;
         align-items: center;
 
-        &--filter {
-
-            position: relative;
-
-        }
-
     }
 
     &__header {
@@ -32,7 +26,6 @@
         &--filter {
 
             width: 330px;
-            padding-bottom: 100px;
 
         }
 
@@ -123,56 +116,25 @@
             top: 30%;
             left: 0;
 
-            &-active {
-
-                // transform: translateX(0);
-                opacity: 1;
-                visibility: visible;
-                transition-delay: 0s;
-
-            }
-
         }
 
         &--material {
 
             top: 500px;
-            right: 0;
-            // transform: translateX(0);
-            // transition: .8s all;
-            // opacity: 1;
-            // visibility: visible;
-            // transition-delay: 0s;
-         
-            
-
-            &-active {
-                // transform: translateX(+1000%);
-                opacity: 0;
-                // visibility: hidden;
-                // transition: visibility 0s linear .4s, opacity .4s ease-in;
-                display: none;
-
-            }
-
-            &-none {
-
-                display: none;
-
-            }
+            right: 0;                
 
         }
 
         &--filter {
 
-            top: 27%;
+            top: 30%;
             left: 0;    
 
         }
 
         &--mesh {
 
-            top: 550px;
+            top: 500px;
             right: 0;
 
         }
@@ -259,14 +221,16 @@
 
         &__text-wrap {
 
-            &--steel {
+            &--steel,
+            &--filter {
 
                 top: 20%;
                 left: -5%;
 
             }
 
-            &--material {
+            &--material,
+            &--mesh {
 
                 top: 65%;
 
@@ -275,28 +239,6 @@
         }
 
     }
-
-}
-
-@media (max-width:1300px) {
-
-    // .how-work {
-
-    //     &__text-wrap {
-
-    //         top: 60px;
-    //         right: 520px;
-
-    //         &--second {
-
-    //             top: 340px;
-    //             left: 520px
-
-    //         }
-
-    //     }
-
-    // }
 
 }
 
@@ -316,13 +258,6 @@
             padding: 0 25px;
             width: 373px;
             height: 190px;
-
-            // &--second {
-
-            //     top: 340px;
-            //     left: 480px
-
-            // }
 
         }
 
@@ -351,13 +286,6 @@
             padding: 25px;
             width: 250px;
             height: auto;
-
-            // &--second {
-
-            //     top: 340px;
-            //     left: 480px
-
-            // }
 
         }
 
@@ -460,9 +388,6 @@
 
             position: static;
             height: auto;
-            // left: 50%;
-            // top: calc(100% + 42px);
-            // transform: translateX(-50%);
             width: 100%;
             padding: 0;
             background-color: #fff;
