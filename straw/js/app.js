@@ -1,3 +1,52 @@
+/////////////////////////
+// scroll slider stick
+//////////////////////////
+
+const html = document.documentElement;
+const canvas = document.getElementById("stick-canvas");
+const context = canvas.getContext("2d");
+
+const frameCount = 170;
+const currentFrame = index => (
+  `img/canvas/stick-jpg/${index.toString().padStart(4, '0')}.jpg`
+)
+
+const preloadImages = () => {
+  for (let i = 1; i < frameCount; i++) {
+    const img = new Image();
+    img.src = currentFrame(i);
+  }
+};
+
+const img = new Image()
+img.src = currentFrame(1);
+canvas.width=868;
+canvas.height=434;
+img.onload=function(){
+  context.drawImage(img, 0, 0);
+}
+
+const updateImage = index => {
+  img.src = currentFrame(index);
+  context.drawImage(img, 0, 0);
+}
+
+window.addEventListener('scroll', () => {  
+  const scrollTop = html.scrollTop;
+  const maxScrollTop = html.scrollHeight - window.innerHeight;
+  const scrollFraction = scrollTop / maxScrollTop;
+  const frameIndex = Math.min(
+    frameCount - 1,
+    Math.ceil(scrollFraction * frameCount)
+  );
+  
+  requestAnimationFrame(() => updateImage(frameIndex + 1))
+});
+
+preloadImages()
+
+//scrollmagic
+
 var controller = new ScrollMagic.Controller({
   globalSceneOptions: {
       triggerHook: 'onLeave'
@@ -13,28 +62,5 @@ $(function () { // wait for document ready
                                     })
                              .setPin("#stick-pin")
                              .addTo(controller);
-
-  // var scene = new ScrollMagic.Scene({
-  //                                     triggerElement: "#stick", 
-  //                                     duration: 2000
-  //                                   })
-  //                            .setClassToggle("#steel", "how-work__text-wrap--steel-active")
-  //                            .addTo(controller);
-
-  // var scene = new ScrollMagic.Scene({
-  //                                     triggerElement: "#stick", 
-  //                                     duration: 2000
-  //                                   })
-  //                            .setClassToggle("#material", "how-work__text-wrap--material-active")
-  //                            .addTo(controller);
-
-
-  // var scene = new ScrollMagic.Scene({
-  //                                     triggerElement: "#filter", 
-  //                                     duration: 4000,
-  //                                     // triggerHook: 0.1
-  //                                   })
-  //                            .setPin("#filter-pin")
-  //                            .addTo(controller);
 
 }); 
