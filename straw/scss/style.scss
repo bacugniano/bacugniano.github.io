@@ -274,6 +274,18 @@ body {
 
 }
 
+.animate__delay-0-5s{
+
+  animation-delay: .5s;
+
+}
+
+.animate__delay-1-5s{
+
+  animation-delay: 1.5s;
+
+}
+
 @import 'blocks/header';
 @import 'blocks/navigation';
 @import 'blocks/main-information';
