@@ -7,9 +7,9 @@ const html = document.getElementById("stick");
 const canvas = document.getElementById("stick-canvas");
 const context = canvas.getContext("2d");
 
-const frameCount = 100;
+const frameCount = 101;
 const currentFrame = index => (
-  `img/canvas/stick-jpg/${index.toString().padStart(4, '0')}.jpg`
+  `img/canvas/stick-jpg-2/${index.toString().padStart(4, '0')}.jpg`
 )
 
 const preloadImages = () => {
