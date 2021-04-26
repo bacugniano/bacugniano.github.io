@@ -106,7 +106,7 @@ $(function () { // wait for document ready
   // build scene
   var scene = new ScrollMagic.Scene({
     triggerElement: "#stick",
-    duration: 6000,
+    duration: 3000,
     // triggerHook: 0.1
   })
     .setPin("#stick-pin")
@@ -114,7 +114,7 @@ $(function () { // wait for document ready
 
     var scene = new ScrollMagic.Scene({
       triggerElement: "#filter",
-      duration: 6000,
+      duration: 3000,
       // triggerHook: 0.1
     })
       .setPin("#filter-pin")
