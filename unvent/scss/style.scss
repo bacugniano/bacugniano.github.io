@@ -1,0 +1,12 @@
+@import 'general/vendor';
+@import 'general/mixin';
+@import 'general/fonts';
+@import 'general/variable';
+@import 'general/settings';
+@import 'general/overall';
+
+
+// blocks
+@import 'blocks/header';
+@import 'blocks/nav';
+@import 'blocks/main';
