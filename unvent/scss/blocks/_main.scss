@@ -416,6 +416,18 @@
 
       }
 
+      &::before {
+
+        left: -10px;
+  
+      }
+  
+      &::after {
+  
+        right: -10px;
+  
+      }
+
     }
 
     &__license-img {
