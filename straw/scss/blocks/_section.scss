@@ -219,10 +219,16 @@
 
         }
 
+        &__text-wrap {
+
+            width: 100%;
+
+        }
+
         &__text {
 
             font-size: 18px;
-            width: 560px;
+            width: 100%;
             text-align: center;
             margin-bottom: 52px;
 
@@ -242,11 +248,7 @@
 
         }
 
-        &__text {
-
-            width: auto;
-
-        }
+        
 
     }
 

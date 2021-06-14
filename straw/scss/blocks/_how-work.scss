@@ -139,6 +139,13 @@
 
         }
 
+        &--fits {
+
+            top: 500px;
+            left: 0;
+
+        }
+
     }
 
     &__text-header {
@@ -167,7 +174,7 @@
 
         &--material {
 
-            padding: 0 40px;
+            padding: 0 25px;
 
         }
 
@@ -230,7 +237,8 @@
             }
 
             &--material,
-            &--mesh {
+            &--mesh,
+            &--fits {
 
                 top: 65%;
 
@@ -335,7 +343,7 @@
             &--filter {
 
                 padding-bottom: 0;
-                width: 200px;
+                width: 250px;
                 margin-bottom: 20px;
 
             }
@@ -395,7 +403,8 @@
             margin: 40px 0;
 
             &--filter,
-            &--mesh {
+            &--mesh,
+            &--fits {
 
                 position: static;
                 transform: translateX(0);
