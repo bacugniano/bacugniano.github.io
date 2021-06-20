@@ -1,0 +1,16 @@
+@import 'general/vendor';
+@import 'general/mixin';
+@import 'general/fonts';
+@import 'general/variable';
+@import 'general/settings';
+@import 'components/burger';
+
+// blocks
+
+@import 'components/header';
+@import 'components/nav';
+@import 'components/first';
+@import 'components/checkout';
+@import 'components/form';
+@import 'components/footer';
+

@@ -1,0 +1,55 @@
+.header {
+
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: rgba(16, 16, 29, 0.9);
+  color: #fff;
+  z-index: 4;
+
+  &__container {
+  
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+  }
+
+  &__nav {
+
+    margin-left: auto;
+
+  }
+
+  &__logo-link {
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    span {
+
+      color: $second;
+
+    }
+
+  }
+
+}
+
+@media (max-width: 690px) {
+
+  .header {
+
+    &__container {
+
+      height: 50px;
+
+    }
+
+  }
+
+}
