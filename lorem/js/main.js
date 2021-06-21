@@ -10,11 +10,11 @@ burger.onclick = () => {
 
 }
 
-// $('.nav__link').click(function(){
-//   $('.nav__burger').removeClass("is-active");
-//   $('.nav__list').removeClass('nav__list--active');
-//   $('body').removeClass('body--active');
-// });
+$('.nav__link').click(function(){
+  $('.nav__burger').removeClass("is-active");
+  $('.nav__list').removeClass('nav__list--active');
+  $('body').removeClass('body--active');
+});
 
 $('.form__range-value').html($('input[type="range"]').val() + ' %');
 
