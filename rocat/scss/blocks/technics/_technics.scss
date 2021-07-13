@@ -4,28 +4,6 @@
     position: relative;
     width: 725px;
 
-    &__operator {
-
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        top: 410px;
-        left: 340px;
-        height: 110px;
-        z-index: 2;
-
-    }
-
-    &__operator-img {
-
-        width: 80px;
-        height: 80px;
-        margin-bottom: 10px;
-
-    }
-
     &__picture {
 
         display: block;
@@ -47,12 +25,13 @@
         &-wrap {
 
             width: 100%;
-            height: 500px;
+            height: 412px;
             display: flex;
-            // justify-content: center;
-            align-items: flex-end;
-            padding-bottom: 90px;
-            padding-left: 20px;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background-color: #1b1b1b;
+            margin-bottom: 42px;
 
         }
 
@@ -78,7 +57,7 @@
 
     &__characteristics-list {
 
-        margin-top: 7px;
+        margin-top: 25px;
         margin-bottom: 25px;
         width: 100%;
         min-height: 91px;
@@ -264,7 +243,8 @@
 
             height: 240px;
             justify-content: center;
-            padding-bottom: 60px;
+            background: transparent;
+            margin-bottom: 20px;
 
         }
 

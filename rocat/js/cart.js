@@ -28,17 +28,20 @@ $.getJSON("goods.json", function (data) {
         key == "t3" ||
         key == "t4" ||
         key == "t5" ||
-        key == "t6"
+        key == "t6" ||
+        key == "t7" ||
+        key == "t8" ||
+        key == "t9"
       ) {
         technics += '<li class="cart__item">';
         technics += '<div class="cart__img-wrap">';
-        technics += '<picture class="cart__img">';
-        technics +=
-          '<source class="cart__img" media="(max-width: 480px)" srcset="' +
-          goods[key].imageMobile +
-          '">';
+        // technics += '<picture class="cart__img">';
+        // technics +=
+        //   '<source class="cart__img" media="(max-width: 480px)" srcset="' +
+        //   goods[key].imageMobile +
+        //   '">';
         technics += '<img class="cart__img" src="' + goods[key].image + '" >';
-        technics += "</picture>";
+        // technics += "</picture>";
         technics += "</div>";
         technics += '<div class="cart__description-wrap">';
         technics +=
@@ -94,16 +97,16 @@ $.getJSON("goods.json", function (data) {
       ) {
         details += '<li class="cart__item">';
         details += '<div class="cart__img-wrap cart__img-wrap--details">';
-        details += '<picture class="cart__img">';
-        details +=
-          '<source class="cart__img cart__img--details" media="(max-width: 480px)" srcset="' +
-          goods[key].imageMobile +
-          '">';
+        // details += '<picture class="cart__img">';
+        // details +=
+        //   '<source class="cart__img cart__img--details" media="(max-width: 480px)" srcset="' +
+        //   goods[key].imageMobile +
+        //   '">';
         details +=
           '<img class="cart__img cart__img--details" src="' +
           goods[key].image +
           '" >';
-        details += "</picture>";
+        // details += "</picture>";
         details += "</div>";
         details +=
           '<div class="cart__description-wrap cart__description-wrap--details">';
@@ -160,16 +163,16 @@ $.getJSON("goods.json", function (data) {
       ) {
         services += '<li class="cart__item cart__item--services">';
         services += '<div class="cart__img-wrap cart__img-wrap--services">';
-        services += '<picture class="cart__img cart__img--services">';
-        services +=
-          '<source class="cart__img cart__img--services" media="(max-width: 480px)" srcset="' +
-          goods[key].imageMobile +
-          '">';
+        // services += '<picture class="cart__img cart__img--services">';
+        // services +=
+        //   '<source class="cart__img cart__img--services" media="(max-width: 480px)" srcset="' +
+        //   goods[key].imageMobile +
+        //   '">';
         services +=
           '<img class="cart__img cart__img--services" src="' +
           goods[key].image +
           '" >';
-        services += "</picture>";
+        // services += "</picture>";
         services += "</div>";
         services +=
           '<div class="cart__description-wrap cart__description-wrap--services">';

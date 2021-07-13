@@ -10,6 +10,8 @@
 
         width: 100% !important;
         display: flex !important;
+        flex-wrap: wrap;
+        gap: 35px;
         justify-content: space-between !important;    
     
 
@@ -31,12 +33,18 @@
 
     &__item {
 
-        width: 275px !important;
+        width: 273px !important;
         height: 290px !important;
         padding: 0 20px !important;
         padding-top: 40px !important;
-        border: 1px solid rgba(134, 134, 134, 0.6) !important;
+        background-color: #1b1b1b;
         outline: none !important;
+
+        &:last-child {
+
+            margin-right: auto;
+
+        }
 
     }
 
@@ -46,6 +54,18 @@
         height: 45px;
         background-repeat: no-repeat;
         background-position: bottom;
+
+        &--cat {
+
+            width: 100%;
+            background-image: url('../icon/logotype.svg'),
+                              url('../../../image/zeppelin-cat.jpg');
+            background-size: 99px 11px,
+                             123px 32px;      
+            background-position: left center,
+                                 right center;                        
+
+        }
 
         &--technics {
 
@@ -59,9 +79,15 @@
 
         }
 
-        &--prize {
+        &--alltime {
 
-            background-image: url('../icon/prize.svg');
+            background-image: url('../icon/phone.svg');
+
+        }
+
+        &--coub {
+
+            background-image: url('../icon/coub.svg');
 
         }
 
@@ -82,11 +108,35 @@
 
 }
 
+@media (max-width: 1200px) {
+
+    .features {
+
+        &__item {
+
+            &:last-child {
+
+                margin-right: 0;
+    
+            } 
+
+        }
+
+    }
+
+}
+
 @media (max-width: 960px) {
 
     .features {
 
         margin-top: 30px;
+
+        &__item {
+
+            margin-left: 23px !important;
+
+        }
 
     }
 
@@ -113,7 +163,17 @@
             font-size: 12px;
             padding: 0 17px !important;
             padding-top: 16px !important;
-            margin-left: 23px !important;
+
+        }
+
+        &__icon {
+
+            &--cat {
+
+                background-size: 64px 6px,
+                                 79px 20px;       
+
+            }
 
         }
 

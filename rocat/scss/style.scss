@@ -11,6 +11,12 @@
 }
 
 
+html {
+
+  scroll-behavior: smooth;
+
+}
+
 p,
 h1,
 h2,
@@ -196,6 +202,7 @@ body {
 @import 'blocks/index/how-to-order';
 @import 'blocks/index/features';
 @import 'blocks/index/partners';
+@import 'blocks/index/feedback';
 @import 'blocks/contacts/main-contacts';
 @import 'blocks/contacts/contacts';
 @import 'blocks/contacts/map';
@@ -219,7 +226,8 @@ body {
     .container {
 
         width: 100%;
-        padding: 0 16px;
+        padding-left: 16px;
+        padding-right: 16px;
 
     }
 
@@ -240,7 +248,7 @@ body {
   body {
 
     background-color: #060606;
-    background-image: none;
+    // background-image: none;
 
   }
 

@@ -6,47 +6,50 @@
 
         &-wrap {
 
-            height: 240px;
+            margin-bottom: 40px;
+            height: 300px;
+            background-color: $hover-bg;
             display: flex;
-            align-items: flex-start;
+            justify-content: center;
+            align-items: center;
 
         }
 
-        &--pitchfork {
+        // &--pitchfork {
 
-            margin-left: 65px;
+        //     margin-left: 65px;
 
-        }
+        // }
 
-        &--BR1850 {
+        // &--BR1850 {
 
-            margin-left: 85px;
+        //     margin-left: 85px;
 
-        }
+        // }
 
-        &--impulse {
+        // &--impulse {
 
-            margin-left: 88px;
+        //     margin-left: 88px;
 
-        }
+        // }
 
-        &--VP10 {
+        // &--VP10 {
 
-            margin-left: 135px;
+        //     margin-left: 135px;
 
-        }
+        // }
 
-        &--crane {
+        // &--crane {
 
-            margin-left: 110px;
+        //     margin-left: 110px;
 
-        }
+        // }
 
-        &--pallet-forks {
+        // &--pallet-forks {
 
-            margin-left: 100px;
+        //     margin-left: 100px;
 
-        }
+        // }
 
     }
 
@@ -158,11 +161,11 @@
 
     &__price {
 
+        width: 440px;
         font-weight: 400;
         font-size: 18px;
-        line-height: 18px;
+        line-height: 24px;
         letter-spacing: 0.2px;
-        margin-top: 30px;
 
     }
 
@@ -234,53 +237,11 @@
         width: 100%;
         transition: .5s all;
 
-        &__picture {
-
-            &--pitchfork {
-
-                margin-left: 0;
-    
-            }
-    
-            &--BR1850 {
-    
-                margin-left: 0;
-    
-            }
-    
-            &--impulse {
-    
-                margin-left: 0;
-    
-            }
-    
-            &--VP10 {
-    
-                margin-left: 0;
-    
-            }
-    
-            &--crane {
-    
-                margin-left: 0;
-    
-            }
-    
-            &--pallet-forks {
-    
-                margin-left: 0;
-
-            }
-
-        }
-
         &__picture-wrap {
 
             width: 100%;
             height: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            background-color: transparent;
 
         }
 

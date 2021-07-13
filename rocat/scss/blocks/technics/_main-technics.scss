@@ -5,7 +5,8 @@
 
     &__tab-navigation {
 
-        margin-right: 126px;
+        width: 302px !important;
+        margin-right: 99px;
 
     }
 
@@ -25,6 +26,7 @@
 
         &__tab-navigation {
 
+            width: 100% !important;
             margin-right: 0;
     
         }

@@ -1,5 +1,9 @@
 .how-to-order {
 
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #1b1b1b;
+
     &__list {
 
         width: 100%;
@@ -15,7 +19,7 @@
     &__item {
 
         position: relative;
-        z-index: 33;
+        z-index: 999;
 
         &::after {
 
@@ -76,14 +80,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $hover-bg;
-        color: $third;
-
-        &--last {
-
-            color: $main;
-
-        }
+        background-color: $second;
+        color: #fff;
 
     }
 
@@ -180,6 +178,7 @@
             height: 40px;
             width: 100%;
             padding: 0;
+            padding: 5px 0;
             margin-bottom: 60px;
 
             &::after {
@@ -201,6 +200,7 @@
             align-items: center;
             width: 300px;
             min-height: 40px;
+            padding: 5px 0;
 
         }
 
@@ -234,6 +234,8 @@
         &__list {
 
             margin-top: 24px;
+            padding-top: 25px;
+            padding-bottom: 25px;
             height: 485px;  
             justify-content: space-between;
 
