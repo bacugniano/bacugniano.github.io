@@ -106,6 +106,10 @@ function showMiniCart(){
     }
     $('.header__cart-quantity').html(out);
 
+    if (out == 0) {
+      $('.header__cart-quantity').html('');
+    }
+
     if (out > 0) {
       $('.header__cart').addClass('header__cart--active');
     }
