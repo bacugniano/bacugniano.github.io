@@ -169,7 +169,13 @@
 
                 <p class="contacts__text">Работаем 24/7 и всегда на связи!</p>
 
-                <img src="image/map-img.jpg" alt="" class="contacts__map-img">
+                <picture>
+                    <source 
+                        class="contacts__map-img"
+                        media="(max-width: 480px)"
+                        srcset="image/map-mobile.jpg">
+                    <img class="contacts__map-img" src="image/map-img.jpg" alt="карта">
+                </picture>
 
             </div>
 

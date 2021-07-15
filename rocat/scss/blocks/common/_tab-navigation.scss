@@ -55,7 +55,6 @@
     &__button {
 
         display: flex;
-        justify-content: center;
         align-items: center;
         width: 100%;
         height: 86px;
@@ -68,9 +67,15 @@
 
         &-text {
 
-            width: 155px;
+            width: 185px;
             text-align: left;
             color: $third;
+
+            &--technics {
+
+                width: 155px;
+
+            }
 
         }
 
@@ -145,6 +150,55 @@
 
         }
 
+        &--RS300 {
+
+            width: 90px;
+            height: 39px;
+
+        }
+
+        &--pitchfork {
+
+            width: 80px;
+            height: 50px;
+
+        }
+
+        &--BR1850 {
+
+            width: 80px;
+            height: 44px;
+
+        }
+
+        &--impulse {
+
+            width: 75px;
+            height: 52px;
+
+        }
+
+        &--VP10 {
+
+            width: 65px;
+            height: 63px;
+
+        }
+
+        &--crane {
+
+            width: 85px;
+            height: 53px;
+
+        }
+
+        &--pallet-forks {
+
+            width: 75px;
+            height: 66px;
+
+        }
+
     }
 
     &--details {
@@ -194,9 +248,22 @@
 
         }
 
+        &__button {
+
+            height: 100px;
+
+        }
+
         &__button-text {
 
             color: $main;
+            width: 190px;  
+
+            &--technics {
+
+                width: 180px;
+
+            }
 
         }
         &--none {

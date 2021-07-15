@@ -157,6 +157,7 @@ $(document).ready(function() {
     $(this).toggleClass("is-active");
     $('.navigation').toggleClass('navigation--active');
     $('.body').toggleClass('body--active');
+    $('.header__cart').toggle();
     $('.container-header').toggleClass('container-header--active');
   });
 });

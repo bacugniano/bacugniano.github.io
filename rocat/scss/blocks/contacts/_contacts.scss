@@ -15,10 +15,15 @@
 
     }
 
+    picture {
+
+        margin-top: auto;
+
+    }
+
     &__map-img {
 
         max-width: 100%;
-        margin-top: auto;
 
     }
 
@@ -47,11 +52,11 @@
 
         // }
 
-        // &--phone {
+        &--phone {
 
-        //     margin-left: auto;
+            width: 146px;
 
-        // }
+        }
 
     }
 
@@ -269,14 +274,17 @@
 
         &__text {
 
-            display: none;
+            font-size: 14px;
+            order: 2;
+            margin-top: 0;
+            margin-bottom: 16px;
 
         }
         
         &__map-img {
 
             margin-top: 35px;
-            margin-bottom: 65px;
+            margin-bottom: 30px;
 
         }
 

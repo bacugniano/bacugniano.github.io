@@ -190,10 +190,19 @@
               opacity: 0.7; 
             }
             
+            &.is-active {
+
+                position: fixed;
+                right: 16px;
+                top: 27px;
+
+            }
+
             &.is-active:hover { 
           
               opacity: 0.7; 
             }
+
             &.is-active &-inner,
             &.is-active &-inner::before,
             &.is-active &-inner::after {
