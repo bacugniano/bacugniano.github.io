@@ -61,13 +61,15 @@
         background: transparent;
         border: none;
         color: $main;
+        padding: 0;
         transition: .3s all;
         cursor: pointer;
         outline: none;
 
         &-text {
 
-            width: 185px;
+            width: 150px;
+            flex-grow: 1;
             text-align: left;
             color: $third;
 
@@ -81,10 +83,14 @@
 
     }
 
-    &__image {
+    &__image-wrap {
 
+        width: 115px;
         margin-right: 16px;
-        margin-left: auto;
+
+    }
+
+    &__image {
 
         &--CAT320GC {
 
@@ -248,6 +254,12 @@
 
         }
 
+        &__image-wrap {
+
+            margin-right: 10px;
+
+        }
+
         &__button {
 
             height: 100px;
@@ -256,6 +268,7 @@
 
         &__button-text {
 
+            font-size: 12px;
             color: $main;
             width: 190px;  
 
