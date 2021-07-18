@@ -241,6 +241,18 @@ body {
 
     // }
 
+    .container-header {
+
+      transition: all .3s ease-in-out;
+
+      &--active {
+
+        background-color: #060606;
+
+      }
+
+  }
+
 } 
 
 @media (max-width: 480px) {
@@ -252,10 +264,12 @@ body {
 
   }
 
+  
+
+
   .body--active {
 
     overflow: hidden;
-    background: #060606;
 
   }
 

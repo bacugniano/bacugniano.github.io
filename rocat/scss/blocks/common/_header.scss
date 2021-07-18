@@ -149,14 +149,11 @@
     .header {
 
         min-height: 75px;
+        transition: all .3s ease-in-out;
         
         &--active {
 
-            + .container {
-
-                background-color: #060606;
-
-            }
+            background-color: #060606;
 
         }
 
