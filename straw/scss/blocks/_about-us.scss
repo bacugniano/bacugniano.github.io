@@ -57,10 +57,16 @@
 
     &__text {
 
-        width: 216px;
+        width: 242px;
         font-size: 18px;
         line-height: 150%;
         text-align: center;
+
+        &--first {
+
+            width: 220px;
+
+        }
 
     }
 
