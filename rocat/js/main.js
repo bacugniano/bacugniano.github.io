@@ -158,7 +158,7 @@ $(document).ready(function() {
     $('.navigation').toggleClass('navigation--active');
     $('.body').toggleClass('body--active');
     $('.header__cart').toggle();
-    $('.container-header').toggleClass('container-header--active');
+    // $('.container-header').toggleClass('container-header--active');
   });
 });
 

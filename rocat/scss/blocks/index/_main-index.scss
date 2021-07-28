@@ -111,6 +111,20 @@
 
 }
 
+@media (min-width: 1921px) {
+
+    .main-index {
+
+        &__banner-section {
+
+            background-image: url('../image/main-banner_3_lg.jpg');    
+
+        }    
+
+    }
+
+}
+
 @media (max-width: 1690px) {
 
     .main-index {

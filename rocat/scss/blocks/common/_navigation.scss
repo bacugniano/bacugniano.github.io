@@ -49,6 +49,12 @@
         }
 
     }
+
+    &__logo {
+
+        display: none;
+
+    }
     
 }
 
@@ -101,15 +107,15 @@
 
 @media (max-width:730px) {
 
-    .container-header {
+    // .container-header {
 
-      &--active {
+    //   &--active {
 
-        background-color: #060606;
+    //     background-color: #060606;
 
-      }  
+    //   }  
 
-    }
+    // }
 
     .navigation {
 
@@ -121,15 +127,31 @@
         background-color:#060606;
         margin: 0;
         padding: 0;
-        top: 75px;
+        padding-left: 16px;
+        top: 0;
         left: 0;
         bottom: 0;
 
         &--active {
 
             transform: translateX(0);
-            transition: all .3s ease-in-out;
+            transition: all .2s ease-in-out;
 
+
+        }
+
+        &__logo {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 75px;
+
+            img {
+
+                width: 110px;
+
+            }
 
         }
 
@@ -143,7 +165,6 @@
 
             width: 100%;
             justify-content: flex-start;
-            padding-left: 16px;
             font-size: 18px;
             height: 40px;
 
