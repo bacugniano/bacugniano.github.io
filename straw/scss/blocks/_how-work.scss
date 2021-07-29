@@ -15,6 +15,7 @@
     &__header {
 
         padding-top: 80px;
+        padding-bottom: 70px;
         width: 710px;
         text-align: center;
         font-size: 66px;
@@ -113,35 +114,35 @@
 
         &--steel {
 
-            top: 30%;
+            top: calc(30% + 50px);
             left: 0;
 
         }
 
         &--material {
 
-            top: 500px;
+            top: 540px;
             right: 0;                
 
         }
 
         &--filter {
 
-            top: 30%;
+            top: calc(30% + 50px);
             left: 0;    
 
         }
 
         &--mesh {
 
-            top: 500px;
+            top: 540px;
             right: 0;
 
         }
 
         &--fits {
 
-            top: 500px;
+            top: 540px;
             left: 0;
 
         }
@@ -256,10 +257,30 @@
 
 }
 
-@media (max-width:1110px) {
+@media (max-width: 1280px) {
 
     .how-work {
 
+        &__header {
+
+            padding-bottom: 40px;
+
+        }
+
+    }
+
+}
+@media (max-width:1024px) {
+
+    .how-work {
+
+
+        &__canvas {
+
+            width: 550px;
+            height: auto;
+
+        }        
 
         &__header {
 
@@ -269,9 +290,31 @@
 
         &__text-wrap {
 
-            padding: 0 25px;
-            width: 373px;
-            height: 190px;
+            padding: 20px;
+            width: 270px;
+            height: auto;
+
+            &--steel,
+            &--filter {
+
+                top: calc(25% + 40px);
+                left: 0;
+
+            }
+
+            &--material,
+            &--mesh,
+            &--fits {
+
+                top: calc(65% + 50px);
+
+            }
+
+            &--fits {
+
+                left: 0;
+
+            }
 
         }
 
@@ -281,31 +324,25 @@
 
         }
 
+        &__text {
+
+            padding: 0;
+            font-size: 14px;
+
+        }
+
     }
 
 }
 
-@media (max-width:940px) {
+@media (max-width: 960px) {
 
     .how-work {
 
         &__header {
 
             font-size: 48px;
-
-        }
-
-        &__text-wrap {
-
-            padding: 25px;
-            width: 250px;
-            height: auto;
-
-        }
-
-        &__text {
-
-            padding: 0;
+            padding-bottom: 40px;
 
         }
 
@@ -313,14 +350,20 @@
 
 }
 
-@media (max-width: 868px) {
+@media (max-width: 854px) {
 
     .how-work {
 
         &__canvas {
 
-            width: 100%;
-            height: auto;
+            width: 400px;
+
+        }
+
+        &__header {
+
+            padding-top: 30px;
+            padding-bottom: 60px;
 
         }
 
@@ -385,6 +428,20 @@
     .how-work {
 
         margin-bottom: 200px;
+
+        &__canvas {
+
+            width: 100%;
+            height: auto;
+
+        }
+
+        &__header {
+
+            padding-top: 40px;
+            padding-bottom: 0;
+
+        }
 
         &--filter {
 
