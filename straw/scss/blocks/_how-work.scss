@@ -257,6 +257,33 @@
 
 }
 
+@media (max-width: 1366px) {
+
+    .how-work {
+
+        &__text-wrap {
+
+            &--steel,
+            &--filter {
+
+                top: calc(25% + 40px);
+
+            }
+
+            &--material,
+            &--mesh,
+            &--fits {
+
+                top: calc(65% + 50px);
+
+            }
+
+        }
+
+    }
+
+}
+
 @media (max-width: 1280px) {
 
     .how-work {
@@ -264,6 +291,18 @@
         &__header {
 
             padding-bottom: 40px;
+
+        }
+
+        &__text-wrap {
+
+            &--steel,
+            &--filter,
+            &--fits {
+
+                left: -20px;
+
+            }
 
         }
 
