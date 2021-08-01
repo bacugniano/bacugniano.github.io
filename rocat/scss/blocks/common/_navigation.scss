@@ -131,11 +131,12 @@
         top: 0;
         left: 0;
         bottom: 0;
+        z-index: 99;
 
         &--active {
 
             transform: translateX(0);
-            transition: all .2s ease-in-out;
+            transition: all .3s ease-in-out;
 
 
         }
