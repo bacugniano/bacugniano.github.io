@@ -1,0 +1,15 @@
+@import 'general/vendor';
+@import 'general/mixin';
+@import 'general/fonts';
+@import 'general/variable';
+@import 'general/settings';
+@import 'components/burger';
+
+// blocks
+@import 'components/column';
+@import 'components/header';
+@import 'components/contacts';
+@import 'components/skills';
+@import 'components/section';
+@import 'components/projects';
+@import 'components/footer';

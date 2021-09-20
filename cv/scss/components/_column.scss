@@ -1,0 +1,27 @@
+.col-1 {
+
+  width: 35%;
+  padding: 40px 20px;
+  color: #fff;
+  background-color: $dark-blue;
+
+}
+
+.col-2 {
+
+  padding: 40px 30px;
+  padding-bottom: 20px;
+  flex-grow: 1;
+
+}
+
+@media (max-width: 670px) {
+
+  .col-1,
+  .col-2 {
+
+    width: 100%;
+
+  }
+
+}

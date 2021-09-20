@@ -1,0 +1,98 @@
+.skills {
+
+  &__title {
+
+    margin-bottom: 15px;
+
+    &--personal-skills {
+
+      margin-top: 40px;
+
+    }
+
+  }
+
+  &__item {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+
+      margin-bottom: 10px;
+
+    }
+
+  }
+
+  &__bar {
+
+    position: relative;
+    width: 100px;
+    height: 10px;
+    border: 2px solid $blue;
+    background-color: $blue;
+
+  }
+
+  &__line {
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 85%;
+    background-color: $dark-blue;
+
+    &--bem {
+
+      width: 80%;
+
+    }
+
+    &--grid {
+
+      width: 70%;
+
+    }
+
+    &--js {
+
+      width: 20%;
+
+    }
+
+    &--git {
+
+      width: 50%;
+
+    }
+
+    &--team {
+
+      width: 95%;
+
+    }
+
+    &--communicate {
+
+      width: 70%;
+
+    }
+
+    &--creative {
+
+      width: 50%;
+
+    }
+
+    &--organize {
+
+      width: 80%;
+
+    }
+
+  }
+
+}
