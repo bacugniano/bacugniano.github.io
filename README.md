@@ -1,4 +1,4 @@
 # Проекты
 
-[Straw](http://cleaninc.co/ "Straw"){:target="_blank"}  
+[Straw](http://cleaninc.co/ "Straw") 
 [Rocat](https://bacugniano.github.io/rocat/ "Rocat") 
